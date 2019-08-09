@@ -278,3 +278,143 @@ NoMethodError (undefined method `permit' for "mypassword":String):
   
 app/controllers/users_controller.rb:38:in `user_params'
 app/controllers/users_controller.rb:7:in `create'
+Started GET "/" for ::1 at 2019-08-08 22:16:40 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/railties-6.0.0.rc2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/railties-6.0.0.rc2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 11.3ms | Allocations: 205)
+Completed 200 OK in 18ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 1116)
+
+
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from <top (required)> at /Users/victormrecabarren/project4/My-Spotify-Rails/spotify-app-api/app/controllers/application_controller.rb:1)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5038566874636245300)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSongs (20190809021740)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.4ms)[0m  [1m[35mCREATE TABLE "songs" ("id" bigserial primary key, "title" character varying, "artist" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190809021740"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5038566874636245300)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from <top (required)> at /Users/victormrecabarren/project4/My-Spotify-Rails/spotify-app-api/app/controllers/application_controller.rb:1)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "songs"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5038566874636245300)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddColumnsToSongs (20190809021926)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.5ms)[0m  [1m[35mALTER TABLE "songs" ADD "img" character varying[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "songs" ADD "album" character varying[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190809021926"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5038566874636245300)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.9ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "created_at", "updated_at", "img", "album") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Distorted Records"], ["artist", "A$AP Rocky"], ["created_at", "2019-08-09 02:22:36.413811"], ["updated_at", "2019-08-09 02:22:36.413811"], ["img", "Testing.jpg"], ["album", "Testing"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "created_at", "updated_at", "img", "album") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Provider"], ["artist", "Frank Ocean"], ["created_at", "2019-08-09 02:22:36.418473"], ["updated_at", "2019-08-09 02:22:36.418473"], ["img", "provider.jpeg"], ["album", "Provider"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "created_at", "updated_at", "img", "album") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "20 Something"], ["artist", "SZA"], ["created_at", "2019-08-09 02:22:36.421998"], ["updated_at", "2019-08-09 02:22:36.421998"], ["img", "ctrl.jpg"], ["album", "ctrl"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "created_at", "updated_at", "img", "album") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Wasted Times"], ["artist", "The Weeknd"], ["created_at", "2019-08-09 02:22:36.425491"], ["updated_at", "2019-08-09 02:22:36.425491"], ["img", "meloncholy.jpeg"], ["album", "My Dear Meloncholy,"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "created_at", "updated_at", "img", "album") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "If You Know You Know"], ["artist", "Pusha T"], ["created_at", "2019-08-09 02:22:36.429035"], ["updated_at", "2019-08-09 02:22:36.429035"], ["img", "daytona.jpg"], ["album", "DAYTONA"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "created_at", "updated_at", "img", "album") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Foreword"], ["artist", "Tyler, The Creator"], ["created_at", "2019-08-09 02:22:36.432639"], ["updated_at", "2019-08-09 02:22:36.432639"], ["img", "flowerboy.jpg"], ["album", "Flower Boy"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  [1m[36mSong Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "songs" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from block in <module:ContentHelper> at /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0.rc2/app/helpers/action_text/content_helper.rb:7)
+Started GET "/songs" for ::1 at 2019-08-08 22:42:37 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 8.6ms | ActiveRecord: 3.5ms | Allocations: 7522)
+
+
+Started GET "/songs" for ::1 at 2019-08-08 22:47:45 -0400
+Processing by SongsController#index as */*
+  [1m[36mSong Load (2.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 26ms (Views: 13.9ms | ActiveRecord: 2.3ms | Allocations: 1804)
+
+
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from block in <module:ContentHelper> at /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0.rc2/app/helpers/action_text/content_helper.rb:7)
+Started GET "/songs" for ::1 at 2019-08-08 22:49:18 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 7.0ms | ActiveRecord: 3.7ms | Allocations: 7525)
+
+
+Started GET "/songs" for ::1 at 2019-08-08 22:49:41 -0400
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (1.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 1.0ms | Allocations: 1805)
+
+
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from block in <module:ContentHelper> at /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0.rc2/app/helpers/action_text/content_helper.rb:7)
+Started GET "/songs" for ::1 at 2019-08-08 22:51:46 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 7.3ms | ActiveRecord: 4.0ms | Allocations: 7525)
+
+
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from block in <module:ContentHelper> at /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0.rc2/app/helpers/action_text/content_helper.rb:7)
+Started GET "/songs" for ::1 at 2019-08-08 22:52:31 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 7.3ms | ActiveRecord: 3.7ms | Allocations: 7525)
+
+
+Started GET "/songs" for ::1 at 2019-08-08 22:52:44 -0400
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.4ms | Allocations: 1805)
+
+
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from block in <module:ContentHelper> at /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0.rc2/app/helpers/action_text/content_helper.rb:7)
+Started GET "/songs" for ::1 at 2019-08-08 22:52:54 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 6.7ms | ActiveRecord: 3.4ms | Allocations: 7525)
+
+
+Started GET "/songs" for ::1 at 2019-08-08 22:52:57 -0400
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.5ms | Allocations: 1805)
+
+
+Started GET "/songs" for ::1 at 2019-08-08 22:53:01 -0400
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms | Allocations: 1805)
+
+
+Started GET "/songs" for ::1 at 2019-08-08 22:54:16 -0400
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.7ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.7ms | Allocations: 1805)
+
+
