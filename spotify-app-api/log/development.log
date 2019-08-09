@@ -131,3 +131,150 @@ puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
 puma (3.12.1) lib/puma/server.rb:474:in `process_client'
 puma (3.12.1) lib/puma/server.rb:334:in `block in run'
 puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (36.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5038566874636245300)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20190808222845)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_username" ON "users"  ("username")[0m
+  [1m[36mprimary::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190808222845"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-08-09 01:14:34.841947"], ["updated_at", "2019-08-09 01:14:34.841947"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5038566874636245300)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from <top (required)> at /Users/victormrecabarren/project4/My-Spotify-Rails/spotify-app-api/app/controllers/application_controller.rb:1)
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from block in <module:ContentHelper> at /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0.rc2/app/helpers/action_text/content_helper.rb:7)
+Started GET "/users" for ::1 at 2019-08-08 21:15:52 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 6.8ms | ActiveRecord: 2.1ms | Allocations: 1781)
+
+
+Started GET "/users/1" for ::1 at 2019-08-08 21:15:54 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:44:in `set_user'
+Completed 404 Not Found in 10ms (ActiveRecord: 4.9ms | Allocations: 1503)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:44:in `set_user'
+Started GET "/users/0" for ::1 at 2019-08-08 21:15:56 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"0"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:44:in `set_user'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms | Allocations: 655)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=0):
+  
+app/controllers/users_controller.rb:44:in `set_user'
+Started GET "/users/" for ::1 at 2019-08-08 21:16:00 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.6ms | Allocations: 843)
+
+
+Started GET "/users/" for ::1 at 2019-08-08 21:18:23 -0400
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  
+actionpack (6.0.0.rc2) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.0.rc2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0.rc2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0.rc2) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0.rc2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0.rc2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0.rc2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0.rc2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0.rc2) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (6.0.0.rc2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users/?user[username]=NewUser&user[password]=[FILTERED]" for ::1 at 2019-08-08 21:23:08 -0400
+Processing by UsersController#create as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}, "user"=>{"username"=>"NewUser", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 583)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+app/controllers/users_controller.rb:38:in `user_params'
+app/controllers/users_controller.rb:7:in `create'
+Started POST "/users/?user[username]=NewUser&user[password]=[FILTERED]" for ::1 at 2019-08-08 21:23:23 -0400
+Processing by UsersController#create as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}, "user"=>{"username"=>"NewUser", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (2.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "NewUser"], ["password", "mypassword"], ["created_at", "2019-08-09 01:23:23.741254"], ["updated_at", "2019-08-09 01:23:23.741254"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+Completed 200 OK in 36ms (Views: 1.1ms | ActiveRecord: 12.7ms | Allocations: 6615)
+
+
+Started POST "/users/?user[username]=NewUser2" for ::1 at 2019-08-08 21:23:55 -0400
+Processing by UsersController#create as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}, "user"=>{"username"=>"NewUser2"}}
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.0ms | Allocations: 578)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: password):
+  
+app/controllers/users_controller.rb:38:in `user_params'
+app/controllers/users_controller.rb:7:in `create'
+Started POST "/users/?user[username]=NewUser2&user[password]=[FILTERED]" for ::1 at 2019-08-08 21:23:59 -0400
+Processing by UsersController#create as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}, "user"=>{"username"=>"NewUser2", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 992)
+
+
+  
+NoMethodError (undefined method `permit' for "mypassword":String):
+  
+app/controllers/users_controller.rb:38:in `user_params'
+app/controllers/users_controller.rb:7:in `create'
