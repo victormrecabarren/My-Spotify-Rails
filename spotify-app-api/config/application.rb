@@ -14,6 +14,9 @@ require "action_view/railtie"
 require "action_cable/engine"
 # require "sprockets/railtie"
 require "rails/test_unit/railtie"
+require 'rspotify'
+
+RSpotify.authenticate("93f13874896f45b88e09ef0de5c050b2", "cde452f1e4ef4634b4b614809dd8b0bf")
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
