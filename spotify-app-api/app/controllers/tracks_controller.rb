@@ -15,7 +15,10 @@ class TracksController < ApplicationController
 
   # POST /tracks
   def create
-    @track = Track.new(track_params)
+    track = Track.new
+
+    track.new_track()
+
 
     if @track.save
       render json: @track, status: :created, location: @track

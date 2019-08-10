@@ -1588,3 +1588,734 @@ Migrating to CreateTracks (20190810164638)
 DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from <top (required)> at /Users/victormrecabarren/project4/My-Spotify-Rails/spotify-app-api/app/controllers/application_controller.rb:1)
   [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "tracks"[0m
   [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "playlists"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5038566874636245300)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddColumnToTracksTable (20190810170831)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.8ms)[0m  [1m[35mALTER TABLE "tracks" ADD "album_id" character varying[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190810170831"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(5038566874636245300)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5038566874636245300)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to ChangeColumnDataTypeOfTracks (20190810171046)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (14.4ms)[0m  [1m[35mALTER TABLE "tracks" ALTER COLUMN "spotify_id" TYPE character varying[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190810171046"]]
+  [1m[35m (5.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5038566874636245300)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/login/" for ::1 at 2019-08-10 15:55:19 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LoginController#index as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Track (0.42ms)
+Completed 200 OK in 972ms (Views: 3.7ms | ActiveRecord: 5.7ms | Allocations: 22268)
+
+
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "tracks"[0m
+Started GET "/login" for ::1 at 2019-08-10 16:02:45 -0400
+  
+SyntaxError (/Users/victormrecabarren/project4/My-Spotify-Rails/spotify-app-api/app/controllers/login_controller.rb:11: syntax error, unexpected ':', expecting '}'
+    else render { song: error },  status: 400
+                      ^):
+  
+app/controllers/login_controller.rb:11: syntax error, unexpected ':', expecting '}'
+app/controllers/login_controller.rb:11: syntax error, unexpected ':', expecting '}'
+Started GET "/login" for ::1 at 2019-08-10 16:05:56 -0400
+  
+SyntaxError (/Users/victormrecabarren/project4/My-Spotify-Rails/spotify-app-api/app/controllers/login_controller.rb:11: syntax error, unexpected '\n', expecting =>
+...nder status:422, { song: error}
+...                               ^
+/Users/victormrecabarren/project4/My-Spotify-Rails/spotify-app-api/app/controllers/login_controller.rb:22: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/login_controller.rb:11: syntax error, unexpected '\n', expecting =>
+app/controllers/login_controller.rb:22: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/login_controller.rb:11: syntax error, unexpected '\n', expecting =>
+app/controllers/login_controller.rb:22: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/login" for ::1 at 2019-08-10 16:07:16 -0400
+  
+SyntaxError (/Users/victormrecabarren/project4/My-Spotify-Rails/spotify-app-api/app/controllers/login_controller.rb:11: syntax error, unexpected '\n', expecting =>
+...nder status:422, { song: error}
+...                               ^
+/Users/victormrecabarren/project4/My-Spotify-Rails/spotify-app-api/app/controllers/login_controller.rb:22: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/login_controller.rb:11: syntax error, unexpected '\n', expecting =>
+app/controllers/login_controller.rb:22: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/login_controller.rb:11: syntax error, unexpected '\n', expecting =>
+app/controllers/login_controller.rb:22: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/login" for ::1 at 2019-08-10 16:07:36 -0400
+  
+SyntaxError (/Users/victormrecabarren/project4/My-Spotify-Rails/spotify-app-api/app/controllers/login_controller.rb:12: syntax error, unexpected '\n', expecting =>
+...nder status:422, { song: error}
+...                               ^
+/Users/victormrecabarren/project4/My-Spotify-Rails/spotify-app-api/app/controllers/login_controller.rb:23: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/login_controller.rb:12: syntax error, unexpected '\n', expecting =>
+app/controllers/login_controller.rb:23: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/login_controller.rb:12: syntax error, unexpected '\n', expecting =>
+app/controllers/login_controller.rb:23: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/login" for ::1 at 2019-08-10 16:10:02 -0400
+  
+SyntaxError (/Users/victormrecabarren/project4/My-Spotify-Rails/spotify-app-api/app/controllers/login_controller.rb:12: syntax error, unexpected '\n', expecting =>
+...nder status:422, { song: error}
+...                               ^
+/Users/victormrecabarren/project4/My-Spotify-Rails/spotify-app-api/app/controllers/login_controller.rb:23: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/login_controller.rb:12: syntax error, unexpected '\n', expecting =>
+app/controllers/login_controller.rb:23: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/login_controller.rb:12: syntax error, unexpected '\n', expecting =>
+app/controllers/login_controller.rb:23: syntax error, unexpected end-of-input, expecting keyword_end
+  [1m[35m (22.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tracks"[0m
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from block in <module:ContentHelper> at /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0.rc2/app/helpers/action_text/content_helper.rb:7)
+Started GET "/search" for ::1 at 2019-08-10 16:44:12 -0400
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/search"):
+  
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/search" for ::1 at 2019-08-10 16:44:59 -0400
+  
+ActionController::RoutingError (uninitialized constant SearchController
+Did you mean?  SearchController
+               UsersController):
+  
+activesupport (6.0.0.rc2) lib/active_support/inflector/methods.rb:282:in `const_get'
+activesupport (6.0.0.rc2) lib/active_support/inflector/methods.rb:282:in `block in constantize'
+activesupport (6.0.0.rc2) lib/active_support/inflector/methods.rb:280:in `each'
+activesupport (6.0.0.rc2) lib/active_support/inflector/methods.rb:280:in `inject'
+activesupport (6.0.0.rc2) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (6.0.0.rc2) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.0.0.rc2) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.0.rc2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.0.rc2) lib/action_dispatch/routing/route_set.rb:45:in `controller'
+actionpack (6.0.0.rc2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.0.rc2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0.rc2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0.rc2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0.rc2) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (6.0.0.rc2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/search" for ::1 at 2019-08-10 16:45:27 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.49ms)
+Completed 200 OK in 330ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 7337)
+
+
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from <top (required)> at /Users/victormrecabarren/project4/My-Spotify-Rails/spotify-app-api/app/controllers/application_controller.rb:1)
+Started GET "/search" for ::1 at 2019-08-10 16:55:35 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.12ms)
+Completed 200 OK in 1553ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 5158)
+
+
+Started GET "/search" for ::1 at 2019-08-10 16:55:59 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.32ms)
+Completed 200 OK in 332ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 5356)
+
+
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from block in <module:ContentHelper> at /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0.rc2/app/helpers/action_text/content_helper.rb:7)
+Started GET "/search" for ::1 at 2019-08-10 16:57:11 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+Completed 500 Internal Server Error in 1060ms (ActiveRecord: 0.0ms | Allocations: 4713)
+
+
+  
+NameError (`@[]' is not allowed as an instance variable name):
+  
+app/controllers/search_controller.rb:9:in `block in index'
+app/controllers/search_controller.rb:7:in `map'
+app/controllers/search_controller.rb:7:in `index'
+Started GET "/search" for ::1 at 2019-08-10 16:57:41 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+Completed 500 Internal Server Error in 357ms (ActiveRecord: 0.0ms | Allocations: 3208)
+
+
+  
+NameError (`@[]' is not allowed as an instance variable name):
+  
+app/controllers/search_controller.rb:9:in `block in index'
+app/controllers/search_controller.rb:7:in `map'
+app/controllers/search_controller.rb:7:in `index'
+Started GET "/search" for ::1 at 2019-08-10 16:57:53 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+Completed 500 Internal Server Error in 483ms (ActiveRecord: 0.0ms | Allocations: 3038)
+
+
+  
+NameError (`@[]' is not allowed as an instance variable name):
+  
+app/controllers/search_controller.rb:9:in `block in index'
+app/controllers/search_controller.rb:7:in `map'
+app/controllers/search_controller.rb:7:in `index'
+Started GET "/search" for ::1 at 2019-08-10 16:58:16 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+Completed 500 Internal Server Error in 539ms (ActiveRecord: 0.0ms | Allocations: 39256)
+
+
+  
+NoMethodError (undefined method `let' for #<SearchController:0x00007f9815287328>):
+  
+app/controllers/search_controller.rb:5:in `index'
+Started GET "/search" for ::1 at 2019-08-10 16:58:23 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+Completed 500 Internal Server Error in 352ms (ActiveRecord: 0.0ms | Allocations: 2995)
+
+
+  
+NameError (`@[]' is not allowed as an instance variable name):
+  
+app/controllers/search_controller.rb:9:in `block in index'
+app/controllers/search_controller.rb:7:in `map'
+app/controllers/search_controller.rb:7:in `index'
+Started GET "/search" for ::1 at 2019-08-10 16:59:12 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+Completed 500 Internal Server Error in 179ms (ActiveRecord: 0.0ms | Allocations: 2931)
+
+
+  
+NameError (`@[]' is not allowed as an instance variable name):
+  
+app/controllers/search_controller.rb:8:in `block in index'
+app/controllers/search_controller.rb:7:in `map'
+app/controllers/search_controller.rb:7:in `index'
+Started GET "/search" for ::1 at 2019-08-10 16:59:29 -0400
+  
+SyntaxError (/Users/victormrecabarren/project4/My-Spotify-Rails/spotify-app-api/app/controllers/search_controller.rb:5: syntax error, unexpected '=', expecting keyword_end
+    :albums = []
+            ^):
+  
+app/controllers/search_controller.rb:5: syntax error, unexpected '=', expecting keyword_end
+app/controllers/search_controller.rb:5: syntax error, unexpected '=', expecting keyword_end
+Started GET "/search" for ::1 at 2019-08-10 16:59:54 -0400
+  
+SyntaxError (/Users/victormrecabarren/project4/My-Spotify-Rails/spotify-app-api/app/controllers/search_controller.rb:3: syntax error, unexpected '=', expecting keyword_end
+    :spotify_albums = RSpotify::Album.search("My B...
+                    ^
+/Users/victormrecabarren/project4/My-Spotify-Rails/spotify-app-api/app/controllers/search_controller.rb:5: syntax error, unexpected '=', expecting keyword_end
+    :albums = []
+            ^):
+  
+app/controllers/search_controller.rb:3: syntax error, unexpected '=', expecting keyword_end
+app/controllers/search_controller.rb:5: syntax error, unexpected '=', expecting keyword_end
+app/controllers/search_controller.rb:3: syntax error, unexpected '=', expecting keyword_end
+app/controllers/search_controller.rb:5: syntax error, unexpected '=', expecting keyword_end
+Started GET "/search" for ::1 at 2019-08-10 17:01:48 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+Completed 500 Internal Server Error in 249ms (ActiveRecord: 0.0ms | Allocations: 2901)
+
+
+  
+NameError (`@[]' is not allowed as an instance variable name):
+  
+app/controllers/search_controller.rb:8:in `block in index'
+app/controllers/search_controller.rb:7:in `map'
+app/controllers/search_controller.rb:7:in `index'
+Started GET "/search" for ::1 at 2019-08-10 17:11:15 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+Completed 500 Internal Server Error in 1209ms (ActiveRecord: 0.0ms | Allocations: 3283)
+
+
+  
+NameError (`@[]' is not allowed as an instance variable name):
+  
+app/controllers/search_controller.rb:8:in `block in index'
+app/controllers/search_controller.rb:7:in `map'
+app/controllers/search_controller.rb:7:in `index'
+Started GET "/search" for ::1 at 2019-08-10 17:11:27 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+Completed 500 Internal Server Error in 918ms (ActiveRecord: 0.0ms | Allocations: 3238)
+
+
+  
+NameError (`@[]' is not allowed as an instance variable name):
+  
+app/controllers/search_controller.rb:8:in `block in index'
+app/controllers/search_controller.rb:7:in `map'
+app/controllers/search_controller.rb:7:in `index'
+Started GET "/search" for ::1 at 2019-08-10 17:12:33 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+Completed 500 Internal Server Error in 699ms (ActiveRecord: 0.0ms | Allocations: 3237)
+
+
+  
+NameError (`@[]' is not allowed as an instance variable name):
+  
+app/controllers/search_controller.rb:8:in `block in index'
+app/controllers/search_controller.rb:7:in `map'
+app/controllers/search_controller.rb:7:in `index'
+Started GET "/search" for ::1 at 2019-08-10 17:12:54 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.18ms)
+Completed 200 OK in 489ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 5623)
+
+
+Started GET "/search" for ::1 at 2019-08-10 17:13:24 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+Completed 500 Internal Server Error in 1053ms (ActiveRecord: 0.0ms | Allocations: 3125)
+
+
+  
+NameError (`@[]' is not allowed as an instance variable name):
+  
+app/controllers/search_controller.rb:9:in `block in index'
+app/controllers/search_controller.rb:7:in `map'
+app/controllers/search_controller.rb:7:in `index'
+Started GET "/search" for ::1 at 2019-08-10 17:13:38 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+Completed 500 Internal Server Error in 1295ms (ActiveRecord: 0.0ms | Allocations: 3052)
+
+
+  
+NameError (`@[]' is not allowed as an instance variable name):
+  
+app/controllers/search_controller.rb:10:in `block in index'
+app/controllers/search_controller.rb:7:in `map'
+app/controllers/search_controller.rb:7:in `index'
+Started GET "/search" for ::1 at 2019-08-10 17:14:04 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (8.19ms)
+Completed 200 OK in 1273ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 5331)
+
+
+Started GET "/search" for ::1 at 2019-08-10 17:14:53 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.27ms)
+Completed 200 OK in 762ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 5336)
+
+
+Started GET "/search" for ::1 at 2019-08-10 17:15:03 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.51ms)
+Completed 200 OK in 901ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 3684)
+
+
+Started GET "/search" for ::1 at 2019-08-10 17:15:51 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.5ms)
+Completed 200 OK in 450ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 5469)
+
+
+Started GET "/search" for ::1 at 2019-08-10 17:31:52 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+Completed 500 Internal Server Error in 1108ms (ActiveRecord: 0.0ms | Allocations: 3622)
+
+
+  
+NoMethodError (undefined method `id' for #<Hash:0x00007f9811d44350>):
+  
+app/controllers/search_controller.rb:18:in `block in index'
+app/controllers/search_controller.rb:17:in `map'
+app/controllers/search_controller.rb:17:in `index'
+Started GET "/search" for ::1 at 2019-08-10 17:32:34 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+Completed 500 Internal Server Error in 876ms (ActiveRecord: 0.0ms | Allocations: 3739)
+
+
+  
+NoMethodError (undefined method `album_id' for #<Hash:0x00007f98153c5de8>):
+  
+app/controllers/search_controller.rb:18:in `block in index'
+app/controllers/search_controller.rb:17:in `map'
+app/controllers/search_controller.rb:17:in `index'
+Started GET "/search" for ::1 at 2019-08-10 17:32:57 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.39ms)
+Completed 200 OK in 1155ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 5264)
+
+
+Started GET "/search" for ::1 at 2019-08-10 17:33:15 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.44ms)
+Completed 200 OK in 426ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 3504)
+
+
+Started GET "/search" for ::1 at 2019-08-10 17:34:26 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+Completed 500 Internal Server Error in 196ms (ActiveRecord: 0.0ms | Allocations: 3650)
+
+
+  
+NoMethodError (undefined method `album_id' for #<Hash:0x00007f98124b6bb0>):
+  
+app/controllers/search_controller.rb:18:in `block in index'
+app/controllers/search_controller.rb:17:in `map'
+app/controllers/search_controller.rb:17:in `index'
+Started GET "/search" for ::1 at 2019-08-10 17:34:43 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+Completed 500 Internal Server Error in 536ms (ActiveRecord: 0.0ms | Allocations: 74563)
+
+
+  
+NameError (undefined local variable or method `album_id' for #<SearchController:0x00007f9811ce5a30>
+Did you mean?  album):
+  
+app/controllers/search_controller.rb:18:in `block in index'
+app/controllers/search_controller.rb:17:in `map'
+app/controllers/search_controller.rb:17:in `index'
+Started GET "/search" for ::1 at 2019-08-10 17:35:34 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.9ms)
+Completed 200 OK in 480ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 3634)
+
+
+Started GET "/search" for ::1 at 2019-08-10 17:35:57 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+Completed 500 Internal Server Error in 1185ms (ActiveRecord: 0.0ms | Allocations: 74242)
+
+
+  
+NameError (undefined local variable or method `album_id' for #<SearchController:0x00007f981541d278>
+Did you mean?  album):
+  
+app/controllers/search_controller.rb:19:in `block in index'
+app/controllers/search_controller.rb:17:in `map'
+app/controllers/search_controller.rb:17:in `index'
+Started GET "/search" for ::1 at 2019-08-10 17:37:14 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 989)
+
+
+  
+NoMethodError (undefined method `id' for #<Hash:0x00007f98151bc498>):
+  
+app/controllers/search_controller.rb:25:in `block in index'
+app/controllers/search_controller.rb:24:in `map'
+app/controllers/search_controller.rb:24:in `index'
+Started GET "/search" for ::1 at 2019-08-10 17:37:31 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 990)
+
+
+  
+NoMethodError (undefined method `id' for #<Hash:0x00007f9810c4ba80>):
+  
+app/controllers/search_controller.rb:25:in `block in index'
+app/controllers/search_controller.rb:24:in `map'
+app/controllers/search_controller.rb:24:in `index'
+Started GET "/search" for ::1 at 2019-08-10 17:39:16 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 997)
+
+
+  
+NoMethodError (undefined method `id' for #<Hash:0x00007f9810c52b00>):
+  
+app/controllers/search_controller.rb:23:in `block in index'
+app/controllers/search_controller.rb:22:in `map'
+app/controllers/search_controller.rb:22:in `index'
+Started GET "/search" for ::1 at 2019-08-10 17:39:58 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.7ms)
+Completed 200 OK in 368ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 3735)
+
+
+Started GET "/search" for ::1 at 2019-08-10 17:40:34 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 379)
+
+
+Started GET "/search" for ::1 at 2019-08-10 17:40:59 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+Completed 500 Internal Server Error in 2194ms (ActiveRecord: 0.0ms | Allocations: 74208)
+
+
+  
+NameError (undefined local variable or method `album_id' for #<SearchController:0x00007f9811c96bb0>
+Did you mean?  album):
+  
+app/controllers/search_controller.rb:20:in `block in index'
+app/controllers/search_controller.rb:18:in `map'
+app/controllers/search_controller.rb:18:in `index'
+Started GET "/search" for ::1 at 2019-08-10 17:41:57 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+Completed 500 Internal Server Error in 558ms (ActiveRecord: 0.0ms | Allocations: 74351)
+
+
+  
+NameError (undefined local variable or method `album_id' for #<SearchController:0x00007f98152d1608>
+Did you mean?  album):
+  
+app/controllers/search_controller.rb:20:in `block in index'
+app/controllers/search_controller.rb:18:in `map'
+app/controllers/search_controller.rb:18:in `index'
+Started GET "/search" for ::1 at 2019-08-10 17:42:02 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.54ms)
+Completed 200 OK in 276ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 3455)
+
+
+Started GET "/search" for ::1 at 2019-08-10 17:44:51 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+Completed 500 Internal Server Error in 198ms (ActiveRecord: 0.0ms | Allocations: 3512)
+
+
+  
+NoMethodError (undefined method `album_id' for #<Hash:0x00007f9811b7f4c0>):
+  
+app/controllers/search_controller.rb:20:in `block in index'
+app/controllers/search_controller.rb:18:in `map'
+app/controllers/search_controller.rb:18:in `index'
+Started GET "/search" for ::1 at 2019-08-10 17:45:36 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+Completed 500 Internal Server Error in 402ms (ActiveRecord: 0.0ms | Allocations: 74326)
+
+
+  
+NameError (undefined local variable or method `album_id' for #<SearchController:0x00007f9811b8c238>
+Did you mean?  album):
+  
+app/controllers/search_controller.rb:22:in `block in index'
+app/controllers/search_controller.rb:18:in `map'
+app/controllers/search_controller.rb:18:in `index'
+Started GET "/search" for ::1 at 2019-08-10 17:46:31 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+Completed 500 Internal Server Error in 578ms (ActiveRecord: 0.0ms | Allocations: 74252)
+
+
+  
+NameError (undefined local variable or method `album_id' for #<SearchController:0x00007f9810d7b900>
+Did you mean?  album):
+  
+app/controllers/search_controller.rb:22:in `block in index'
+app/controllers/search_controller.rb:18:in `map'
+app/controllers/search_controller.rb:18:in `index'
+Started GET "/search" for ::1 at 2019-08-10 17:46:58 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+Completed 500 Internal Server Error in 533ms (ActiveRecord: 0.0ms | Allocations: 9614)
+
+
+  
+NoMethodError (undefined method `map' for #<RSpotify::Album:0x00007f981506b670>
+Did you mean?  tap):
+  
+app/controllers/search_controller.rb:22:in `block in index'
+app/controllers/search_controller.rb:18:in `map'
+app/controllers/search_controller.rb:18:in `index'
+Started GET "/search" for ::1 at 2019-08-10 17:50:36 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+Completed 500 Internal Server Error in 407ms (ActiveRecord: 0.0ms | Allocations: 8110)
+
+
+  
+NoMethodError (undefined method `tracks' for #<Hash:0x00007f9810bf4438>):
+  
+app/controllers/search_controller.rb:25:in `block (2 levels) in index'
+app/controllers/search_controller.rb:24:in `map'
+app/controllers/search_controller.rb:24:in `block in index'
+app/controllers/search_controller.rb:18:in `map'
+app/controllers/search_controller.rb:18:in `index'
+Started GET "/search" for ::1 at 2019-08-10 17:51:06 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+Completed 500 Internal Server Error in 1297ms (ActiveRecord: 0.0ms | Allocations: 8303)
+
+
+  
+NoMethodError (undefined method `tracks' for #<Hash:0x00007f9811b1f6b0>):
+  
+app/controllers/search_controller.rb:25:in `block (2 levels) in index'
+app/controllers/search_controller.rb:24:in `map'
+app/controllers/search_controller.rb:24:in `block in index'
+app/controllers/search_controller.rb:18:in `map'
+app/controllers/search_controller.rb:18:in `index'
+Started GET "/search" for ::1 at 2019-08-10 17:51:46 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+Completed 500 Internal Server Error in 608ms (ActiveRecord: 0.0ms | Allocations: 8099)
+
+
+  
+NoMethodError (undefined method `tracks' for #<Hash:0x00007f98158b0948>):
+  
+app/controllers/search_controller.rb:25:in `block (2 levels) in index'
+app/controllers/search_controller.rb:24:in `map'
+app/controllers/search_controller.rb:24:in `block in index'
+app/controllers/search_controller.rb:18:in `map'
+app/controllers/search_controller.rb:18:in `index'
+Started GET "/search" for ::1 at 2019-08-10 17:55:39 -0400
+  
+SyntaxError (/Users/victormrecabarren/project4/My-Spotify-Rails/spotify-app-api/app/controllers/search_controller.rb:23: syntax error, unexpected ')', expecting '}'
+....find(album[:album_id]).tracks)
+...                              ^
+/Users/victormrecabarren/project4/My-Spotify-Rails/spotify-app-api/app/controllers/search_controller.rb:33: syntax error, unexpected keyword_end, expecting '}'
+  end
+  ^~~):
+  
+app/controllers/search_controller.rb:23: syntax error, unexpected ')', expecting '}'
+app/controllers/search_controller.rb:33: syntax error, unexpected keyword_end, expecting '}'
+app/controllers/search_controller.rb:23: syntax error, unexpected ')', expecting '}'
+app/controllers/search_controller.rb:33: syntax error, unexpected keyword_end, expecting '}'
+Started GET "/search" for ::1 at 2019-08-10 17:56:56 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+Completed 500 Internal Server Error in 798ms (ActiveRecord: 0.0ms | Allocations: 9103)
+
+
+  
+NoMethodError (undefined method `name' for #<Hash:0x00007f98127d42c0>):
+  
+app/controllers/search_controller.rb:22:in `block in index'
+app/controllers/search_controller.rb:20:in `map'
+app/controllers/search_controller.rb:20:in `index'
+Started GET "/search" for ::1 at 2019-08-10 18:01:16 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.42ms)
+Completed 200 OK in 640ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 12052)
+
+
+Started GET "/search" for ::1 at 2019-08-10 18:01:58 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.73ms)
+Completed 200 OK in 594ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 11651)
+
+
+Started GET "/search" for ::1 at 2019-08-10 18:02:46 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.15ms)
+Completed 200 OK in 584ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 11723)
+
+
+Started GET "/search" for ::1 at 2019-08-10 18:03:40 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+Completed 500 Internal Server Error in 360ms (ActiveRecord: 0.0ms | Allocations: 8201)
+
+
+  
+NoMethodError (undefined method `track' for #<Hash:0x00007f9812690170>):
+  
+app/controllers/search_controller.rb:22:in `block (2 levels) in index'
+app/controllers/search_controller.rb:20:in `map'
+app/controllers/search_controller.rb:20:in `block in index'
+app/controllers/search_controller.rb:19:in `map'
+app/controllers/search_controller.rb:19:in `index'
+Started GET "/search" for ::1 at 2019-08-10 18:03:58 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.5ms)
+Completed 200 OK in 561ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 11787)
+
+
+Started GET "/search" for ::1 at 2019-08-10 18:04:39 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.48ms)
+Completed 200 OK in 512ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 11725)
+
+
+Started GET "/search" for ::1 at 2019-08-10 18:05:29 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.06ms)
+Completed 200 OK in 540ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 13606)
+
+
+Started GET "/search" for ::1 at 2019-08-10 18:05:59 -0400
+Processing by SearchController#index as */*
+  Parameters: {"average_price"=>{"month"=>"February", "price"=>"6"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.27ms)
+Completed 200 OK in 568ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 13692)
+
+
