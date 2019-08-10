@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 
+  user_id: 
+  playlist_name: MyString
+  playlist_img: MyString
+
+two:
+  id: 
+  user_id: 
+  playlist_name: MyString
+  playlist_img: MyString
