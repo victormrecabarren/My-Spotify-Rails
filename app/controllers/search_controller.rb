@@ -2,7 +2,6 @@ class SearchController < ApplicationController
   def index
     spotify_albums = RSpotify::Album.search("My Beautiful Dark Twisted Fantasy")
 
-
     myarray = []
 
     spotify_albums.map{ |album| myarray.push({
@@ -14,8 +13,6 @@ class SearchController < ApplicationController
         tracks: []
         })
      }
-
-
      myarray.map{ |album|
        RSpotify:: Album.find(album[:album_id]).tracks.map{ |track|
          album[:tracks].push({
@@ -27,20 +24,6 @@ class SearchController < ApplicationController
          }
        }
 
-     #   .map{ |track|
-     #     album.tracks.push({
-     #        track: track.track_number,
-     #        title: track.name,
-     #        explicit: track.explicit,
-     #        milliseconds: track.duration_ms
-     #       })
-     #   }
-     #
-     # puts albums_with_tracks
-
-
-
-
-    render json: { albums: myarray}
+    render json: { results: myarray}
   end
 end
