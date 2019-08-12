@@ -1,0 +1,351 @@
+  [1m[35m (138.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "spotify_app_api_test"[0m
+  [1m[35m (469.4ms)[0m  [1m[35mCREATE DATABASE "spotify_app_api_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (2.6ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (1.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "playlists" CASCADE[0m
+  [1m[35m (22.1ms)[0m  [1m[35mCREATE TABLE "playlists" ("id" bigserial primary key, "user_id" integer, "playlist_name" character varying, "playlist_img" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "songs" CASCADE[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "songs" ("id" bigserial primary key, "title" character varying, "artist" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "img" character varying, "album" character varying)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "tracks" CASCADE[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "tracks" ("id" bigserial primary key, "spotify_id" character varying, "playlist_id" integer, "name" character varying, "artist" character varying, "image" character varying, "album_name" character varying, "preview" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "album_id" character varying)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_username" ON "users"  ("username")[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190810171046)[0m
+  [1m[35m (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190808222845),
+(20190809021740),
+(20190809021926),
+(20190810164254),
+(20190810164638),
+(20190810170831);
+
+[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "test"], ["created_at", "2019-08-11 13:03:55.341526"], ["updated_at", "2019-08-11 13:03:55.341526"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (285.8ms)[0m  [1m[35mCREATE DATABASE "spotify_app_api_test-0" ENCODING = 'unicode'[0m
+  [1m[35m (286.0ms)[0m  [1m[35mCREATE DATABASE "spotify_app_api_test-1" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "playlists" CASCADE[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "playlists" CASCADE[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "playlists" ("id" bigserial primary key, "user_id" integer, "playlist_name" character varying, "playlist_img" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE "playlists" ("id" bigserial primary key, "user_id" integer, "playlist_name" character varying, "playlist_img" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "songs" CASCADE[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "songs" CASCADE[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE TABLE "songs" ("id" bigserial primary key, "title" character varying, "artist" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "img" character varying, "album" character varying)[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "songs" ("id" bigserial primary key, "title" character varying, "artist" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "img" character varying, "album" character varying)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "tracks" CASCADE[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "tracks" CASCADE[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "tracks" ("id" bigserial primary key, "spotify_id" character varying, "playlist_id" integer, "name" character varying, "artist" character varying, "image" character varying, "album_name" character varying, "preview" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "album_id" character varying)[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "tracks" ("id" bigserial primary key, "spotify_id" character varying, "playlist_id" integer, "name" character varying, "artist" character varying, "image" character varying, "album_name" character varying, "preview" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "album_id" character varying)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_username" ON "users"  ("username")[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_username" ON "users"  ("username")[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190810171046)[0m
+  [1m[35m (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190810171046)[0m
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190808222845),
+(20190809021740),
+(20190809021926),
+(20190810164254),
+(20190810164638),
+(20190810170831);
+
+[0m
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190808222845),
+(20190809021740),
+(20190809021926),
+(20190810164254),
+(20190810164638),
+(20190810170831);
+
+[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "test"], ["created_at", "2019-08-11 13:03:55.889521"], ["updated_at", "2019-08-11 13:03:55.889521"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "test"], ["created_at", "2019-08-11 13:03:55.889524"], ["updated_at", "2019-08-11 13:03:55.889524"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "playlists" DISABLE TRIGGER ALL;ALTER TABLE "songs" DISABLE TRIGGER ALL;ALTER TABLE "tracks" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "playlists" DISABLE TRIGGER ALL;ALTER TABLE "songs" DISABLE TRIGGER ALL;ALTER TABLE "tracks" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixtures Load (4.5ms)[0m  [1m[31mDELETE FROM "songs";
+DELETE FROM "tracks";
+DELETE FROM "users";
+DELETE FROM "playlists";
+INSERT INTO "songs" ("id", "title", "artist", "created_at", "updated_at", "img", "album") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:55.930273', '2019-08-11 13:03:55.930273', DEFAULT, DEFAULT), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:55.930273', '2019-08-11 13:03:55.930273', DEFAULT, DEFAULT);
+INSERT INTO "tracks" ("id", "spotify_id", "playlist_id", "name", "artist", "image", "album_name", "preview", "created_at", "updated_at", "album_id") VALUES (980190962, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:55.937784', '2019-08-11 13:03:55.937784', DEFAULT), (298486374, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:55.937784', '2019-08-11 13:03:55.937784', DEFAULT);
+INSERT INTO "users" ("id", "username", "password", "created_at", "updated_at") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:55.941047', '2019-08-11 13:03:55.941047'), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:55.941047', '2019-08-11 13:03:55.941047');
+INSERT INTO "playlists" ("id", "user_id", "playlist_name", "playlist_img", "created_at", "updated_at") VALUES (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:55.943315', '2019-08-11 13:03:55.943315'), (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:55.943315', '2019-08-11 13:03:55.943315')[0m
+  [1m[36mFixtures Load (4.5ms)[0m  [1m[31mDELETE FROM "songs";
+DELETE FROM "tracks";
+DELETE FROM "users";
+DELETE FROM "playlists";
+INSERT INTO "songs" ("id", "title", "artist", "created_at", "updated_at", "img", "album") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:55.930273', '2019-08-11 13:03:55.930273', DEFAULT, DEFAULT), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:55.930273', '2019-08-11 13:03:55.930273', DEFAULT, DEFAULT);
+INSERT INTO "tracks" ("id", "spotify_id", "playlist_id", "name", "artist", "image", "album_name", "preview", "created_at", "updated_at", "album_id") VALUES (980190962, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:55.937784', '2019-08-11 13:03:55.937784', DEFAULT), (298486374, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:55.937784', '2019-08-11 13:03:55.937784', DEFAULT);
+INSERT INTO "users" ("id", "username", "password", "created_at", "updated_at") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:55.941090', '2019-08-11 13:03:55.941090'), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:55.941090', '2019-08-11 13:03:55.941090');
+INSERT INTO "playlists" ("id", "user_id", "playlist_name", "playlist_img", "created_at", "updated_at") VALUES (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:55.943315', '2019-08-11 13:03:55.943315'), (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:55.943315', '2019-08-11 13:03:55.943315')[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "playlists" DISABLE TRIGGER ALL;ALTER TABLE "songs" DISABLE TRIGGER ALL;ALTER TABLE "tracks" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "playlists" DISABLE TRIGGER ALL;ALTER TABLE "songs" DISABLE TRIGGER ALL;ALTER TABLE "tracks" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixtures Load (0.6ms)[0m  [1m[31mDELETE FROM "songs";
+DELETE FROM "tracks";
+DELETE FROM "users";
+DELETE FROM "playlists";
+INSERT INTO "songs" ("id", "title", "artist", "created_at", "updated_at", "img", "album") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.014730', '2019-08-11 13:03:56.014730', DEFAULT, DEFAULT), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.014730', '2019-08-11 13:03:56.014730', DEFAULT, DEFAULT);
+INSERT INTO "tracks" ("id", "spotify_id", "playlist_id", "name", "artist", "image", "album_name", "preview", "created_at", "updated_at", "album_id") VALUES (980190962, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.014912', '2019-08-11 13:03:56.014912', DEFAULT), (298486374, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.014912', '2019-08-11 13:03:56.014912', DEFAULT);
+INSERT INTO "users" ("id", "username", "password", "created_at", "updated_at") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.015046', '2019-08-11 13:03:56.015046'), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.015046', '2019-08-11 13:03:56.015046');
+INSERT INTO "playlists" ("id", "user_id", "playlist_name", "playlist_img", "created_at", "updated_at") VALUES (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.015267', '2019-08-11 13:03:56.015267'), (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.015267', '2019-08-11 13:03:56.015267')[0m
+  [1m[36mFixtures Load (0.6ms)[0m  [1m[31mDELETE FROM "songs";
+DELETE FROM "tracks";
+DELETE FROM "users";
+DELETE FROM "playlists";
+INSERT INTO "songs" ("id", "title", "artist", "created_at", "updated_at", "img", "album") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.014730', '2019-08-11 13:03:56.014730', DEFAULT, DEFAULT), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.014730', '2019-08-11 13:03:56.014730', DEFAULT, DEFAULT);
+INSERT INTO "tracks" ("id", "spotify_id", "playlist_id", "name", "artist", "image", "album_name", "preview", "created_at", "updated_at", "album_id") VALUES (980190962, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.014912', '2019-08-11 13:03:56.014912', DEFAULT), (298486374, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.014912', '2019-08-11 13:03:56.014912', DEFAULT);
+INSERT INTO "users" ("id", "username", "password", "created_at", "updated_at") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.015043', '2019-08-11 13:03:56.015043'), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.015043', '2019-08-11 13:03:56.015043');
+INSERT INTO "playlists" ("id", "user_id", "playlist_name", "playlist_img", "created_at", "updated_at") VALUES (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.015270', '2019-08-11 13:03:56.015270'), (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.015270', '2019-08-11 13:03:56.015270')[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "playlists" DISABLE TRIGGER ALL;ALTER TABLE "songs" DISABLE TRIGGER ALL;ALTER TABLE "tracks" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "playlists" DISABLE TRIGGER ALL;ALTER TABLE "songs" DISABLE TRIGGER ALL;ALTER TABLE "tracks" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixtures Load (0.7ms)[0m  [1m[31mDELETE FROM "songs";
+DELETE FROM "tracks";
+DELETE FROM "users";
+DELETE FROM "playlists";
+INSERT INTO "songs" ("id", "title", "artist", "created_at", "updated_at", "img", "album") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.023297', '2019-08-11 13:03:56.023297', DEFAULT, DEFAULT), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.023297', '2019-08-11 13:03:56.023297', DEFAULT, DEFAULT);
+INSERT INTO "tracks" ("id", "spotify_id", "playlist_id", "name", "artist", "image", "album_name", "preview", "created_at", "updated_at", "album_id") VALUES (980190962, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.023462', '2019-08-11 13:03:56.023462', DEFAULT), (298486374, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.023462', '2019-08-11 13:03:56.023462', DEFAULT);
+INSERT INTO "users" ("id", "username", "password", "created_at", "updated_at") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.023584', '2019-08-11 13:03:56.023584'), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.023584', '2019-08-11 13:03:56.023584');
+INSERT INTO "playlists" ("id", "user_id", "playlist_name", "playlist_img", "created_at", "updated_at") VALUES (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.023693', '2019-08-11 13:03:56.023693'), (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.023693', '2019-08-11 13:03:56.023693')[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mFixtures Load (0.8ms)[0m  [1m[31mDELETE FROM "songs";
+DELETE FROM "tracks";
+DELETE FROM "users";
+DELETE FROM "playlists";
+INSERT INTO "songs" ("id", "title", "artist", "created_at", "updated_at", "img", "album") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.023752', '2019-08-11 13:03:56.023752', DEFAULT, DEFAULT), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.023752', '2019-08-11 13:03:56.023752', DEFAULT, DEFAULT);
+INSERT INTO "tracks" ("id", "spotify_id", "playlist_id", "name", "artist", "image", "album_name", "preview", "created_at", "updated_at", "album_id") VALUES (980190962, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.023902', '2019-08-11 13:03:56.023902', DEFAULT), (298486374, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.023902', '2019-08-11 13:03:56.023902', DEFAULT);
+INSERT INTO "users" ("id", "username", "password", "created_at", "updated_at") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.024024', '2019-08-11 13:03:56.024024'), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.024024', '2019-08-11 13:03:56.024024');
+INSERT INTO "playlists" ("id", "user_id", "playlist_name", "playlist_img", "created_at", "updated_at") VALUES (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.024134', '2019-08-11 13:03:56.024134'), (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.024134', '2019-08-11 13:03:56.024134')[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "playlists" DISABLE TRIGGER ALL;ALTER TABLE "songs" DISABLE TRIGGER ALL;ALTER TABLE "tracks" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "playlists" DISABLE TRIGGER ALL;ALTER TABLE "songs" DISABLE TRIGGER ALL;ALTER TABLE "tracks" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixtures Load (0.8ms)[0m  [1m[31mDELETE FROM "songs";
+DELETE FROM "tracks";
+DELETE FROM "users";
+DELETE FROM "playlists";
+INSERT INTO "songs" ("id", "title", "artist", "created_at", "updated_at", "img", "album") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.032325', '2019-08-11 13:03:56.032325', DEFAULT, DEFAULT), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.032325', '2019-08-11 13:03:56.032325', DEFAULT, DEFAULT);
+INSERT INTO "tracks" ("id", "spotify_id", "playlist_id", "name", "artist", "image", "album_name", "preview", "created_at", "updated_at", "album_id") VALUES (980190962, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.032482', '2019-08-11 13:03:56.032482', DEFAULT), (298486374, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.032482', '2019-08-11 13:03:56.032482', DEFAULT);
+INSERT INTO "users" ("id", "username", "password", "created_at", "updated_at") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.032675', '2019-08-11 13:03:56.032675'), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.032675', '2019-08-11 13:03:56.032675');
+INSERT INTO "playlists" ("id", "user_id", "playlist_name", "playlist_img", "created_at", "updated_at") VALUES (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.032876', '2019-08-11 13:03:56.032876'), (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.032876', '2019-08-11 13:03:56.032876')[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mFixtures Load (0.9ms)[0m  [1m[31mDELETE FROM "songs";
+DELETE FROM "tracks";
+DELETE FROM "users";
+DELETE FROM "playlists";
+INSERT INTO "songs" ("id", "title", "artist", "created_at", "updated_at", "img", "album") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.032947', '2019-08-11 13:03:56.032947', DEFAULT, DEFAULT), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.032947', '2019-08-11 13:03:56.032947', DEFAULT, DEFAULT);
+INSERT INTO "tracks" ("id", "spotify_id", "playlist_id", "name", "artist", "image", "album_name", "preview", "created_at", "updated_at", "album_id") VALUES (980190962, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.033090', '2019-08-11 13:03:56.033090', DEFAULT), (298486374, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.033090', '2019-08-11 13:03:56.033090', DEFAULT);
+INSERT INTO "users" ("id", "username", "password", "created_at", "updated_at") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.033210', '2019-08-11 13:03:56.033210'), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.033210', '2019-08-11 13:03:56.033210');
+INSERT INTO "playlists" ("id", "user_id", "playlist_name", "playlist_img", "created_at", "updated_at") VALUES (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.033321', '2019-08-11 13:03:56.033321'), (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.033321', '2019-08-11 13:03:56.033321')[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "playlists" DISABLE TRIGGER ALL;ALTER TABLE "songs" DISABLE TRIGGER ALL;ALTER TABLE "tracks" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "playlists" DISABLE TRIGGER ALL;ALTER TABLE "songs" DISABLE TRIGGER ALL;ALTER TABLE "tracks" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixtures Load (0.6ms)[0m  [1m[31mDELETE FROM "songs";
+DELETE FROM "tracks";
+DELETE FROM "users";
+DELETE FROM "playlists";
+INSERT INTO "songs" ("id", "title", "artist", "created_at", "updated_at", "img", "album") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.041590', '2019-08-11 13:03:56.041590', DEFAULT, DEFAULT), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.041590', '2019-08-11 13:03:56.041590', DEFAULT, DEFAULT);
+INSERT INTO "tracks" ("id", "spotify_id", "playlist_id", "name", "artist", "image", "album_name", "preview", "created_at", "updated_at", "album_id") VALUES (980190962, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.041757', '2019-08-11 13:03:56.041757', DEFAULT), (298486374, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.041757', '2019-08-11 13:03:56.041757', DEFAULT);
+INSERT INTO "users" ("id", "username", "password", "created_at", "updated_at") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.041882', '2019-08-11 13:03:56.041882'), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.041882', '2019-08-11 13:03:56.041882');
+INSERT INTO "playlists" ("id", "user_id", "playlist_name", "playlist_img", "created_at", "updated_at") VALUES (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.041997', '2019-08-11 13:03:56.041997'), (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.041997', '2019-08-11 13:03:56.041997')[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mFixtures Load (0.9ms)[0m  [1m[31mDELETE FROM "songs";
+DELETE FROM "tracks";
+DELETE FROM "users";
+DELETE FROM "playlists";
+INSERT INTO "songs" ("id", "title", "artist", "created_at", "updated_at", "img", "album") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.041589', '2019-08-11 13:03:56.041589', DEFAULT, DEFAULT), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.041589', '2019-08-11 13:03:56.041589', DEFAULT, DEFAULT);
+INSERT INTO "tracks" ("id", "spotify_id", "playlist_id", "name", "artist", "image", "album_name", "preview", "created_at", "updated_at", "album_id") VALUES (980190962, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.041774', '2019-08-11 13:03:56.041774', DEFAULT), (298486374, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.041774', '2019-08-11 13:03:56.041774', DEFAULT);
+INSERT INTO "users" ("id", "username", "password", "created_at", "updated_at") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.041901', '2019-08-11 13:03:56.041901'), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.041901', '2019-08-11 13:03:56.041901');
+INSERT INTO "playlists" ("id", "user_id", "playlist_name", "playlist_img", "created_at", "updated_at") VALUES (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.042015', '2019-08-11 13:03:56.042015'), (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.042015', '2019-08-11 13:03:56.042015')[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "playlists" DISABLE TRIGGER ALL;ALTER TABLE "songs" DISABLE TRIGGER ALL;ALTER TABLE "tracks" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixtures Load (0.8ms)[0m  [1m[31mDELETE FROM "songs";
+DELETE FROM "tracks";
+DELETE FROM "users";
+DELETE FROM "playlists";
+INSERT INTO "songs" ("id", "title", "artist", "created_at", "updated_at", "img", "album") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.054346', '2019-08-11 13:03:56.054346', DEFAULT, DEFAULT), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.054346', '2019-08-11 13:03:56.054346', DEFAULT, DEFAULT);
+INSERT INTO "tracks" ("id", "spotify_id", "playlist_id", "name", "artist", "image", "album_name", "preview", "created_at", "updated_at", "album_id") VALUES (980190962, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.054602', '2019-08-11 13:03:56.054602', DEFAULT), (298486374, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.054602', '2019-08-11 13:03:56.054602', DEFAULT);
+INSERT INTO "users" ("id", "username", "password", "created_at", "updated_at") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.054810', '2019-08-11 13:03:56.054810'), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.054810', '2019-08-11 13:03:56.054810');
+INSERT INTO "playlists" ("id", "user_id", "playlist_name", "playlist_img", "created_at", "updated_at") VALUES (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.054991', '2019-08-11 13:03:56.054991'), (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.054991', '2019-08-11 13:03:56.054991')[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "playlists" DISABLE TRIGGER ALL;ALTER TABLE "songs" DISABLE TRIGGER ALL;ALTER TABLE "tracks" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixtures Load (0.8ms)[0m  [1m[31mDELETE FROM "songs";
+DELETE FROM "tracks";
+DELETE FROM "users";
+DELETE FROM "playlists";
+INSERT INTO "songs" ("id", "title", "artist", "created_at", "updated_at", "img", "album") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.053983', '2019-08-11 13:03:56.053983', DEFAULT, DEFAULT), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.053983', '2019-08-11 13:03:56.053983', DEFAULT, DEFAULT);
+INSERT INTO "tracks" ("id", "spotify_id", "playlist_id", "name", "artist", "image", "album_name", "preview", "created_at", "updated_at", "album_id") VALUES (980190962, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.056801', '2019-08-11 13:03:56.056801', DEFAULT), (298486374, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.056801', '2019-08-11 13:03:56.056801', DEFAULT);
+INSERT INTO "users" ("id", "username", "password", "created_at", "updated_at") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.057015', '2019-08-11 13:03:56.057015'), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.057015', '2019-08-11 13:03:56.057015');
+INSERT INTO "playlists" ("id", "user_id", "playlist_name", "playlist_img", "created_at", "updated_at") VALUES (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.057187', '2019-08-11 13:03:56.057187'), (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.057187', '2019-08-11 13:03:56.057187')[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "playlists" DISABLE TRIGGER ALL;ALTER TABLE "songs" DISABLE TRIGGER ALL;ALTER TABLE "tracks" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "playlists" DISABLE TRIGGER ALL;ALTER TABLE "songs" DISABLE TRIGGER ALL;ALTER TABLE "tracks" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[36mFixtures Load (1.0ms)[0m  [1m[31mDELETE FROM "songs";
+DELETE FROM "tracks";
+DELETE FROM "users";
+DELETE FROM "playlists";
+INSERT INTO "songs" ("id", "title", "artist", "created_at", "updated_at", "img", "album") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.066459', '2019-08-11 13:03:56.066459', DEFAULT, DEFAULT), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.066459', '2019-08-11 13:03:56.066459', DEFAULT, DEFAULT);
+INSERT INTO "tracks" ("id", "spotify_id", "playlist_id", "name", "artist", "image", "album_name", "preview", "created_at", "updated_at", "album_id") VALUES (980190962, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.066770', '2019-08-11 13:03:56.066770', DEFAULT), (298486374, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.066770', '2019-08-11 13:03:56.066770', DEFAULT);
+INSERT INTO "users" ("id", "username", "password", "created_at", "updated_at") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.067273', '2019-08-11 13:03:56.067273'), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.067273', '2019-08-11 13:03:56.067273');
+INSERT INTO "playlists" ("id", "user_id", "playlist_name", "playlist_img", "created_at", "updated_at") VALUES (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.067421', '2019-08-11 13:03:56.067421'), (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.067421', '2019-08-11 13:03:56.067421')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixtures Load (0.8ms)[0m  [1m[31mDELETE FROM "songs";
+DELETE FROM "tracks";
+DELETE FROM "users";
+DELETE FROM "playlists";
+INSERT INTO "songs" ("id", "title", "artist", "created_at", "updated_at", "img", "album") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.067608', '2019-08-11 13:03:56.067608', DEFAULT, DEFAULT), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.067608', '2019-08-11 13:03:56.067608', DEFAULT, DEFAULT);
+INSERT INTO "tracks" ("id", "spotify_id", "playlist_id", "name", "artist", "image", "album_name", "preview", "created_at", "updated_at", "album_id") VALUES (980190962, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.067756', '2019-08-11 13:03:56.067756', DEFAULT), (298486374, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.067756', '2019-08-11 13:03:56.067756', DEFAULT);
+INSERT INTO "users" ("id", "username", "password", "created_at", "updated_at") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.068132', '2019-08-11 13:03:56.068132'), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.068132', '2019-08-11 13:03:56.068132');
+INSERT INTO "playlists" ("id", "user_id", "playlist_name", "playlist_img", "created_at", "updated_at") VALUES (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.068338', '2019-08-11 13:03:56.068338'), (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.068338', '2019-08-11 13:03:56.068338')[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "playlists" DISABLE TRIGGER ALL;ALTER TABLE "songs" DISABLE TRIGGER ALL;ALTER TABLE "tracks" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "playlists" DISABLE TRIGGER ALL;ALTER TABLE "songs" DISABLE TRIGGER ALL;ALTER TABLE "tracks" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixtures Load (0.9ms)[0m  [1m[31mDELETE FROM "songs";
+DELETE FROM "tracks";
+DELETE FROM "users";
+DELETE FROM "playlists";
+INSERT INTO "songs" ("id", "title", "artist", "created_at", "updated_at", "img", "album") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.078992', '2019-08-11 13:03:56.078992', DEFAULT, DEFAULT), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.078992', '2019-08-11 13:03:56.078992', DEFAULT, DEFAULT);
+INSERT INTO "tracks" ("id", "spotify_id", "playlist_id", "name", "artist", "image", "album_name", "preview", "created_at", "updated_at", "album_id") VALUES (980190962, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.079175', '2019-08-11 13:03:56.079175', DEFAULT), (298486374, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.079175', '2019-08-11 13:03:56.079175', DEFAULT);
+INSERT INTO "users" ("id", "username", "password", "created_at", "updated_at") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.079316', '2019-08-11 13:03:56.079316'), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.079316', '2019-08-11 13:03:56.079316');
+INSERT INTO "playlists" ("id", "user_id", "playlist_name", "playlist_img", "created_at", "updated_at") VALUES (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.079436', '2019-08-11 13:03:56.079436'), (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.079436', '2019-08-11 13:03:56.079436')[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mFixtures Load (0.9ms)[0m  [1m[31mDELETE FROM "songs";
+DELETE FROM "tracks";
+DELETE FROM "users";
+DELETE FROM "playlists";
+INSERT INTO "songs" ("id", "title", "artist", "created_at", "updated_at", "img", "album") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.079576', '2019-08-11 13:03:56.079576', DEFAULT, DEFAULT), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.079576', '2019-08-11 13:03:56.079576', DEFAULT, DEFAULT);
+INSERT INTO "tracks" ("id", "spotify_id", "playlist_id", "name", "artist", "image", "album_name", "preview", "created_at", "updated_at", "album_id") VALUES (980190962, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.079807', '2019-08-11 13:03:56.079807', DEFAULT), (298486374, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.079807', '2019-08-11 13:03:56.079807', DEFAULT);
+INSERT INTO "users" ("id", "username", "password", "created_at", "updated_at") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.080050', '2019-08-11 13:03:56.080050'), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.080050', '2019-08-11 13:03:56.080050');
+INSERT INTO "playlists" ("id", "user_id", "playlist_name", "playlist_img", "created_at", "updated_at") VALUES (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.080196', '2019-08-11 13:03:56.080196'), (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.080196', '2019-08-11 13:03:56.080196')[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "playlists" DISABLE TRIGGER ALL;ALTER TABLE "songs" DISABLE TRIGGER ALL;ALTER TABLE "tracks" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "playlists" DISABLE TRIGGER ALL;ALTER TABLE "songs" DISABLE TRIGGER ALL;ALTER TABLE "tracks" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixtures Load (0.6ms)[0m  [1m[31mDELETE FROM "songs";
+DELETE FROM "tracks";
+DELETE FROM "users";
+DELETE FROM "playlists";
+INSERT INTO "songs" ("id", "title", "artist", "created_at", "updated_at", "img", "album") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.090644', '2019-08-11 13:03:56.090644', DEFAULT, DEFAULT), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.090644', '2019-08-11 13:03:56.090644', DEFAULT, DEFAULT);
+INSERT INTO "tracks" ("id", "spotify_id", "playlist_id", "name", "artist", "image", "album_name", "preview", "created_at", "updated_at", "album_id") VALUES (980190962, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.090913', '2019-08-11 13:03:56.090913', DEFAULT), (298486374, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.090913', '2019-08-11 13:03:56.090913', DEFAULT);
+INSERT INTO "users" ("id", "username", "password", "created_at", "updated_at") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.091215', '2019-08-11 13:03:56.091215'), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.091215', '2019-08-11 13:03:56.091215');
+INSERT INTO "playlists" ("id", "user_id", "playlist_name", "playlist_img", "created_at", "updated_at") VALUES (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.091399', '2019-08-11 13:03:56.091399'), (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.091399', '2019-08-11 13:03:56.091399')[0m
+  [1m[36mFixtures Load (0.7ms)[0m  [1m[31mDELETE FROM "songs";
+DELETE FROM "tracks";
+DELETE FROM "users";
+DELETE FROM "playlists";
+INSERT INTO "songs" ("id", "title", "artist", "created_at", "updated_at", "img", "album") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.090683', '2019-08-11 13:03:56.090683', DEFAULT, DEFAULT), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.090683', '2019-08-11 13:03:56.090683', DEFAULT, DEFAULT);
+INSERT INTO "tracks" ("id", "spotify_id", "playlist_id", "name", "artist", "image", "album_name", "preview", "created_at", "updated_at", "album_id") VALUES (980190962, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.090928', '2019-08-11 13:03:56.090928', DEFAULT), (298486374, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.090928', '2019-08-11 13:03:56.090928', DEFAULT);
+INSERT INTO "users" ("id", "username", "password", "created_at", "updated_at") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.091211', '2019-08-11 13:03:56.091211'), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.091211', '2019-08-11 13:03:56.091211');
+INSERT INTO "playlists" ("id", "user_id", "playlist_name", "playlist_img", "created_at", "updated_at") VALUES (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.091386', '2019-08-11 13:03:56.091386'), (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.091386', '2019-08-11 13:03:56.091386')[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "playlists" DISABLE TRIGGER ALL;ALTER TABLE "songs" DISABLE TRIGGER ALL;ALTER TABLE "tracks" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "playlists" DISABLE TRIGGER ALL;ALTER TABLE "songs" DISABLE TRIGGER ALL;ALTER TABLE "tracks" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixtures Load (1.7ms)[0m  [1m[31mDELETE FROM "songs";
+DELETE FROM "tracks";
+DELETE FROM "users";
+DELETE FROM "playlists";
+INSERT INTO "songs" ("id", "title", "artist", "created_at", "updated_at", "img", "album") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.101313', '2019-08-11 13:03:56.101313', DEFAULT, DEFAULT), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.101313', '2019-08-11 13:03:56.101313', DEFAULT, DEFAULT);
+INSERT INTO "tracks" ("id", "spotify_id", "playlist_id", "name", "artist", "image", "album_name", "preview", "created_at", "updated_at", "album_id") VALUES (980190962, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.101549', '2019-08-11 13:03:56.101549', DEFAULT), (298486374, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.101549', '2019-08-11 13:03:56.101549', DEFAULT);
+INSERT INTO "users" ("id", "username", "password", "created_at", "updated_at") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.101841', '2019-08-11 13:03:56.101841'), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.101841', '2019-08-11 13:03:56.101841');
+INSERT INTO "playlists" ("id", "user_id", "playlist_name", "playlist_img", "created_at", "updated_at") VALUES (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.102011', '2019-08-11 13:03:56.102011'), (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.102011', '2019-08-11 13:03:56.102011')[0m
+  [1m[36mFixtures Load (1.7ms)[0m  [1m[31mDELETE FROM "songs";
+DELETE FROM "tracks";
+DELETE FROM "users";
+DELETE FROM "playlists";
+INSERT INTO "songs" ("id", "title", "artist", "created_at", "updated_at", "img", "album") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.101243', '2019-08-11 13:03:56.101243', DEFAULT, DEFAULT), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.101243', '2019-08-11 13:03:56.101243', DEFAULT, DEFAULT);
+INSERT INTO "tracks" ("id", "spotify_id", "playlist_id", "name", "artist", "image", "album_name", "preview", "created_at", "updated_at", "album_id") VALUES (980190962, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.101418', '2019-08-11 13:03:56.101418', DEFAULT), (298486374, '1', 1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2019-08-11 13:03:56.101418', '2019-08-11 13:03:56.101418', DEFAULT);
+INSERT INTO "users" ("id", "username", "password", "created_at", "updated_at") VALUES (980190962, 'MyString', 'MyString', '2019-08-11 13:03:56.101692', '2019-08-11 13:03:56.101692'), (298486374, 'MyString', 'MyString', '2019-08-11 13:03:56.101692', '2019-08-11 13:03:56.101692');
+INSERT INTO "playlists" ("id", "user_id", "playlist_name", "playlist_img", "created_at", "updated_at") VALUES (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.101882', '2019-08-11 13:03:56.101882'), (NULL, NULL, 'MyString', 'MyString', '2019-08-11 13:03:56.101882', '2019-08-11 13:03:56.101882')[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (137.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "spotify_app_api_test-0"[0m
+  [1m[35m (138.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "spotify_app_api_test-1"[0m

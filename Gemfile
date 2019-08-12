@@ -11,6 +11,8 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'dotenv-rails'
 gem 'awesome_print'
+gem 'active_model_serializers'
+gem 'rspotify'
 
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -28,8 +30,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
-gem 'active_model_serializers'
-gem 'rspotify'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

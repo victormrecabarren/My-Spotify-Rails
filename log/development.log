@@ -2319,3 +2319,947 @@ Processing by SearchController#index as */*
 Completed 200 OK in 568ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 13692)
 
 
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from block in <module:ContentHelper> at /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0.rc2/app/helpers/action_text/content_helper.rb:7)
+Started GET "/songs" for ::1 at 2019-08-11 08:32:45 -0400
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (1.1.4) lib/pg.rb:56:in `initialize'
+pg (1.1.4) lib/pg.rb:56:in `new'
+pg (1.1.4) lib/pg.rb:56:in `connect'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/postgresql_adapter.rb:46:in `postgresql_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:923:in `checkout_new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:902:in `try_to_checkout_new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:863:in `acquire_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:587:in `checkout'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1106:in `retrieve_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_handling.rb:231:in `retrieve_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_handling.rb:199:in `connection'
+activerecord (6.0.0.rc2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/songs" for ::1 at 2019-08-11 08:32:47 -0400
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (1.1.4) lib/pg.rb:56:in `initialize'
+pg (1.1.4) lib/pg.rb:56:in `new'
+pg (1.1.4) lib/pg.rb:56:in `connect'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/postgresql_adapter.rb:46:in `postgresql_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:923:in `checkout_new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:902:in `try_to_checkout_new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:863:in `acquire_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:587:in `checkout'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1106:in `retrieve_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_handling.rb:231:in `retrieve_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_handling.rb:199:in `connection'
+activerecord (6.0.0.rc2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-08-11 08:32:48 -0400
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (1.1.4) lib/pg.rb:56:in `initialize'
+pg (1.1.4) lib/pg.rb:56:in `new'
+pg (1.1.4) lib/pg.rb:56:in `connect'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/postgresql_adapter.rb:46:in `postgresql_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:923:in `checkout_new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:902:in `try_to_checkout_new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:863:in `acquire_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:587:in `checkout'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1106:in `retrieve_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_handling.rb:231:in `retrieve_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_handling.rb:199:in `connection'
+activerecord (6.0.0.rc2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/songs" for ::1 at 2019-08-11 08:33:04 -0400
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (1.1.4) lib/pg.rb:56:in `initialize'
+pg (1.1.4) lib/pg.rb:56:in `new'
+pg (1.1.4) lib/pg.rb:56:in `connect'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/postgresql_adapter.rb:46:in `postgresql_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:923:in `checkout_new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:902:in `try_to_checkout_new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:863:in `acquire_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:587:in `checkout'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1106:in `retrieve_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_handling.rb:231:in `retrieve_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_handling.rb:199:in `connection'
+activerecord (6.0.0.rc2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/songs" for ::1 at 2019-08-11 08:33:15 -0400
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (1.9ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+No serializer found for resource: #<Song id: 1, title: "Distorted Records", artist: "A$AP Rocky", created_at: "2019-08-09 02:22:36", updated_at: "2019-08-09 02:22:36", img: "Testing.jpg", album: "Testing">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (1.16ms)
+Completed 200 OK in 21ms (Views: 11.5ms | ActiveRecord: 7.9ms | Allocations: 9587)
+
+
+Started GET "/search" for ::1 at 2019-08-11 08:33:25 -0400
+Processing by SearchController#index as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.01ms)
+Completed 200 OK in 588ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 15643)
+
+
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from block in <module:ContentHelper> at /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0.rc2/app/helpers/action_text/content_helper.rb:7)
+Started GET "/songs" for ::1 at 2019-08-11 08:38:26 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+No serializer found for resource: #<Song id: 1, title: "Distorted Records", artist: "A$AP Rocky", created_at: "2019-08-09 02:22:36", updated_at: "2019-08-09 02:22:36", img: "Testing.jpg", album: "Testing">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (5.89ms)
+Completed 200 OK in 34ms (Views: 28.2ms | ActiveRecord: 3.7ms | Allocations: 9571)
+
+
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from block in <module:ContentHelper> at /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0.rc2/app/helpers/action_text/content_helper.rb:7)
+Started GET "/search/Channel%20Orange" for ::1 at 2019-08-11 08:50:58 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/search/Channel%20Orange"):
+  
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/search/Blackstar" for ::1 at 2019-08-11 08:51:09 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/search/Blackstar"):
+  
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/search/Channel%20Orange" for ::1 at 2019-08-11 08:51:56 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/search/Channel%20Orange"):
+  
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/search/Blackstar" for ::1 at 2019-08-11 08:52:01 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/search/Blackstar"):
+  
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from <top (required)> at /Users/victormrecabarren/project4/api-spotify/app/controllers/application_controller.rb:1)
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from load at /Users/victormrecabarren/.rbenv/versions/2.5.5/bin/rake:23)
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from block in <module:ContentHelper> at /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0.rc2/app/helpers/action_text/content_helper.rb:7)
+Started GET "/search/channel%20orange" for ::1 at 2019-08-11 09:07:47 -0400
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for SearchController):
+  
+actionpack (6.0.0.rc2) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.0.rc2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0.rc2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0.rc2) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0.rc2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0.rc2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0.rc2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0.rc2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0.rc2) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (6.0.0.rc2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/search/blackstar" for ::1 at 2019-08-11 09:07:52 -0400
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for SearchController):
+  
+actionpack (6.0.0.rc2) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.0.rc2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0.rc2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0.rc2) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0.rc2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0.rc2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0.rc2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0.rc2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0.rc2) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (6.0.0.rc2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/search/channel%20orange" for ::1 at 2019-08-11 09:09:58 -0400
+Processing by SearchController#show as HTML
+  Parameters: {"id"=>"channel orange"}
+No serializer found for resource: {:album_id=>"392p3shh2jkxUxY2VHvlH8", :name=>"channel ORANGE", :artist=>"Frank Ocean", :artist_id=>"2h93pZq0e7k5yf4dywlkpM", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Start", :explicit=>false, :milliseconds=>45640}, {:track_number=>2, :title=>"Thinkin Bout You", :explicit=>false, :milliseconds=>200746}, {:track_number=>3, :title=>"Fertilizer", :explicit=>true, :milliseconds=>39640}, {:track_number=>4, :title=>"Sierra Leone", :explicit=>true, :milliseconds=>148760}, {:track_number=>5, :title=>"Sweet Life", :explicit=>true, :milliseconds=>262680}, {:track_number=>6, :title=>"Not Just Money", :explicit=>false, :milliseconds=>59760}, {:track_number=>7, :title=>"Super Rich Kids", :explicit=>true, :milliseconds=>304760}, {:track_number=>8, :title=>"Pilot Jones", :explicit=>false, :milliseconds=>184080}, {:track_number=>9, :title=>"Crack Rock", :explicit=>true, :milliseconds=>224146}, {:track_number=>10, :title=>"Pyramids", :explicit=>true, :milliseconds=>592920}, {:track_number=>11, :title=>"Lost", :explicit=>true, :milliseconds=>234093}, {:track_number=>12, :title=>"White", :explicit=>false, :milliseconds=>76280}, {:track_number=>13, :title=>"Monks", :explicit=>true, :milliseconds=>200240}, {:track_number=>14, :title=>"Bad Religion", :explicit=>false, :milliseconds=>175453}, {:track_number=>15, :title=>"Pink Matter", :explicit=>true, :milliseconds=>268813}, {:track_number=>16, :title=>"Forrest Gump", :explicit=>false, :milliseconds=>194840}, {:track_number=>17, :title=>"End", :explicit=>false, :milliseconds=>134600}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (2.92ms)
+Completed 200 OK in 1073ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 28971)
+
+
+Started GET "/songs" for ::1 at 2019-08-11 09:16:05 -0400
+Processing by SongsController#index as */*
+  [1m[36mSong Load (4.9ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+No serializer found for resource: #<Song id: 1, title: "Distorted Records", artist: "A$AP Rocky", created_at: "2019-08-09 02:22:36", updated_at: "2019-08-09 02:22:36", img: "Testing.jpg", album: "Testing">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (21.08ms)
+Completed 200 OK in 118ms (Views: 90.0ms | ActiveRecord: 19.5ms | Allocations: 9005)
+
+
+Started GET "/songs" for ::1 at 2019-08-11 09:16:18 -0400
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+No serializer found for resource: #<Song id: 1, title: "Distorted Records", artist: "A$AP Rocky", created_at: "2019-08-09 02:22:36", updated_at: "2019-08-09 02:22:36", img: "Testing.jpg", album: "Testing">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (1.96ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.4ms | Allocations: 3049)
+
+
+Started GET "/songs" for ::1 at 2019-08-11 09:17:01 -0400
+Processing by SongsController#index as */*
+  [1m[36mSong Load (4.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+No serializer found for resource: #<Song id: 1, title: "Distorted Records", artist: "A$AP Rocky", created_at: "2019-08-09 02:22:36", updated_at: "2019-08-09 02:22:36", img: "Testing.jpg", album: "Testing">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (2.01ms)
+Completed 200 OK in 13ms (Views: 8.6ms | ActiveRecord: 4.5ms | Allocations: 3047)
+
+
+Started GET "/songs" for ::1 at 2019-08-11 09:17:10 -0400
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+No serializer found for resource: #<Song id: 1, title: "Distorted Records", artist: "A$AP Rocky", created_at: "2019-08-09 02:22:36", updated_at: "2019-08-09 02:22:36", img: "Testing.jpg", album: "Testing">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (2.31ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.3ms | Allocations: 3033)
+
+
+Started GET "/songs" for ::1 at 2019-08-11 09:31:25 -0400
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.7ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+No serializer found for resource: #<Song id: 1, title: "Distorted Records", artist: "A$AP Rocky", created_at: "2019-08-09 02:22:36", updated_at: "2019-08-09 02:22:36", img: "Testing.jpg", album: "Testing">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (5.08ms)
+Completed 200 OK in 23ms (Views: 19.1ms | ActiveRecord: 0.7ms | Allocations: 3119)
+
+
+Started GET "/songs" for ::1 at 2019-08-11 09:31:29 -0400
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+No serializer found for resource: #<Song id: 1, title: "Distorted Records", artist: "A$AP Rocky", created_at: "2019-08-09 02:22:36", updated_at: "2019-08-09 02:22:36", img: "Testing.jpg", album: "Testing">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (1.94ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.4ms | Allocations: 3033)
+
+
+Started GET "/songs" for ::1 at 2019-08-11 09:32:21 -0400
+Processing by SongsController#index as */*
+  [1m[36mSong Load (1.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+No serializer found for resource: #<Song id: 1, title: "Distorted Records", artist: "A$AP Rocky", created_at: "2019-08-09 02:22:36", updated_at: "2019-08-09 02:22:36", img: "Testing.jpg", album: "Testing">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (2.17ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 1.0ms | Allocations: 3034)
+
+
+Started GET "/songs" for ::1 at 2019-08-11 09:32:46 -0400
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+No serializer found for resource: #<Song id: 1, title: "Distorted Records", artist: "A$AP Rocky", created_at: "2019-08-09 02:22:36", updated_at: "2019-08-09 02:22:36", img: "Testing.jpg", album: "Testing">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Song::ActiveRecord_Relation (1.88ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.3ms | Allocations: 3033)
+
+
+Started GET "/channel%20orange" for ::1 at 2019-08-11 10:43:55 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/channel%20orange"):
+  
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/search/channel%20orange" for ::1 at 2019-08-11 10:44:14 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+No serializer found for resource: {:album_id=>"392p3shh2jkxUxY2VHvlH8", :name=>"channel ORANGE", :artist=>"Frank Ocean", :artist_id=>"2h93pZq0e7k5yf4dywlkpM", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Start", :explicit=>false, :milliseconds=>45640}, {:track_number=>2, :title=>"Thinkin Bout You", :explicit=>false, :milliseconds=>200746}, {:track_number=>3, :title=>"Fertilizer", :explicit=>true, :milliseconds=>39640}, {:track_number=>4, :title=>"Sierra Leone", :explicit=>true, :milliseconds=>148760}, {:track_number=>5, :title=>"Sweet Life", :explicit=>true, :milliseconds=>262680}, {:track_number=>6, :title=>"Not Just Money", :explicit=>false, :milliseconds=>59760}, {:track_number=>7, :title=>"Super Rich Kids", :explicit=>true, :milliseconds=>304760}, {:track_number=>8, :title=>"Pilot Jones", :explicit=>false, :milliseconds=>184080}, {:track_number=>9, :title=>"Crack Rock", :explicit=>true, :milliseconds=>224146}, {:track_number=>10, :title=>"Pyramids", :explicit=>true, :milliseconds=>592920}, {:track_number=>11, :title=>"Lost", :explicit=>true, :milliseconds=>234093}, {:track_number=>12, :title=>"White", :explicit=>false, :milliseconds=>76280}, {:track_number=>13, :title=>"Monks", :explicit=>true, :milliseconds=>200240}, {:track_number=>14, :title=>"Bad Religion", :explicit=>false, :milliseconds=>175453}, {:track_number=>15, :title=>"Pink Matter", :explicit=>true, :milliseconds=>268813}, {:track_number=>16, :title=>"Forrest Gump", :explicit=>false, :milliseconds=>194840}, {:track_number=>17, :title=>"End", :explicit=>false, :milliseconds=>134600}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (9.18ms)
+Completed 200 OK in 1760ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 35401)
+
+
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from block in <module:ContentHelper> at /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0.rc2/app/helpers/action_text/content_helper.rb:7)
+Started GET "/search/channel%20orange" for ::1 at 2019-08-11 10:52:09 -0400
+  [1m[35m (4.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+No serializer found for resource: {:album_id=>"392p3shh2jkxUxY2VHvlH8", :name=>"channel ORANGE", :artist=>"Frank Ocean", :artist_id=>"2h93pZq0e7k5yf4dywlkpM", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Start", :explicit=>false, :milliseconds=>45640}, {:track_number=>2, :title=>"Thinkin Bout You", :explicit=>false, :milliseconds=>200746}, {:track_number=>3, :title=>"Fertilizer", :explicit=>true, :milliseconds=>39640}, {:track_number=>4, :title=>"Sierra Leone", :explicit=>true, :milliseconds=>148760}, {:track_number=>5, :title=>"Sweet Life", :explicit=>true, :milliseconds=>262680}, {:track_number=>6, :title=>"Not Just Money", :explicit=>false, :milliseconds=>59760}, {:track_number=>7, :title=>"Super Rich Kids", :explicit=>true, :milliseconds=>304760}, {:track_number=>8, :title=>"Pilot Jones", :explicit=>false, :milliseconds=>184080}, {:track_number=>9, :title=>"Crack Rock", :explicit=>true, :milliseconds=>224146}, {:track_number=>10, :title=>"Pyramids", :explicit=>true, :milliseconds=>592920}, {:track_number=>11, :title=>"Lost", :explicit=>true, :milliseconds=>234093}, {:track_number=>12, :title=>"White", :explicit=>false, :milliseconds=>76280}, {:track_number=>13, :title=>"Monks", :explicit=>true, :milliseconds=>200240}, {:track_number=>14, :title=>"Bad Religion", :explicit=>false, :milliseconds=>175453}, {:track_number=>15, :title=>"Pink Matter", :explicit=>true, :milliseconds=>268813}, {:track_number=>16, :title=>"Forrest Gump", :explicit=>false, :milliseconds=>194840}, {:track_number=>17, :title=>"End", :explicit=>false, :milliseconds=>134600}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (4.93ms)
+Completed 200 OK in 1128ms (Views: 24.1ms | ActiveRecord: 0.0ms | Allocations: 29569)
+
+
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from block in <module:ContentHelper> at /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0.rc2/app/helpers/action_text/content_helper.rb:7)
+Started GET "/search/channel%20orange" for ::1 at 2019-08-11 10:52:36 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+No serializer found for resource: {:album_id=>"392p3shh2jkxUxY2VHvlH8", :name=>"channel ORANGE", :artist=>"Frank Ocean", :artist_id=>"2h93pZq0e7k5yf4dywlkpM", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Start", :explicit=>false, :milliseconds=>45640}, {:track_number=>2, :title=>"Thinkin Bout You", :explicit=>false, :milliseconds=>200746}, {:track_number=>3, :title=>"Fertilizer", :explicit=>true, :milliseconds=>39640}, {:track_number=>4, :title=>"Sierra Leone", :explicit=>true, :milliseconds=>148760}, {:track_number=>5, :title=>"Sweet Life", :explicit=>true, :milliseconds=>262680}, {:track_number=>6, :title=>"Not Just Money", :explicit=>false, :milliseconds=>59760}, {:track_number=>7, :title=>"Super Rich Kids", :explicit=>true, :milliseconds=>304760}, {:track_number=>8, :title=>"Pilot Jones", :explicit=>false, :milliseconds=>184080}, {:track_number=>9, :title=>"Crack Rock", :explicit=>true, :milliseconds=>224146}, {:track_number=>10, :title=>"Pyramids", :explicit=>true, :milliseconds=>592920}, {:track_number=>11, :title=>"Lost", :explicit=>true, :milliseconds=>234093}, {:track_number=>12, :title=>"White", :explicit=>false, :milliseconds=>76280}, {:track_number=>13, :title=>"Monks", :explicit=>true, :milliseconds=>200240}, {:track_number=>14, :title=>"Bad Religion", :explicit=>false, :milliseconds=>175453}, {:track_number=>15, :title=>"Pink Matter", :explicit=>true, :milliseconds=>268813}, {:track_number=>16, :title=>"Forrest Gump", :explicit=>false, :milliseconds=>194840}, {:track_number=>17, :title=>"End", :explicit=>false, :milliseconds=>134600}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (3.26ms)
+Completed 200 OK in 1071ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 29425)
+
+
+Started GET "/search/acid%20rap" for ::1 at 2019-08-11 10:52:58 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"acid rap"}
+No serializer found for resource: {:album_id=>"2VBcztE58pBKjIDS5oEgFh", :name=>"Acid Rap", :artist=>"Chance the Rapper", :artist_id=>"1anyVhU62p31KFi8MEzkbf", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/81b6617b51a25a20e637507e72aa793640a566a4", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/3d514528bd30162928ae560042258c09872af976", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/4c2e237f417bf3785f3257579ae089b5bd885668", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Good Ass Intro", :explicit=>true, :milliseconds=>239250}, {:track_number=>2, :title=>"Pusha Man", :explicit=>true, :milliseconds=>139406}, {:track_number=>3, :title=>"Paranoia", :explicit=>true, :milliseconds=>275281}, {:track_number=>4, :title=>"Cocoa Butter Kisses", :explicit=>true, :milliseconds=>307187}, {:track_number=>5, :title=>"Juice", :explicit=>false, :milliseconds=>30300}, {:track_number=>6, :title=>"Lost", :explicit=>true, :milliseconds=>184562}, {:track_number=>7, :title=>"Everybody's Something", :explicit=>true, :milliseconds=>276937}, {:track_number=>8, :title=>"Interlude (That's Love)", :explicit=>false, :milliseconds=>149875}, {:track_number=>9, :title=>"Favorite Song", :explicit=>true, :milliseconds=>185062}, {:track_number=>10, :title=>"NaNa", :explicit=>true, :milliseconds=>200625}, {:track_number=>11, :title=>"Smoke Again", :explicit=>true, :milliseconds=>272562}, {:track_number=>12, :title=>"Acid Rain", :explicit=>true, :milliseconds=>216312}, {:track_number=>13, :title=>"Chain Smoker", :explicit=>true, :milliseconds=>210562}, {:track_number=>14, :title=>"Everything's Good (Good Ass Outro)", :explicit=>true, :milliseconds=>333379}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (7.39ms)
+Completed 200 OK in 1019ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 25107)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-11 10:53:06 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+No serializer found for resource: {:album_id=>"392p3shh2jkxUxY2VHvlH8", :name=>"channel ORANGE", :artist=>"Frank Ocean", :artist_id=>"2h93pZq0e7k5yf4dywlkpM", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Start", :explicit=>false, :milliseconds=>45640}, {:track_number=>2, :title=>"Thinkin Bout You", :explicit=>false, :milliseconds=>200746}, {:track_number=>3, :title=>"Fertilizer", :explicit=>true, :milliseconds=>39640}, {:track_number=>4, :title=>"Sierra Leone", :explicit=>true, :milliseconds=>148760}, {:track_number=>5, :title=>"Sweet Life", :explicit=>true, :milliseconds=>262680}, {:track_number=>6, :title=>"Not Just Money", :explicit=>false, :milliseconds=>59760}, {:track_number=>7, :title=>"Super Rich Kids", :explicit=>true, :milliseconds=>304760}, {:track_number=>8, :title=>"Pilot Jones", :explicit=>false, :milliseconds=>184080}, {:track_number=>9, :title=>"Crack Rock", :explicit=>true, :milliseconds=>224146}, {:track_number=>10, :title=>"Pyramids", :explicit=>true, :milliseconds=>592920}, {:track_number=>11, :title=>"Lost", :explicit=>true, :milliseconds=>234093}, {:track_number=>12, :title=>"White", :explicit=>false, :milliseconds=>76280}, {:track_number=>13, :title=>"Monks", :explicit=>true, :milliseconds=>200240}, {:track_number=>14, :title=>"Bad Religion", :explicit=>false, :milliseconds=>175453}, {:track_number=>15, :title=>"Pink Matter", :explicit=>true, :milliseconds=>268813}, {:track_number=>16, :title=>"Forrest Gump", :explicit=>false, :milliseconds=>194840}, {:track_number=>17, :title=>"End", :explicit=>false, :milliseconds=>134600}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (2.54ms)
+Completed 200 OK in 1047ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 26541)
+
+
+Started GET "/search/my%20beautiful%20dark%20twisted%20fantasy" for ::1 at 2019-08-11 10:53:25 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"my beautiful dark twisted fantasy"}
+No serializer found for resource: {:album_id=>"20r762YmB5HeofjMCiPMLv", :name=>"My Beautiful Dark Twisted Fantasy", :artist=>"Kanye West", :artist_id=>"5K4W6rqBFWDnAN6FQUkS6x", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/cafd8763a050dabc4f6157172bb09a23d09abde3", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/9e27d58cc64c1c4fc97034ba83c6b938d24582f6", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/6cf0001035578534d00d37b0371108f24fbf63c9", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Dark Fantasy", :explicit=>true, :milliseconds=>280786}, {:track_number=>2, :title=>"Gorgeous", :explicit=>true, :milliseconds=>357653}, {:track_number=>3, :title=>"POWER", :explicit=>true, :milliseconds=>292093}, {:track_number=>4, :title=>"All Of The Lights (Interlude)", :explicit=>true, :milliseconds=>62253}, {:track_number=>5, :title=>"All Of The Lights", :explicit=>true, :milliseconds=>299613}, {:track_number=>6, :title=>"Monster", :explicit=>true, :milliseconds=>378893}, {:track_number=>7, :title=>"So Appalled", :explicit=>true, :milliseconds=>397666}, {:track_number=>8, :title=>"Devil In A New Dress", :explicit=>true, :milliseconds=>351946}, {:track_number=>9, :title=>"Runaway", :explicit=>true, :milliseconds=>547733}, {:track_number=>10, :title=>"Hell Of A Life", :explicit=>true, :milliseconds=>327786}, {:track_number=>11, :title=>"Blame Game", :explicit=>true, :milliseconds=>469866}, {:track_number=>12, :title=>"Lost In The World", :explicit=>true, :milliseconds=>256586}, {:track_number=>13, :title=>"Who Will Survive In America", :explicit=>true, :milliseconds=>98200}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.91ms)
+Completed 200 OK in 532ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 13682)
+
+
+Started GET "/search/my%20beautiful%20dark%20twisted%20fanasy" for ::1 at 2019-08-11 10:53:46 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"my beautiful dark twisted fanasy"}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.12ms)
+Completed 200 OK in 170ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 6622)
+
+
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from block in <module:ContentHelper> at /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0.rc2/app/helpers/action_text/content_helper.rb:7)
+Started GET "/search/channel%20orange" for ::1 at 2019-08-12 07:19:50 -0400
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+No serializer found for resource: {:album_id=>"392p3shh2jkxUxY2VHvlH8", :name=>"channel ORANGE", :artist=>"Frank Ocean", :artist_id=>"2h93pZq0e7k5yf4dywlkpM", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Start", :explicit=>false, :milliseconds=>45640}, {:track_number=>2, :title=>"Thinkin Bout You", :explicit=>false, :milliseconds=>200746}, {:track_number=>3, :title=>"Fertilizer", :explicit=>true, :milliseconds=>39640}, {:track_number=>4, :title=>"Sierra Leone", :explicit=>true, :milliseconds=>148760}, {:track_number=>5, :title=>"Sweet Life", :explicit=>true, :milliseconds=>262680}, {:track_number=>6, :title=>"Not Just Money", :explicit=>false, :milliseconds=>59760}, {:track_number=>7, :title=>"Super Rich Kids", :explicit=>true, :milliseconds=>304760}, {:track_number=>8, :title=>"Pilot Jones", :explicit=>false, :milliseconds=>184080}, {:track_number=>9, :title=>"Crack Rock", :explicit=>true, :milliseconds=>224146}, {:track_number=>10, :title=>"Pyramids", :explicit=>true, :milliseconds=>592920}, {:track_number=>11, :title=>"Lost", :explicit=>true, :milliseconds=>234093}, {:track_number=>12, :title=>"White", :explicit=>false, :milliseconds=>76280}, {:track_number=>13, :title=>"Monks", :explicit=>true, :milliseconds=>200240}, {:track_number=>14, :title=>"Bad Religion", :explicit=>false, :milliseconds=>175453}, {:track_number=>15, :title=>"Pink Matter", :explicit=>true, :milliseconds=>268813}, {:track_number=>16, :title=>"Forrest Gump", :explicit=>false, :milliseconds=>194840}, {:track_number=>17, :title=>"End", :explicit=>false, :milliseconds=>134600}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (4.12ms)
+Completed 200 OK in 1045ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 28895)
+
+
+Started GET "/search/Channel%20Orange" for ::1 at 2019-08-12 07:49:23 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"Channel Orange"}
+No serializer found for resource: {:album_id=>"392p3shh2jkxUxY2VHvlH8", :name=>"channel ORANGE", :artist=>"Frank Ocean", :artist_id=>"2h93pZq0e7k5yf4dywlkpM", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Start", :explicit=>false, :milliseconds=>45640}, {:track_number=>2, :title=>"Thinkin Bout You", :explicit=>false, :milliseconds=>200746}, {:track_number=>3, :title=>"Fertilizer", :explicit=>true, :milliseconds=>39640}, {:track_number=>4, :title=>"Sierra Leone", :explicit=>true, :milliseconds=>148760}, {:track_number=>5, :title=>"Sweet Life", :explicit=>true, :milliseconds=>262680}, {:track_number=>6, :title=>"Not Just Money", :explicit=>false, :milliseconds=>59760}, {:track_number=>7, :title=>"Super Rich Kids", :explicit=>true, :milliseconds=>304760}, {:track_number=>8, :title=>"Pilot Jones", :explicit=>false, :milliseconds=>184080}, {:track_number=>9, :title=>"Crack Rock", :explicit=>true, :milliseconds=>224146}, {:track_number=>10, :title=>"Pyramids", :explicit=>true, :milliseconds=>592920}, {:track_number=>11, :title=>"Lost", :explicit=>true, :milliseconds=>234093}, {:track_number=>12, :title=>"White", :explicit=>false, :milliseconds=>76280}, {:track_number=>13, :title=>"Monks", :explicit=>true, :milliseconds=>200240}, {:track_number=>14, :title=>"Bad Religion", :explicit=>false, :milliseconds=>175453}, {:track_number=>15, :title=>"Pink Matter", :explicit=>true, :milliseconds=>268813}, {:track_number=>16, :title=>"Forrest Gump", :explicit=>false, :milliseconds=>194840}, {:track_number=>17, :title=>"End", :explicit=>false, :milliseconds=>134600}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (1.82ms)
+Completed 200 OK in 1123ms (Views: 18.0ms | ActiveRecord: 0.0ms | Allocations: 26701)
+
+
+Started GET "/search/Channel%20Orange" for ::1 at 2019-08-12 08:00:51 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"Channel Orange"}
+No serializer found for resource: {:album_id=>"392p3shh2jkxUxY2VHvlH8", :name=>"channel ORANGE", :artist=>"Frank Ocean", :artist_id=>"2h93pZq0e7k5yf4dywlkpM", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Start", :explicit=>false, :milliseconds=>45640}, {:track_number=>2, :title=>"Thinkin Bout You", :explicit=>false, :milliseconds=>200746}, {:track_number=>3, :title=>"Fertilizer", :explicit=>true, :milliseconds=>39640}, {:track_number=>4, :title=>"Sierra Leone", :explicit=>true, :milliseconds=>148760}, {:track_number=>5, :title=>"Sweet Life", :explicit=>true, :milliseconds=>262680}, {:track_number=>6, :title=>"Not Just Money", :explicit=>false, :milliseconds=>59760}, {:track_number=>7, :title=>"Super Rich Kids", :explicit=>true, :milliseconds=>304760}, {:track_number=>8, :title=>"Pilot Jones", :explicit=>false, :milliseconds=>184080}, {:track_number=>9, :title=>"Crack Rock", :explicit=>true, :milliseconds=>224146}, {:track_number=>10, :title=>"Pyramids", :explicit=>true, :milliseconds=>592920}, {:track_number=>11, :title=>"Lost", :explicit=>true, :milliseconds=>234093}, {:track_number=>12, :title=>"White", :explicit=>false, :milliseconds=>76280}, {:track_number=>13, :title=>"Monks", :explicit=>true, :milliseconds=>200240}, {:track_number=>14, :title=>"Bad Religion", :explicit=>false, :milliseconds=>175453}, {:track_number=>15, :title=>"Pink Matter", :explicit=>true, :milliseconds=>268813}, {:track_number=>16, :title=>"Forrest Gump", :explicit=>false, :milliseconds=>194840}, {:track_number=>17, :title=>"End", :explicit=>false, :milliseconds=>134600}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (3.57ms)
+Completed 200 OK in 1060ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 26373)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-12 08:00:56 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+No serializer found for resource: {:album_id=>"392p3shh2jkxUxY2VHvlH8", :name=>"channel ORANGE", :artist=>"Frank Ocean", :artist_id=>"2h93pZq0e7k5yf4dywlkpM", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Start", :explicit=>false, :milliseconds=>45640}, {:track_number=>2, :title=>"Thinkin Bout You", :explicit=>false, :milliseconds=>200746}, {:track_number=>3, :title=>"Fertilizer", :explicit=>true, :milliseconds=>39640}, {:track_number=>4, :title=>"Sierra Leone", :explicit=>true, :milliseconds=>148760}, {:track_number=>5, :title=>"Sweet Life", :explicit=>true, :milliseconds=>262680}, {:track_number=>6, :title=>"Not Just Money", :explicit=>false, :milliseconds=>59760}, {:track_number=>7, :title=>"Super Rich Kids", :explicit=>true, :milliseconds=>304760}, {:track_number=>8, :title=>"Pilot Jones", :explicit=>false, :milliseconds=>184080}, {:track_number=>9, :title=>"Crack Rock", :explicit=>true, :milliseconds=>224146}, {:track_number=>10, :title=>"Pyramids", :explicit=>true, :milliseconds=>592920}, {:track_number=>11, :title=>"Lost", :explicit=>true, :milliseconds=>234093}, {:track_number=>12, :title=>"White", :explicit=>false, :milliseconds=>76280}, {:track_number=>13, :title=>"Monks", :explicit=>true, :milliseconds=>200240}, {:track_number=>14, :title=>"Bad Religion", :explicit=>false, :milliseconds=>175453}, {:track_number=>15, :title=>"Pink Matter", :explicit=>true, :milliseconds=>268813}, {:track_number=>16, :title=>"Forrest Gump", :explicit=>false, :milliseconds=>194840}, {:track_number=>17, :title=>"End", :explicit=>false, :milliseconds=>134600}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (2.79ms)
+Completed 200 OK in 961ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 26416)
+
+
+Started GET "/search/Channel%20Orange" for ::1 at 2019-08-12 08:02:31 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"Channel Orange"}
+No serializer found for resource: {:album_id=>"392p3shh2jkxUxY2VHvlH8", :name=>"channel ORANGE", :artist=>"Frank Ocean", :artist_id=>"2h93pZq0e7k5yf4dywlkpM", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Start", :explicit=>false, :milliseconds=>45640}, {:track_number=>2, :title=>"Thinkin Bout You", :explicit=>false, :milliseconds=>200746}, {:track_number=>3, :title=>"Fertilizer", :explicit=>true, :milliseconds=>39640}, {:track_number=>4, :title=>"Sierra Leone", :explicit=>true, :milliseconds=>148760}, {:track_number=>5, :title=>"Sweet Life", :explicit=>true, :milliseconds=>262680}, {:track_number=>6, :title=>"Not Just Money", :explicit=>false, :milliseconds=>59760}, {:track_number=>7, :title=>"Super Rich Kids", :explicit=>true, :milliseconds=>304760}, {:track_number=>8, :title=>"Pilot Jones", :explicit=>false, :milliseconds=>184080}, {:track_number=>9, :title=>"Crack Rock", :explicit=>true, :milliseconds=>224146}, {:track_number=>10, :title=>"Pyramids", :explicit=>true, :milliseconds=>592920}, {:track_number=>11, :title=>"Lost", :explicit=>true, :milliseconds=>234093}, {:track_number=>12, :title=>"White", :explicit=>false, :milliseconds=>76280}, {:track_number=>13, :title=>"Monks", :explicit=>true, :milliseconds=>200240}, {:track_number=>14, :title=>"Bad Religion", :explicit=>false, :milliseconds=>175453}, {:track_number=>15, :title=>"Pink Matter", :explicit=>true, :milliseconds=>268813}, {:track_number=>16, :title=>"Forrest Gump", :explicit=>false, :milliseconds=>194840}, {:track_number=>17, :title=>"End", :explicit=>false, :milliseconds=>134600}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (2.55ms)
+Completed 200 OK in 1047ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 26434)
+
+
+Started GET "/search/" for ::1 at 2019-08-12 08:05:39 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/search"):
+  
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/search/Channel%20Orange" for ::1 at 2019-08-12 08:05:57 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"Channel Orange"}
+No serializer found for resource: {:album_id=>"392p3shh2jkxUxY2VHvlH8", :name=>"channel ORANGE", :artist=>"Frank Ocean", :artist_id=>"2h93pZq0e7k5yf4dywlkpM", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Start", :explicit=>false, :milliseconds=>45640}, {:track_number=>2, :title=>"Thinkin Bout You", :explicit=>false, :milliseconds=>200746}, {:track_number=>3, :title=>"Fertilizer", :explicit=>true, :milliseconds=>39640}, {:track_number=>4, :title=>"Sierra Leone", :explicit=>true, :milliseconds=>148760}, {:track_number=>5, :title=>"Sweet Life", :explicit=>true, :milliseconds=>262680}, {:track_number=>6, :title=>"Not Just Money", :explicit=>false, :milliseconds=>59760}, {:track_number=>7, :title=>"Super Rich Kids", :explicit=>true, :milliseconds=>304760}, {:track_number=>8, :title=>"Pilot Jones", :explicit=>false, :milliseconds=>184080}, {:track_number=>9, :title=>"Crack Rock", :explicit=>true, :milliseconds=>224146}, {:track_number=>10, :title=>"Pyramids", :explicit=>true, :milliseconds=>592920}, {:track_number=>11, :title=>"Lost", :explicit=>true, :milliseconds=>234093}, {:track_number=>12, :title=>"White", :explicit=>false, :milliseconds=>76280}, {:track_number=>13, :title=>"Monks", :explicit=>true, :milliseconds=>200240}, {:track_number=>14, :title=>"Bad Religion", :explicit=>false, :milliseconds=>175453}, {:track_number=>15, :title=>"Pink Matter", :explicit=>true, :milliseconds=>268813}, {:track_number=>16, :title=>"Forrest Gump", :explicit=>false, :milliseconds=>194840}, {:track_number=>17, :title=>"End", :explicit=>false, :milliseconds=>134600}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (3.88ms)
+Completed 200 OK in 1015ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 26191)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-12 08:12:41 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+No serializer found for resource: {:album_id=>"392p3shh2jkxUxY2VHvlH8", :name=>"channel ORANGE", :artist=>"Frank Ocean", :artist_id=>"2h93pZq0e7k5yf4dywlkpM", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Start", :explicit=>false, :milliseconds=>45640}, {:track_number=>2, :title=>"Thinkin Bout You", :explicit=>false, :milliseconds=>200746}, {:track_number=>3, :title=>"Fertilizer", :explicit=>true, :milliseconds=>39640}, {:track_number=>4, :title=>"Sierra Leone", :explicit=>true, :milliseconds=>148760}, {:track_number=>5, :title=>"Sweet Life", :explicit=>true, :milliseconds=>262680}, {:track_number=>6, :title=>"Not Just Money", :explicit=>false, :milliseconds=>59760}, {:track_number=>7, :title=>"Super Rich Kids", :explicit=>true, :milliseconds=>304760}, {:track_number=>8, :title=>"Pilot Jones", :explicit=>false, :milliseconds=>184080}, {:track_number=>9, :title=>"Crack Rock", :explicit=>true, :milliseconds=>224146}, {:track_number=>10, :title=>"Pyramids", :explicit=>true, :milliseconds=>592920}, {:track_number=>11, :title=>"Lost", :explicit=>true, :milliseconds=>234093}, {:track_number=>12, :title=>"White", :explicit=>false, :milliseconds=>76280}, {:track_number=>13, :title=>"Monks", :explicit=>true, :milliseconds=>200240}, {:track_number=>14, :title=>"Bad Religion", :explicit=>false, :milliseconds=>175453}, {:track_number=>15, :title=>"Pink Matter", :explicit=>true, :milliseconds=>268813}, {:track_number=>16, :title=>"Forrest Gump", :explicit=>false, :milliseconds=>194840}, {:track_number=>17, :title=>"End", :explicit=>false, :milliseconds=>134600}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (2.79ms)
+Completed 200 OK in 1065ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 26720)
+
+
+Started GET "/search/Channel%20Orange" for ::1 at 2019-08-12 08:19:19 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"Channel Orange"}
+No serializer found for resource: {:album_id=>"392p3shh2jkxUxY2VHvlH8", :name=>"channel ORANGE", :artist=>"Frank Ocean", :artist_id=>"2h93pZq0e7k5yf4dywlkpM", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Start", :explicit=>false, :milliseconds=>45640}, {:track_number=>2, :title=>"Thinkin Bout You", :explicit=>false, :milliseconds=>200746}, {:track_number=>3, :title=>"Fertilizer", :explicit=>true, :milliseconds=>39640}, {:track_number=>4, :title=>"Sierra Leone", :explicit=>true, :milliseconds=>148760}, {:track_number=>5, :title=>"Sweet Life", :explicit=>true, :milliseconds=>262680}, {:track_number=>6, :title=>"Not Just Money", :explicit=>false, :milliseconds=>59760}, {:track_number=>7, :title=>"Super Rich Kids", :explicit=>true, :milliseconds=>304760}, {:track_number=>8, :title=>"Pilot Jones", :explicit=>false, :milliseconds=>184080}, {:track_number=>9, :title=>"Crack Rock", :explicit=>true, :milliseconds=>224146}, {:track_number=>10, :title=>"Pyramids", :explicit=>true, :milliseconds=>592920}, {:track_number=>11, :title=>"Lost", :explicit=>true, :milliseconds=>234093}, {:track_number=>12, :title=>"White", :explicit=>false, :milliseconds=>76280}, {:track_number=>13, :title=>"Monks", :explicit=>true, :milliseconds=>200240}, {:track_number=>14, :title=>"Bad Religion", :explicit=>false, :milliseconds=>175453}, {:track_number=>15, :title=>"Pink Matter", :explicit=>true, :milliseconds=>268813}, {:track_number=>16, :title=>"Forrest Gump", :explicit=>false, :milliseconds=>194840}, {:track_number=>17, :title=>"End", :explicit=>false, :milliseconds=>134600}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (4.3ms)
+Completed 200 OK in 1581ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 35354)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-12 08:30:52 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+No serializer found for resource: {:album_id=>"392p3shh2jkxUxY2VHvlH8", :name=>"channel ORANGE", :artist=>"Frank Ocean", :artist_id=>"2h93pZq0e7k5yf4dywlkpM", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Start", :explicit=>false, :milliseconds=>45640}, {:track_number=>2, :title=>"Thinkin Bout You", :explicit=>false, :milliseconds=>200746}, {:track_number=>3, :title=>"Fertilizer", :explicit=>true, :milliseconds=>39640}, {:track_number=>4, :title=>"Sierra Leone", :explicit=>true, :milliseconds=>148760}, {:track_number=>5, :title=>"Sweet Life", :explicit=>true, :milliseconds=>262680}, {:track_number=>6, :title=>"Not Just Money", :explicit=>false, :milliseconds=>59760}, {:track_number=>7, :title=>"Super Rich Kids", :explicit=>true, :milliseconds=>304760}, {:track_number=>8, :title=>"Pilot Jones", :explicit=>false, :milliseconds=>184080}, {:track_number=>9, :title=>"Crack Rock", :explicit=>true, :milliseconds=>224146}, {:track_number=>10, :title=>"Pyramids", :explicit=>true, :milliseconds=>592920}, {:track_number=>11, :title=>"Lost", :explicit=>true, :milliseconds=>234093}, {:track_number=>12, :title=>"White", :explicit=>false, :milliseconds=>76280}, {:track_number=>13, :title=>"Monks", :explicit=>true, :milliseconds=>200240}, {:track_number=>14, :title=>"Bad Religion", :explicit=>false, :milliseconds=>175453}, {:track_number=>15, :title=>"Pink Matter", :explicit=>true, :milliseconds=>268813}, {:track_number=>16, :title=>"Forrest Gump", :explicit=>false, :milliseconds=>194840}, {:track_number=>17, :title=>"End", :explicit=>false, :milliseconds=>134600}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (7.74ms)
+Completed 200 OK in 1165ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 26919)
+
+
+Started GET "/search/Channel%20Orange" for ::1 at 2019-08-12 08:37:09 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"Channel Orange"}
+No serializer found for resource: {:album_id=>"392p3shh2jkxUxY2VHvlH8", :name=>"channel ORANGE", :artist=>"Frank Ocean", :artist_id=>"2h93pZq0e7k5yf4dywlkpM", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Start", :explicit=>false, :milliseconds=>45640}, {:track_number=>2, :title=>"Thinkin Bout You", :explicit=>false, :milliseconds=>200746}, {:track_number=>3, :title=>"Fertilizer", :explicit=>true, :milliseconds=>39640}, {:track_number=>4, :title=>"Sierra Leone", :explicit=>true, :milliseconds=>148760}, {:track_number=>5, :title=>"Sweet Life", :explicit=>true, :milliseconds=>262680}, {:track_number=>6, :title=>"Not Just Money", :explicit=>false, :milliseconds=>59760}, {:track_number=>7, :title=>"Super Rich Kids", :explicit=>true, :milliseconds=>304760}, {:track_number=>8, :title=>"Pilot Jones", :explicit=>false, :milliseconds=>184080}, {:track_number=>9, :title=>"Crack Rock", :explicit=>true, :milliseconds=>224146}, {:track_number=>10, :title=>"Pyramids", :explicit=>true, :milliseconds=>592920}, {:track_number=>11, :title=>"Lost", :explicit=>true, :milliseconds=>234093}, {:track_number=>12, :title=>"White", :explicit=>false, :milliseconds=>76280}, {:track_number=>13, :title=>"Monks", :explicit=>true, :milliseconds=>200240}, {:track_number=>14, :title=>"Bad Religion", :explicit=>false, :milliseconds=>175453}, {:track_number=>15, :title=>"Pink Matter", :explicit=>true, :milliseconds=>268813}, {:track_number=>16, :title=>"Forrest Gump", :explicit=>false, :milliseconds=>194840}, {:track_number=>17, :title=>"End", :explicit=>false, :milliseconds=>134600}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (9.06ms)
+Completed 200 OK in 1165ms (Views: 29.5ms | ActiveRecord: 0.0ms | Allocations: 25952)
+
+
+Started GET "/search/Channel%20Orange" for ::1 at 2019-08-12 08:40:21 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"Channel Orange"}
+No serializer found for resource: {:album_id=>"392p3shh2jkxUxY2VHvlH8", :name=>"channel ORANGE", :artist=>"Frank Ocean", :artist_id=>"2h93pZq0e7k5yf4dywlkpM", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Start", :explicit=>false, :milliseconds=>45640}, {:track_number=>2, :title=>"Thinkin Bout You", :explicit=>false, :milliseconds=>200746}, {:track_number=>3, :title=>"Fertilizer", :explicit=>true, :milliseconds=>39640}, {:track_number=>4, :title=>"Sierra Leone", :explicit=>true, :milliseconds=>148760}, {:track_number=>5, :title=>"Sweet Life", :explicit=>true, :milliseconds=>262680}, {:track_number=>6, :title=>"Not Just Money", :explicit=>false, :milliseconds=>59760}, {:track_number=>7, :title=>"Super Rich Kids", :explicit=>true, :milliseconds=>304760}, {:track_number=>8, :title=>"Pilot Jones", :explicit=>false, :milliseconds=>184080}, {:track_number=>9, :title=>"Crack Rock", :explicit=>true, :milliseconds=>224146}, {:track_number=>10, :title=>"Pyramids", :explicit=>true, :milliseconds=>592920}, {:track_number=>11, :title=>"Lost", :explicit=>true, :milliseconds=>234093}, {:track_number=>12, :title=>"White", :explicit=>false, :milliseconds=>76280}, {:track_number=>13, :title=>"Monks", :explicit=>true, :milliseconds=>200240}, {:track_number=>14, :title=>"Bad Religion", :explicit=>false, :milliseconds=>175453}, {:track_number=>15, :title=>"Pink Matter", :explicit=>true, :milliseconds=>268813}, {:track_number=>16, :title=>"Forrest Gump", :explicit=>false, :milliseconds=>194840}, {:track_number=>17, :title=>"End", :explicit=>false, :milliseconds=>134600}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (12.86ms)
+Completed 200 OK in 1071ms (Views: 17.8ms | ActiveRecord: 0.0ms | Allocations: 26736)
+
+
+Started GET "/search/Channel%20Orange" for ::1 at 2019-08-12 08:41:30 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"Channel Orange"}
+No serializer found for resource: {:album_id=>"392p3shh2jkxUxY2VHvlH8", :name=>"channel ORANGE", :artist=>"Frank Ocean", :artist_id=>"2h93pZq0e7k5yf4dywlkpM", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Start", :explicit=>false, :milliseconds=>45640}, {:track_number=>2, :title=>"Thinkin Bout You", :explicit=>false, :milliseconds=>200746}, {:track_number=>3, :title=>"Fertilizer", :explicit=>true, :milliseconds=>39640}, {:track_number=>4, :title=>"Sierra Leone", :explicit=>true, :milliseconds=>148760}, {:track_number=>5, :title=>"Sweet Life", :explicit=>true, :milliseconds=>262680}, {:track_number=>6, :title=>"Not Just Money", :explicit=>false, :milliseconds=>59760}, {:track_number=>7, :title=>"Super Rich Kids", :explicit=>true, :milliseconds=>304760}, {:track_number=>8, :title=>"Pilot Jones", :explicit=>false, :milliseconds=>184080}, {:track_number=>9, :title=>"Crack Rock", :explicit=>true, :milliseconds=>224146}, {:track_number=>10, :title=>"Pyramids", :explicit=>true, :milliseconds=>592920}, {:track_number=>11, :title=>"Lost", :explicit=>true, :milliseconds=>234093}, {:track_number=>12, :title=>"White", :explicit=>false, :milliseconds=>76280}, {:track_number=>13, :title=>"Monks", :explicit=>true, :milliseconds=>200240}, {:track_number=>14, :title=>"Bad Religion", :explicit=>false, :milliseconds=>175453}, {:track_number=>15, :title=>"Pink Matter", :explicit=>true, :milliseconds=>268813}, {:track_number=>16, :title=>"Forrest Gump", :explicit=>false, :milliseconds=>194840}, {:track_number=>17, :title=>"End", :explicit=>false, :milliseconds=>134600}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (3.96ms)
+Completed 200 OK in 1017ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 26813)
+
+
+Started GET "/search/Channel%20Orange" for ::1 at 2019-08-12 08:41:56 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"Channel Orange"}
+No serializer found for resource: {:album_id=>"392p3shh2jkxUxY2VHvlH8", :name=>"channel ORANGE", :artist=>"Frank Ocean", :artist_id=>"2h93pZq0e7k5yf4dywlkpM", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Start", :explicit=>false, :milliseconds=>45640}, {:track_number=>2, :title=>"Thinkin Bout You", :explicit=>false, :milliseconds=>200746}, {:track_number=>3, :title=>"Fertilizer", :explicit=>true, :milliseconds=>39640}, {:track_number=>4, :title=>"Sierra Leone", :explicit=>true, :milliseconds=>148760}, {:track_number=>5, :title=>"Sweet Life", :explicit=>true, :milliseconds=>262680}, {:track_number=>6, :title=>"Not Just Money", :explicit=>false, :milliseconds=>59760}, {:track_number=>7, :title=>"Super Rich Kids", :explicit=>true, :milliseconds=>304760}, {:track_number=>8, :title=>"Pilot Jones", :explicit=>false, :milliseconds=>184080}, {:track_number=>9, :title=>"Crack Rock", :explicit=>true, :milliseconds=>224146}, {:track_number=>10, :title=>"Pyramids", :explicit=>true, :milliseconds=>592920}, {:track_number=>11, :title=>"Lost", :explicit=>true, :milliseconds=>234093}, {:track_number=>12, :title=>"White", :explicit=>false, :milliseconds=>76280}, {:track_number=>13, :title=>"Monks", :explicit=>true, :milliseconds=>200240}, {:track_number=>14, :title=>"Bad Religion", :explicit=>false, :milliseconds=>175453}, {:track_number=>15, :title=>"Pink Matter", :explicit=>true, :milliseconds=>268813}, {:track_number=>16, :title=>"Forrest Gump", :explicit=>false, :milliseconds=>194840}, {:track_number=>17, :title=>"End", :explicit=>false, :milliseconds=>134600}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (6.23ms)
+Completed 200 OK in 1047ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 26552)
+
+
+Started GET "/search/Channel%20Orange" for ::1 at 2019-08-12 08:50:30 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"Channel Orange"}
+No serializer found for resource: {:album_id=>"392p3shh2jkxUxY2VHvlH8", :name=>"channel ORANGE", :artist=>"Frank Ocean", :artist_id=>"2h93pZq0e7k5yf4dywlkpM", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Start", :explicit=>false, :milliseconds=>45640}, {:track_number=>2, :title=>"Thinkin Bout You", :explicit=>false, :milliseconds=>200746}, {:track_number=>3, :title=>"Fertilizer", :explicit=>true, :milliseconds=>39640}, {:track_number=>4, :title=>"Sierra Leone", :explicit=>true, :milliseconds=>148760}, {:track_number=>5, :title=>"Sweet Life", :explicit=>true, :milliseconds=>262680}, {:track_number=>6, :title=>"Not Just Money", :explicit=>false, :milliseconds=>59760}, {:track_number=>7, :title=>"Super Rich Kids", :explicit=>true, :milliseconds=>304760}, {:track_number=>8, :title=>"Pilot Jones", :explicit=>false, :milliseconds=>184080}, {:track_number=>9, :title=>"Crack Rock", :explicit=>true, :milliseconds=>224146}, {:track_number=>10, :title=>"Pyramids", :explicit=>true, :milliseconds=>592920}, {:track_number=>11, :title=>"Lost", :explicit=>true, :milliseconds=>234093}, {:track_number=>12, :title=>"White", :explicit=>false, :milliseconds=>76280}, {:track_number=>13, :title=>"Monks", :explicit=>true, :milliseconds=>200240}, {:track_number=>14, :title=>"Bad Religion", :explicit=>false, :milliseconds=>175453}, {:track_number=>15, :title=>"Pink Matter", :explicit=>true, :milliseconds=>268813}, {:track_number=>16, :title=>"Forrest Gump", :explicit=>false, :milliseconds=>194840}, {:track_number=>17, :title=>"End", :explicit=>false, :milliseconds=>134600}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (35.58ms)
+Completed 200 OK in 1156ms (Views: 54.6ms | ActiveRecord: 0.0ms | Allocations: 26239)
+
+
+Started GET "/search/Channel%20Orange" for ::1 at 2019-08-12 08:51:39 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"Channel Orange"}
+No serializer found for resource: {:album_id=>"392p3shh2jkxUxY2VHvlH8", :name=>"channel ORANGE", :artist=>"Frank Ocean", :artist_id=>"2h93pZq0e7k5yf4dywlkpM", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Start", :explicit=>false, :milliseconds=>45640}, {:track_number=>2, :title=>"Thinkin Bout You", :explicit=>false, :milliseconds=>200746}, {:track_number=>3, :title=>"Fertilizer", :explicit=>true, :milliseconds=>39640}, {:track_number=>4, :title=>"Sierra Leone", :explicit=>true, :milliseconds=>148760}, {:track_number=>5, :title=>"Sweet Life", :explicit=>true, :milliseconds=>262680}, {:track_number=>6, :title=>"Not Just Money", :explicit=>false, :milliseconds=>59760}, {:track_number=>7, :title=>"Super Rich Kids", :explicit=>true, :milliseconds=>304760}, {:track_number=>8, :title=>"Pilot Jones", :explicit=>false, :milliseconds=>184080}, {:track_number=>9, :title=>"Crack Rock", :explicit=>true, :milliseconds=>224146}, {:track_number=>10, :title=>"Pyramids", :explicit=>true, :milliseconds=>592920}, {:track_number=>11, :title=>"Lost", :explicit=>true, :milliseconds=>234093}, {:track_number=>12, :title=>"White", :explicit=>false, :milliseconds=>76280}, {:track_number=>13, :title=>"Monks", :explicit=>true, :milliseconds=>200240}, {:track_number=>14, :title=>"Bad Religion", :explicit=>false, :milliseconds=>175453}, {:track_number=>15, :title=>"Pink Matter", :explicit=>true, :milliseconds=>268813}, {:track_number=>16, :title=>"Forrest Gump", :explicit=>false, :milliseconds=>194840}, {:track_number=>17, :title=>"End", :explicit=>false, :milliseconds=>134600}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (7.94ms)
+Completed 200 OK in 1116ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 26535)
+
+
+Started GET "/search/Channel%20Orange" for ::1 at 2019-08-12 08:51:50 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"Channel Orange"}
+No serializer found for resource: {:album_id=>"392p3shh2jkxUxY2VHvlH8", :name=>"channel ORANGE", :artist=>"Frank Ocean", :artist_id=>"2h93pZq0e7k5yf4dywlkpM", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Start", :explicit=>false, :milliseconds=>45640}, {:track_number=>2, :title=>"Thinkin Bout You", :explicit=>false, :milliseconds=>200746}, {:track_number=>3, :title=>"Fertilizer", :explicit=>true, :milliseconds=>39640}, {:track_number=>4, :title=>"Sierra Leone", :explicit=>true, :milliseconds=>148760}, {:track_number=>5, :title=>"Sweet Life", :explicit=>true, :milliseconds=>262680}, {:track_number=>6, :title=>"Not Just Money", :explicit=>false, :milliseconds=>59760}, {:track_number=>7, :title=>"Super Rich Kids", :explicit=>true, :milliseconds=>304760}, {:track_number=>8, :title=>"Pilot Jones", :explicit=>false, :milliseconds=>184080}, {:track_number=>9, :title=>"Crack Rock", :explicit=>true, :milliseconds=>224146}, {:track_number=>10, :title=>"Pyramids", :explicit=>true, :milliseconds=>592920}, {:track_number=>11, :title=>"Lost", :explicit=>true, :milliseconds=>234093}, {:track_number=>12, :title=>"White", :explicit=>false, :milliseconds=>76280}, {:track_number=>13, :title=>"Monks", :explicit=>true, :milliseconds=>200240}, {:track_number=>14, :title=>"Bad Religion", :explicit=>false, :milliseconds=>175453}, {:track_number=>15, :title=>"Pink Matter", :explicit=>true, :milliseconds=>268813}, {:track_number=>16, :title=>"Forrest Gump", :explicit=>false, :milliseconds=>194840}, {:track_number=>17, :title=>"End", :explicit=>false, :milliseconds=>134600}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (6.82ms)
+Completed 200 OK in 1051ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 26594)
+
+
+Started GET "/search/Channel%20Orange" for ::1 at 2019-08-12 08:55:13 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"Channel Orange"}
+No serializer found for resource: {:album_id=>"392p3shh2jkxUxY2VHvlH8", :name=>"channel ORANGE", :artist=>"Frank Ocean", :artist_id=>"2h93pZq0e7k5yf4dywlkpM", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Start", :explicit=>false, :milliseconds=>45640}, {:track_number=>2, :title=>"Thinkin Bout You", :explicit=>false, :milliseconds=>200746}, {:track_number=>3, :title=>"Fertilizer", :explicit=>true, :milliseconds=>39640}, {:track_number=>4, :title=>"Sierra Leone", :explicit=>true, :milliseconds=>148760}, {:track_number=>5, :title=>"Sweet Life", :explicit=>true, :milliseconds=>262680}, {:track_number=>6, :title=>"Not Just Money", :explicit=>false, :milliseconds=>59760}, {:track_number=>7, :title=>"Super Rich Kids", :explicit=>true, :milliseconds=>304760}, {:track_number=>8, :title=>"Pilot Jones", :explicit=>false, :milliseconds=>184080}, {:track_number=>9, :title=>"Crack Rock", :explicit=>true, :milliseconds=>224146}, {:track_number=>10, :title=>"Pyramids", :explicit=>true, :milliseconds=>592920}, {:track_number=>11, :title=>"Lost", :explicit=>true, :milliseconds=>234093}, {:track_number=>12, :title=>"White", :explicit=>false, :milliseconds=>76280}, {:track_number=>13, :title=>"Monks", :explicit=>true, :milliseconds=>200240}, {:track_number=>14, :title=>"Bad Religion", :explicit=>false, :milliseconds=>175453}, {:track_number=>15, :title=>"Pink Matter", :explicit=>true, :milliseconds=>268813}, {:track_number=>16, :title=>"Forrest Gump", :explicit=>false, :milliseconds=>194840}, {:track_number=>17, :title=>"End", :explicit=>false, :milliseconds=>134600}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (3.23ms)
+Completed 200 OK in 1041ms (Views: 24.7ms | ActiveRecord: 0.0ms | Allocations: 26334)
+
+
+Started GET "/search/Channel%20Orange" for ::1 at 2019-08-12 08:59:30 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"Channel Orange"}
+No serializer found for resource: {:album_id=>"392p3shh2jkxUxY2VHvlH8", :name=>"channel ORANGE", :artist=>"Frank Ocean", :artist_id=>"2h93pZq0e7k5yf4dywlkpM", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Start", :explicit=>false, :milliseconds=>45640}, {:track_number=>2, :title=>"Thinkin Bout You", :explicit=>false, :milliseconds=>200746}, {:track_number=>3, :title=>"Fertilizer", :explicit=>true, :milliseconds=>39640}, {:track_number=>4, :title=>"Sierra Leone", :explicit=>true, :milliseconds=>148760}, {:track_number=>5, :title=>"Sweet Life", :explicit=>true, :milliseconds=>262680}, {:track_number=>6, :title=>"Not Just Money", :explicit=>false, :milliseconds=>59760}, {:track_number=>7, :title=>"Super Rich Kids", :explicit=>true, :milliseconds=>304760}, {:track_number=>8, :title=>"Pilot Jones", :explicit=>false, :milliseconds=>184080}, {:track_number=>9, :title=>"Crack Rock", :explicit=>true, :milliseconds=>224146}, {:track_number=>10, :title=>"Pyramids", :explicit=>true, :milliseconds=>592920}, {:track_number=>11, :title=>"Lost", :explicit=>true, :milliseconds=>234093}, {:track_number=>12, :title=>"White", :explicit=>false, :milliseconds=>76280}, {:track_number=>13, :title=>"Monks", :explicit=>true, :milliseconds=>200240}, {:track_number=>14, :title=>"Bad Religion", :explicit=>false, :milliseconds=>175453}, {:track_number=>15, :title=>"Pink Matter", :explicit=>true, :milliseconds=>268813}, {:track_number=>16, :title=>"Forrest Gump", :explicit=>false, :milliseconds=>194840}, {:track_number=>17, :title=>"End", :explicit=>false, :milliseconds=>134600}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (8.22ms)
+Completed 200 OK in 1131ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 26348)
+
+
+Started GET "/search/Channel%20Orange" for ::1 at 2019-08-12 09:00:54 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"Channel Orange"}
+No serializer found for resource: {:album_id=>"392p3shh2jkxUxY2VHvlH8", :name=>"channel ORANGE", :artist=>"Frank Ocean", :artist_id=>"2h93pZq0e7k5yf4dywlkpM", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Start", :explicit=>false, :milliseconds=>45640}, {:track_number=>2, :title=>"Thinkin Bout You", :explicit=>false, :milliseconds=>200746}, {:track_number=>3, :title=>"Fertilizer", :explicit=>true, :milliseconds=>39640}, {:track_number=>4, :title=>"Sierra Leone", :explicit=>true, :milliseconds=>148760}, {:track_number=>5, :title=>"Sweet Life", :explicit=>true, :milliseconds=>262680}, {:track_number=>6, :title=>"Not Just Money", :explicit=>false, :milliseconds=>59760}, {:track_number=>7, :title=>"Super Rich Kids", :explicit=>true, :milliseconds=>304760}, {:track_number=>8, :title=>"Pilot Jones", :explicit=>false, :milliseconds=>184080}, {:track_number=>9, :title=>"Crack Rock", :explicit=>true, :milliseconds=>224146}, {:track_number=>10, :title=>"Pyramids", :explicit=>true, :milliseconds=>592920}, {:track_number=>11, :title=>"Lost", :explicit=>true, :milliseconds=>234093}, {:track_number=>12, :title=>"White", :explicit=>false, :milliseconds=>76280}, {:track_number=>13, :title=>"Monks", :explicit=>true, :milliseconds=>200240}, {:track_number=>14, :title=>"Bad Religion", :explicit=>false, :milliseconds=>175453}, {:track_number=>15, :title=>"Pink Matter", :explicit=>true, :milliseconds=>268813}, {:track_number=>16, :title=>"Forrest Gump", :explicit=>false, :milliseconds=>194840}, {:track_number=>17, :title=>"End", :explicit=>false, :milliseconds=>134600}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (5.05ms)
+Completed 200 OK in 1105ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 26215)
+
+
+Started GET "/search/Channel%20Orange" for ::1 at 2019-08-12 09:03:52 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"Channel Orange"}
+No serializer found for resource: {:album_id=>"392p3shh2jkxUxY2VHvlH8", :name=>"channel ORANGE", :artist=>"Frank Ocean", :artist_id=>"2h93pZq0e7k5yf4dywlkpM", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Start", :explicit=>false, :milliseconds=>45640}, {:track_number=>2, :title=>"Thinkin Bout You", :explicit=>false, :milliseconds=>200746}, {:track_number=>3, :title=>"Fertilizer", :explicit=>true, :milliseconds=>39640}, {:track_number=>4, :title=>"Sierra Leone", :explicit=>true, :milliseconds=>148760}, {:track_number=>5, :title=>"Sweet Life", :explicit=>true, :milliseconds=>262680}, {:track_number=>6, :title=>"Not Just Money", :explicit=>false, :milliseconds=>59760}, {:track_number=>7, :title=>"Super Rich Kids", :explicit=>true, :milliseconds=>304760}, {:track_number=>8, :title=>"Pilot Jones", :explicit=>false, :milliseconds=>184080}, {:track_number=>9, :title=>"Crack Rock", :explicit=>true, :milliseconds=>224146}, {:track_number=>10, :title=>"Pyramids", :explicit=>true, :milliseconds=>592920}, {:track_number=>11, :title=>"Lost", :explicit=>true, :milliseconds=>234093}, {:track_number=>12, :title=>"White", :explicit=>false, :milliseconds=>76280}, {:track_number=>13, :title=>"Monks", :explicit=>true, :milliseconds=>200240}, {:track_number=>14, :title=>"Bad Religion", :explicit=>false, :milliseconds=>175453}, {:track_number=>15, :title=>"Pink Matter", :explicit=>true, :milliseconds=>268813}, {:track_number=>16, :title=>"Forrest Gump", :explicit=>false, :milliseconds=>194840}, {:track_number=>17, :title=>"End", :explicit=>false, :milliseconds=>134600}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (7.53ms)
+Completed 200 OK in 1120ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 26590)
+
+
+Started GET "/search/Channel%20Orange" for ::1 at 2019-08-12 09:09:12 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"Channel Orange"}
+No serializer found for resource: {:album_id=>"392p3shh2jkxUxY2VHvlH8", :name=>"channel ORANGE", :artist=>"Frank Ocean", :artist_id=>"2h93pZq0e7k5yf4dywlkpM", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Start", :explicit=>false, :milliseconds=>45640}, {:track_number=>2, :title=>"Thinkin Bout You", :explicit=>false, :milliseconds=>200746}, {:track_number=>3, :title=>"Fertilizer", :explicit=>true, :milliseconds=>39640}, {:track_number=>4, :title=>"Sierra Leone", :explicit=>true, :milliseconds=>148760}, {:track_number=>5, :title=>"Sweet Life", :explicit=>true, :milliseconds=>262680}, {:track_number=>6, :title=>"Not Just Money", :explicit=>false, :milliseconds=>59760}, {:track_number=>7, :title=>"Super Rich Kids", :explicit=>true, :milliseconds=>304760}, {:track_number=>8, :title=>"Pilot Jones", :explicit=>false, :milliseconds=>184080}, {:track_number=>9, :title=>"Crack Rock", :explicit=>true, :milliseconds=>224146}, {:track_number=>10, :title=>"Pyramids", :explicit=>true, :milliseconds=>592920}, {:track_number=>11, :title=>"Lost", :explicit=>true, :milliseconds=>234093}, {:track_number=>12, :title=>"White", :explicit=>false, :milliseconds=>76280}, {:track_number=>13, :title=>"Monks", :explicit=>true, :milliseconds=>200240}, {:track_number=>14, :title=>"Bad Religion", :explicit=>false, :milliseconds=>175453}, {:track_number=>15, :title=>"Pink Matter", :explicit=>true, :milliseconds=>268813}, {:track_number=>16, :title=>"Forrest Gump", :explicit=>false, :milliseconds=>194840}, {:track_number=>17, :title=>"End", :explicit=>false, :milliseconds=>134600}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (7.48ms)
+Completed 200 OK in 1201ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 26640)
+
+
+Started GET "/search/Channel%20Orange" for ::1 at 2019-08-12 09:11:01 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"Channel Orange"}
+No serializer found for resource: {:album_id=>"392p3shh2jkxUxY2VHvlH8", :name=>"channel ORANGE", :artist=>"Frank Ocean", :artist_id=>"2h93pZq0e7k5yf4dywlkpM", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Start", :explicit=>false, :milliseconds=>45640}, {:track_number=>2, :title=>"Thinkin Bout You", :explicit=>false, :milliseconds=>200746}, {:track_number=>3, :title=>"Fertilizer", :explicit=>true, :milliseconds=>39640}, {:track_number=>4, :title=>"Sierra Leone", :explicit=>true, :milliseconds=>148760}, {:track_number=>5, :title=>"Sweet Life", :explicit=>true, :milliseconds=>262680}, {:track_number=>6, :title=>"Not Just Money", :explicit=>false, :milliseconds=>59760}, {:track_number=>7, :title=>"Super Rich Kids", :explicit=>true, :milliseconds=>304760}, {:track_number=>8, :title=>"Pilot Jones", :explicit=>false, :milliseconds=>184080}, {:track_number=>9, :title=>"Crack Rock", :explicit=>true, :milliseconds=>224146}, {:track_number=>10, :title=>"Pyramids", :explicit=>true, :milliseconds=>592920}, {:track_number=>11, :title=>"Lost", :explicit=>true, :milliseconds=>234093}, {:track_number=>12, :title=>"White", :explicit=>false, :milliseconds=>76280}, {:track_number=>13, :title=>"Monks", :explicit=>true, :milliseconds=>200240}, {:track_number=>14, :title=>"Bad Religion", :explicit=>false, :milliseconds=>175453}, {:track_number=>15, :title=>"Pink Matter", :explicit=>true, :milliseconds=>268813}, {:track_number=>16, :title=>"Forrest Gump", :explicit=>false, :milliseconds=>194840}, {:track_number=>17, :title=>"End", :explicit=>false, :milliseconds=>134600}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (6.4ms)
+Completed 200 OK in 1054ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 26729)
+
+
+Started GET "/search/Channel%20Orange" for ::1 at 2019-08-12 09:14:12 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"Channel Orange"}
+No serializer found for resource: {:album_id=>"392p3shh2jkxUxY2VHvlH8", :name=>"channel ORANGE", :artist=>"Frank Ocean", :artist_id=>"2h93pZq0e7k5yf4dywlkpM", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Start", :explicit=>false, :milliseconds=>45640}, {:track_number=>2, :title=>"Thinkin Bout You", :explicit=>false, :milliseconds=>200746}, {:track_number=>3, :title=>"Fertilizer", :explicit=>true, :milliseconds=>39640}, {:track_number=>4, :title=>"Sierra Leone", :explicit=>true, :milliseconds=>148760}, {:track_number=>5, :title=>"Sweet Life", :explicit=>true, :milliseconds=>262680}, {:track_number=>6, :title=>"Not Just Money", :explicit=>false, :milliseconds=>59760}, {:track_number=>7, :title=>"Super Rich Kids", :explicit=>true, :milliseconds=>304760}, {:track_number=>8, :title=>"Pilot Jones", :explicit=>false, :milliseconds=>184080}, {:track_number=>9, :title=>"Crack Rock", :explicit=>true, :milliseconds=>224146}, {:track_number=>10, :title=>"Pyramids", :explicit=>true, :milliseconds=>592920}, {:track_number=>11, :title=>"Lost", :explicit=>true, :milliseconds=>234093}, {:track_number=>12, :title=>"White", :explicit=>false, :milliseconds=>76280}, {:track_number=>13, :title=>"Monks", :explicit=>true, :milliseconds=>200240}, {:track_number=>14, :title=>"Bad Religion", :explicit=>false, :milliseconds=>175453}, {:track_number=>15, :title=>"Pink Matter", :explicit=>true, :milliseconds=>268813}, {:track_number=>16, :title=>"Forrest Gump", :explicit=>false, :milliseconds=>194840}, {:track_number=>17, :title=>"End", :explicit=>false, :milliseconds=>134600}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (3.68ms)
+Completed 200 OK in 1149ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 26368)
+
+
+Started GET "/search/Channel%20Orange" for ::1 at 2019-08-12 09:20:46 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"Channel Orange"}
+No serializer found for resource: {:album_id=>"392p3shh2jkxUxY2VHvlH8", :name=>"channel ORANGE", :artist=>"Frank Ocean", :artist_id=>"2h93pZq0e7k5yf4dywlkpM", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Start", :explicit=>false, :milliseconds=>45640}, {:track_number=>2, :title=>"Thinkin Bout You", :explicit=>false, :milliseconds=>200746}, {:track_number=>3, :title=>"Fertilizer", :explicit=>true, :milliseconds=>39640}, {:track_number=>4, :title=>"Sierra Leone", :explicit=>true, :milliseconds=>148760}, {:track_number=>5, :title=>"Sweet Life", :explicit=>true, :milliseconds=>262680}, {:track_number=>6, :title=>"Not Just Money", :explicit=>false, :milliseconds=>59760}, {:track_number=>7, :title=>"Super Rich Kids", :explicit=>true, :milliseconds=>304760}, {:track_number=>8, :title=>"Pilot Jones", :explicit=>false, :milliseconds=>184080}, {:track_number=>9, :title=>"Crack Rock", :explicit=>true, :milliseconds=>224146}, {:track_number=>10, :title=>"Pyramids", :explicit=>true, :milliseconds=>592920}, {:track_number=>11, :title=>"Lost", :explicit=>true, :milliseconds=>234093}, {:track_number=>12, :title=>"White", :explicit=>false, :milliseconds=>76280}, {:track_number=>13, :title=>"Monks", :explicit=>true, :milliseconds=>200240}, {:track_number=>14, :title=>"Bad Religion", :explicit=>false, :milliseconds=>175453}, {:track_number=>15, :title=>"Pink Matter", :explicit=>true, :milliseconds=>268813}, {:track_number=>16, :title=>"Forrest Gump", :explicit=>false, :milliseconds=>194840}, {:track_number=>17, :title=>"End", :explicit=>false, :milliseconds=>134600}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (13.69ms)
+Completed 200 OK in 1648ms (Views: 24.0ms | ActiveRecord: 0.0ms | Allocations: 30554)
+
+
+Started GET "/search/Channel%20Orange" for ::1 at 2019-08-12 09:24:59 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"Channel Orange"}
+No serializer found for resource: {:album_id=>"392p3shh2jkxUxY2VHvlH8", :name=>"channel ORANGE", :artist=>"Frank Ocean", :artist_id=>"2h93pZq0e7k5yf4dywlkpM", :img=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], :tracks=>[{:track_number=>1, :title=>"Start", :explicit=>false, :milliseconds=>45640}, {:track_number=>2, :title=>"Thinkin Bout You", :explicit=>false, :milliseconds=>200746}, {:track_number=>3, :title=>"Fertilizer", :explicit=>true, :milliseconds=>39640}, {:track_number=>4, :title=>"Sierra Leone", :explicit=>true, :milliseconds=>148760}, {:track_number=>5, :title=>"Sweet Life", :explicit=>true, :milliseconds=>262680}, {:track_number=>6, :title=>"Not Just Money", :explicit=>false, :milliseconds=>59760}, {:track_number=>7, :title=>"Super Rich Kids", :explicit=>true, :milliseconds=>304760}, {:track_number=>8, :title=>"Pilot Jones", :explicit=>false, :milliseconds=>184080}, {:track_number=>9, :title=>"Crack Rock", :explicit=>true, :milliseconds=>224146}, {:track_number=>10, :title=>"Pyramids", :explicit=>true, :milliseconds=>592920}, {:track_number=>11, :title=>"Lost", :explicit=>true, :milliseconds=>234093}, {:track_number=>12, :title=>"White", :explicit=>false, :milliseconds=>76280}, {:track_number=>13, :title=>"Monks", :explicit=>true, :milliseconds=>200240}, {:track_number=>14, :title=>"Bad Religion", :explicit=>false, :milliseconds=>175453}, {:track_number=>15, :title=>"Pink Matter", :explicit=>true, :milliseconds=>268813}, {:track_number=>16, :title=>"Forrest Gump", :explicit=>false, :milliseconds=>194840}, {:track_number=>17, :title=>"End", :explicit=>false, :milliseconds=>134600}]}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (5.77ms)
+Completed 200 OK in 1082ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 26506)
+
+
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from <top (required)> at /Users/victormrecabarren/project4/api-spotify/app/controllers/application_controller.rb:1)
+Started GET "/search/cleopatra" for ::1 at 2019-08-12 09:56:40 -0400
+Processing by SearchController#show as HTML
+  Parameters: {"id"=>"cleopatra"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.93ms)
+Completed 200 OK in 352ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 16120)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-08-12 09:56:41 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/search/channel%20orange" for ::1 at 2019-08-12 09:56:49 -0400
+Processing by SearchController#show as HTML
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.48ms)
+Completed 200 OK in 219ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 8524)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-12 10:13:25 -0400
+  
+SyntaxError (/Users/victormrecabarren/project4/api-spotify/app/controllers/search_controller.rb:48: syntax error, unexpected ','
+      album_id: ,
+                ^
+/Users/victormrecabarren/project4/api-spotify/app/controllers/search_controller.rb:50: syntax error, unexpected tLABEL, expecting '='
+      type: track.type
+      ^~~~~
+/Users/victormrecabarren/project4/api-spotify/app/controllers/search_controller.rb:52: syntax error, unexpected '}', expecting keyword_end
+    }
+    ^):
+  
+app/controllers/search_controller.rb:48: syntax error, unexpected ','
+app/controllers/search_controller.rb:50: syntax error, unexpected tLABEL, expecting '='
+app/controllers/search_controller.rb:52: syntax error, unexpected '}', expecting keyword_end
+app/controllers/search_controller.rb:48: syntax error, unexpected ','
+app/controllers/search_controller.rb:50: syntax error, unexpected tLABEL, expecting '='
+app/controllers/search_controller.rb:52: syntax error, unexpected '}', expecting keyword_end
+Started GET "/search/channel%20orange" for ::1 at 2019-08-12 10:14:03 -0400
+Processing by SearchController#show as HTML
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.77ms)
+Completed 200 OK in 220ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 8401)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-12 10:16:26 -0400
+Processing by SearchController#show as HTML
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.33ms)
+Completed 200 OK in 227ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 8351)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-12 10:17:17 -0400
+Processing by SearchController#show as HTML
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.17ms)
+Completed 200 OK in 218ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 8966)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-12 10:18:19 -0400
+Processing by SearchController#show as HTML
+  Parameters: {"id"=>"channel orange"}
+Completed 500 Internal Server Error in 396ms (ActiveRecord: 0.0ms | Allocations: 78800)
+
+
+  
+NameError (undefined local variable or method `fill' for #<SearchController:0x00007fba5023fae8>
+Did you mean?  fail):
+  
+app/controllers/search_controller.rb:43:in `block in set_search'
+app/controllers/search_controller.rb:42:in `map'
+app/controllers/search_controller.rb:42:in `set_search'
+Started GET "/search/channel%20orange" for ::1 at 2019-08-12 10:18:40 -0400
+Processing by SearchController#show as HTML
+  Parameters: {"id"=>"channel orange"}
+Completed 500 Internal Server Error in 180ms (ActiveRecord: 0.0ms | Allocations: 7926)
+
+
+  
+NoMethodError (undefined method `url' for #<Hash:0x00007fba4ebd0cf8>):
+  
+app/controllers/search_controller.rb:51:in `block in set_search'
+app/controllers/search_controller.rb:42:in `map'
+app/controllers/search_controller.rb:42:in `set_search'
+Started GET "/search/channel%20orange" for ::1 at 2019-08-12 10:20:08 -0400
+Processing by SearchController#show as HTML
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.34ms)
+Completed 200 OK in 236ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 16341)
+
+
+Started GET "/search/cleopatra" for ::1 at 2019-08-12 10:21:21 -0400
+Processing by SearchController#show as HTML
+  Parameters: {"id"=>"cleopatra"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (9.5ms)
+Completed 200 OK in 704ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 31947)
+
+
