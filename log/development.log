@@ -3263,3 +3263,10 @@ Processing by SearchController#show as HTML
 Completed 200 OK in 704ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 31947)
 
 
+Started GET "/search/channel%20orange" for ::1 at 2019-08-12 10:22:45 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (10.04ms)
+Completed 200 OK in 189ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 16215)
+
+
