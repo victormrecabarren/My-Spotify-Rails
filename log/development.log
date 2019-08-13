@@ -3294,3 +3294,61 @@ Processing by SearchController#show as */*
 Completed 200 OK in 3696ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 16005)
 
 
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from block in <module:ContentHelper> at /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0.rc2/app/helpers/action_text/content_helper.rb:7)
+Started GET "/search/channel%20orange" for ::1 at 2019-08-13 18:08:53 -0400
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.37ms)
+Completed 200 OK in 754ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 24364)
+
+
+Started GET "/search/d" for ::1 at 2019-08-13 18:10:37 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"d"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (10.08ms)
+Completed 200 OK in 241ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 32329)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-13 18:10:40 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.72ms)
+Completed 200 OK in 160ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 16212)
+
+
+Started GET "/search/coloring%20book" for ::1 at 2019-08-13 18:12:27 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"coloring book"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (8.36ms)
+Completed 200 OK in 273ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 26707)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-13 18:12:54 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (7.58ms)
+Completed 200 OK in 159ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 16134)
+
+
+Started GET "/search/coloring%20book" for ::1 at 2019-08-13 18:13:05 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"coloring book"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.39ms)
+Completed 200 OK in 192ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 26789)
+
+
+Started GET "/search/kanye%20west" for ::1 at 2019-08-13 18:13:11 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"kanye west"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.46ms)
+Completed 200 OK in 202ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 27901)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-13 18:13:32 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.07ms)
+Completed 200 OK in 169ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 15808)
+
+
