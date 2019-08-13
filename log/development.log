@@ -3270,3 +3270,20 @@ Processing by SearchController#show as */*
 Completed 200 OK in 189ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 16215)
 
 
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from <top (required)> at /Users/victormrecabarren/project4/api-spotify/app/controllers/application_controller.rb:1)
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from block in <module:ContentHelper> at /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0.rc2/app/helpers/action_text/content_helper.rb:7)
+Started GET "/search/channel%20orange" for ::1 at 2019-08-13 09:56:12 -0400
+  [1m[35m (4.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SearchController#show as HTML
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.34ms)
+Completed 200 OK in 1372ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 18921)
+
+
+Started GET "/search/cleopatra" for ::1 at 2019-08-13 09:56:52 -0400
+Processing by SearchController#show as HTML
+  Parameters: {"id"=>"cleopatra"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.66ms)
+Completed 200 OK in 2364ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 27562)
+
+
