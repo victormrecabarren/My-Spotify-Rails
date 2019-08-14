@@ -18,7 +18,7 @@ class AlbumsController < ApplicationController
         track_number: track.track_number,
         name: track.name,
         duration: Time.at(track.duration_ms/1000).strftime("%M:%S"),
-        explict: track.explicit
+        explicit: track.explicit,
       })
     }
 
@@ -27,9 +27,10 @@ class AlbumsController < ApplicationController
       name: album.name,
       artist: album.artists[0].name,
       images: album.images,
-      release: album.release_date,
+      release: album.release_date[0,4],
       total_tracks: album.total_tracks,
-      tracks: tracks
+      tracks: tracks,
+      type: "album"
     }
 
   end
