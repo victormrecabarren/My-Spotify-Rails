@@ -6508,3 +6508,10 @@ puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
   [1m[36mActiveRecord::InternalMetadata Load (2.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_advisory_unlock(5038566874636245300)[0m
   [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/search/channel%20orange" for ::1 at 2019-08-14 18:30:31 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (10.62ms)
+Completed 200 OK in 633ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 20573)
+
+

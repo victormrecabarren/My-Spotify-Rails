@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'localhost:3001', 'victormrecabarren.github.io/My-Spotify-React/'
+    origins 'localhost:3001', 'http://victormrecabarren.github.io/My-Spotify-React/'
 
     resource '*',
       headers: :any,
