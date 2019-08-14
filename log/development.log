@@ -6459,3 +6459,10 @@ Processing by PlaylistsController#create as HTML
 Completed 200 OK in 8ms (Views: 1.2ms | ActiveRecord: 1.1ms | Allocations: 2479)
 
 
+Started GET "/search/channel%20orange" for ::1 at 2019-08-14 17:53:11 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (10.99ms)
+Completed 200 OK in 226ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 16302)
+
+
