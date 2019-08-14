@@ -3573,3 +3573,218 @@ Processing by SearchController#show as */*
 Completed 200 OK in 201ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 24373)
 
 
+Started GET "/search/channel%20orange" for ::1 at 2019-08-13 23:01:24 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (14.9ms)
+Completed 200 OK in 282ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 16102)
+
+
+Started GET "/search/the%20life%20of%20pablo" for ::1 at 2019-08-13 23:02:48 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"the life of pablo"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (22.08ms)
+Completed 200 OK in 255ms (Views: 23.0ms | ActiveRecord: 0.0ms | Allocations: 19439)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-13 23:02:54 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (7.59ms)
+Completed 200 OK in 173ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 15913)
+
+
+Started GET "/search/kanye%20west" for ::1 at 2019-08-13 23:12:31 -0400
+Processing by SearchController#show as HTML
+  Parameters: {"id"=>"kanye west"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (11.54ms)
+Completed 200 OK in 360ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 27489)
+
+
+Started GET "/search/cleopatra" for ::1 at 2019-08-13 23:14:42 -0400
+Processing by SearchController#show as HTML
+  Parameters: {"id"=>"cleopatra"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (11.2ms)
+Completed 200 OK in 276ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 27549)
+
+
+Started GET "/search/think%20bout%20you" for ::1 at 2019-08-13 23:14:50 -0400
+Processing by SearchController#show as HTML
+  Parameters: {"id"=>"think bout you"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.93ms)
+Completed 200 OK in 193ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 18922)
+
+
+Started GET "/search/thinkin%20bout%20you" for ::1 at 2019-08-13 23:14:59 -0400
+Processing by SearchController#show as HTML
+  Parameters: {"id"=>"thinkin bout you"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (27.48ms)
+Completed 200 OK in 246ms (Views: 28.0ms | ActiveRecord: 0.0ms | Allocations: 26698)
+
+
+Started GET "/search/think%20bout%20you" for ::1 at 2019-08-13 23:15:05 -0400
+Processing by SearchController#show as HTML
+  Parameters: {"id"=>"think bout you"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.64ms)
+Completed 200 OK in 177ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 18897)
+
+
+Started GET "/search/frank%20ocean" for ::1 at 2019-08-13 23:28:41 -0400
+Processing by SearchController#show as HTML
+  Parameters: {"id"=>"frank ocean"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (90.18ms)
+Completed 200 OK in 864ms (Views: 92.0ms | ActiveRecord: 0.0ms | Allocations: 29937)
+
+
+Started GET "/search/bohemian%20rhapsody" for ::1 at 2019-08-13 23:28:55 -0400
+Processing by SearchController#show as HTML
+  Parameters: {"id"=>"bohemian rhapsody"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (16.17ms)
+Completed 200 OK in 220ms (Views: 16.6ms | ActiveRecord: 0.0ms | Allocations: 23784)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-13 23:41:55 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (17.53ms)
+Completed 200 OK in 275ms (Views: 20.2ms | ActiveRecord: 0.0ms | Allocations: 16067)
+
+
+Started GET "/show" for ::1 at 2019-08-13 23:42:10 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/show"):
+  
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/search/channel%20orange" for ::1 at 2019-08-13 23:43:13 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (13.63ms)
+Completed 200 OK in 326ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 16068)
+
+
+Started GET "/show" for ::1 at 2019-08-13 23:43:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/show"):
+  
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/search/channel%20orange" for ::1 at 2019-08-13 23:43:54 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.51ms)
+Completed 200 OK in 172ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 16147)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-13 23:48:34 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (7.89ms)
+Completed 200 OK in 188ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 16281)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-13 23:52:12 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (8.08ms)
+Completed 200 OK in 256ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 16040)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-13 23:52:26 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (17.94ms)
+Completed 200 OK in 191ms (Views: 18.4ms | ActiveRecord: 0.0ms | Allocations: 16094)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-13 23:53:13 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (17.91ms)
+Completed 200 OK in 187ms (Views: 18.4ms | ActiveRecord: 0.0ms | Allocations: 16423)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-14 00:02:20 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.41ms)
+Completed 200 OK in 202ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 16339)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-14 00:05:52 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (16.68ms)
+Completed 200 OK in 241ms (Views: 17.1ms | ActiveRecord: 0.0ms | Allocations: 15892)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-14 00:07:23 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (18.88ms)
+Completed 200 OK in 217ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 15943)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-14 00:07:56 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (12.66ms)
+Completed 200 OK in 200ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 15897)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-14 00:08:51 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (9.53ms)
+Completed 200 OK in 220ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 16153)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-14 00:08:56 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (13.9ms)
+Completed 200 OK in 170ms (Views: 14.5ms | ActiveRecord: 0.0ms | Allocations: 15858)
+
+
