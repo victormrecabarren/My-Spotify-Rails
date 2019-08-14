@@ -3352,3 +3352,224 @@ Processing by SearchController#show as */*
 Completed 200 OK in 169ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 15808)
 
 
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from block in <module:ContentHelper> at /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0.rc2/app/helpers/action_text/content_helper.rb:7)
+Started GET "/search/my%20beautiful%20dark%20twisted%20fantasy" for ::1 at 2019-08-13 21:16:04 -0400
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"my beautiful dark twisted fantasy"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.88ms)
+Completed 200 OK in 838ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 19914)
+
+
+Started GET "/search/runaway" for ::1 at 2019-08-13 21:21:38 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"runaway"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (43.72ms)
+Completed 200 OK in 380ms (Views: 44.8ms | ActiveRecord: 0.0ms | Allocations: 31801)
+
+
+Started GET "/search/power" for ::1 at 2019-08-13 21:23:17 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"power"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (11.6ms)
+Completed 200 OK in 279ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 32696)
+
+
+Started GET "/search/hell%20of%20a%20life" for ::1 at 2019-08-13 21:24:17 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"hell of a life"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (7.0ms)
+Completed 200 OK in 218ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 24601)
+
+
+Started GET "/search/ye" for ::1 at 2019-08-13 21:24:28 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"ye"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.76ms)
+Completed 200 OK in 187ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 31084)
+
+
+Started GET "/search/ye" for ::1 at 2019-08-13 21:25:23 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"ye"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.28ms)
+Completed 200 OK in 192ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 30320)
+
+
+Started GET "/search/ye" for ::1 at 2019-08-13 21:27:03 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"ye"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (15.7ms)
+Completed 200 OK in 240ms (Views: 16.6ms | ActiveRecord: 0.0ms | Allocations: 30583)
+
+
+Started GET "/search/ye" for ::1 at 2019-08-13 21:33:26 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"ye"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (19.11ms)
+Completed 200 OK in 334ms (Views: 25.3ms | ActiveRecord: 0.0ms | Allocations: 30935)
+
+
+Started GET "/search/ye" for ::1 at 2019-08-13 21:40:52 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"ye"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (12.32ms)
+Completed 200 OK in 286ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 31110)
+
+
+Started GET "/search/ye" for ::1 at 2019-08-13 21:57:07 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"ye"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (32.82ms)
+Completed 200 OK in 316ms (Views: 53.0ms | ActiveRecord: 0.0ms | Allocations: 30481)
+
+
+Started GET "/search/ye" for ::1 at 2019-08-13 22:14:30 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"ye"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (24.87ms)
+Completed 200 OK in 321ms (Views: 36.2ms | ActiveRecord: 0.0ms | Allocations: 30955)
+
+
+Started GET "/search/kanye%20west" for ::1 at 2019-08-13 22:16:18 -0400
+Processing by SearchController#show as HTML
+  Parameters: {"id"=>"kanye west"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (13.96ms)
+Completed 200 OK in 625ms (Views: 15.0ms | ActiveRecord: 0.0ms | Allocations: 36166)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-08-13 22:16:19 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/search/channel%20orange" for ::1 at 2019-08-13 22:21:41 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.07ms)
+Completed 200 OK in 268ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 16519)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-13 22:24:01 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.15ms)
+Completed 200 OK in 213ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 15961)
+
+
+Started GET "/albums/7gsWAHLeT0w7es6FofOXk1" for ::1 at 2019-08-13 22:43:02 -0400
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"7gsWAHLeT0w7es6FofOXk1"}
+Completed 500 Internal Server Error in 177ms (ActiveRecord: 0.0ms | Allocations: 8094)
+
+
+  
+NoMethodError (undefined method `map' for #<RSpotify::Album:0x00007f93c240c5b0>
+Did you mean?  tap):
+  
+app/controllers/AlbumsController.rb:15:in `set_album'
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from <top (required)> at /Users/victormrecabarren/project4/api-spotify/app/controllers/application_controller.rb:1)
+Started GET "/albums/7gsWAHLeT0w7es6FofOXk1" for ::1 at 2019-08-13 22:44:13 -0400
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"7gsWAHLeT0w7es6FofOXk1"}
+Completed 500 Internal Server Error in 154ms (ActiveRecord: 0.0ms | Allocations: 5531)
+
+
+  
+NoMethodError (undefined method `duration' for #<RSpotify::Track:0x00007f93c2bced98>):
+  
+app/controllers/AlbumsController.rb:20:in `block in set_album'
+app/controllers/AlbumsController.rb:15:in `map'
+app/controllers/AlbumsController.rb:15:in `set_album'
+Started GET "/albums/7gsWAHLeT0w7es6FofOXk1" for ::1 at 2019-08-13 22:45:24 -0400
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"7gsWAHLeT0w7es6FofOXk1"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.29ms)
+Completed 200 OK in 176ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 6331)
+
+
+Started GET "/albums/7gsWAHLeT0w7es6FofOXk1" for ::1 at 2019-08-13 22:45:50 -0400
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"7gsWAHLeT0w7es6FofOXk1"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.92ms)
+Completed 200 OK in 159ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 7849)
+
+
+Started GET "/albums/7gsWAHLeT0w7es6FofOXk1" for ::1 at 2019-08-13 22:48:59 -0400
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"7gsWAHLeT0w7es6FofOXk1"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.1ms)
+Completed 200 OK in 159ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 7802)
+
+
+Started GET "/albums/7gsWAHLeT0w7es6FofOXk1" for ::1 at 2019-08-13 22:49:24 -0400
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"7gsWAHLeT0w7es6FofOXk1"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.29ms)
+Completed 200 OK in 164ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 8044)
+
+
+Started GET "/albums/7gsWAHLeT0w7es6FofOXk1" for ::1 at 2019-08-13 22:50:03 -0400
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"7gsWAHLeT0w7es6FofOXk1"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.44ms)
+Completed 200 OK in 149ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 7994)
+
+
+Started GET "/albums/7gsWAHLeT0w7es6FofOXk1" for ::1 at 2019-08-13 22:50:14 -0400
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"7gsWAHLeT0w7es6FofOXk1"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.19ms)
+Completed 200 OK in 146ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 7726)
+
+
+Started GET "/search/the%20life%20of%20pablo" for ::1 at 2019-08-13 22:51:12 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"the life of pablo"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.57ms)
+Completed 200 OK in 223ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 19665)
+
+
+Started GET "/search/runaway" for ::1 at 2019-08-13 22:51:35 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"runaway"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (8.39ms)
+Completed 200 OK in 195ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 31984)
+
+
+Started GET "/search/pyramids" for ::1 at 2019-08-13 22:51:57 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"pyramids"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (7.42ms)
+Completed 200 OK in 222ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 31968)
+
+
+Started GET "/search/saint%20pablo" for ::1 at 2019-08-13 22:52:03 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"saint pablo"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.68ms)
+Completed 200 OK in 201ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 24373)
+
+
