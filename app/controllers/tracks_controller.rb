@@ -17,11 +17,10 @@ class TracksController < ApplicationController
   def create
     @track = Track.new(track_params)
 
-    track.new_track()
-
+    @track[:playlist_id] = params[:playlist_id]
 
     if @track.save
-      render json: @track, status: :created, location: @track
+      render json: @track, status: 200
     else
       render json: @track.errors, status: :unprocessable_entity
     end
@@ -49,6 +48,6 @@ class TracksController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def track_params
-      params.require(:track).permit(:spotify_id, :playlist_id, :name, :artist, :image, :album_name, :preview)
+      params.require(:track).permit(:spotify_id, :playlist_id, :name, :artist, :images, :album_name, :preview, :album_id, :duration, :explicit, :track_number)
     end
 end
