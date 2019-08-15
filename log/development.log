@@ -6522,3 +6522,285 @@ Processing by SearchController#show as */*
 Completed 200 OK in 241ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 16130)
 
 
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from block in <module:ContentHelper> at /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0.rc2/app/helpers/action_text/content_helper.rb:7)
+Started GET "/static/js/main.chunk.js" for ::1 at 2019-08-15 07:53:42 -0400
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/static/js/main.chunk.js"):
+  
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/manifest.json" for ::1 at 2019-08-15 07:53:42 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/manifest.json"):
+  
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2019-08-15 07:53:42 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/search/channel%20orange" for ::1 at 2019-08-15 07:54:48 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.16ms)
+Completed 200 OK in 25546ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 18842)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-15 07:55:16 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.46ms)
+Completed 200 OK in 16773ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 5766)
+
+
+Started GET "/playlists" for ::1 at 2019-08-15 07:55:36 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (3.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.72ms)
+Completed 200 OK in 45ms (Views: 14.5ms | ActiveRecord: 14.4ms | Allocations: 10157)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-15 07:58:44 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (13.69ms)
+Completed 200 OK in 15776ms (Views: 14.5ms | ActiveRecord: 0.0ms | Allocations: 16427)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-15 07:59:07 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.9ms)
+Completed 200 OK in 3288ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 5723)
+
+
+Started GET "/playlists" for ::1 at 2019-08-15 07:59:15 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.5ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.81ms)
+Completed 200 OK in 16ms (Views: 8.3ms | ActiveRecord: 4.6ms | Allocations: 6937)
+
+
+  [1m[36mPlaylist Exists? (1.5ms)[0m  [1m[34mSELECT 1 AS one FROM "playlists" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPlaylist Load (0.3ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  [1m[36mPlaylist Load (0.7ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mPlaylist Destroy (4.9ms)[0m  [1m[31mDELETE FROM "playlists" WHERE "playlists"."id" = $1[0m  [["id", 8]]
+  [1m[36mPlaylist Load (0.3ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mPlaylist Destroy (0.7ms)[0m  [1m[31mDELETE FROM "playlists" WHERE "playlists"."id" = $1[0m  [["id", 9]]
+  [1m[36mPlaylist Load (0.8ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mPlaylist Destroy (0.6ms)[0m  [1m[31mDELETE FROM "playlists" WHERE "playlists"."id" = $1[0m  [["id", 10]]
+  [1m[36mPlaylist Load (0.3ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mPlaylist Destroy (0.7ms)[0m  [1m[31mDELETE FROM "playlists" WHERE "playlists"."id" = $1[0m  [["id", 11]]
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "playlists"[0m
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "tracks"[0m
+Started GET "/search/Channel%20orange" for ::1 at 2019-08-15 08:03:05 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"Channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.03ms)
+Completed 200 OK in 1390ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 16392)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-15 08:03:08 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.21ms)
+Completed 200 OK in 297ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 5648)
+
+
+Started GET "/playlists" for ::1 at 2019-08-15 08:03:10 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.5ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.1ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.5ms | Allocations: 1015)
+
+
+Started POST "/playlists" for ::1 at 2019-08-15 08:03:29 -0400
+Processing by PlaylistsController#create as HTML
+  Parameters: {"playlist"=>{"playlist_name"=>"start playlist", "seed_track"=>{"id"=>"0GAE689kVy7sFT2QWZH1Xa", "track_number"=>1, "name"=>"Start", "duration"=>"00:45", "explicit"=>false}, "seed_album"=>{"id"=>"392p3shh2jkxUxY2VHvlH8", "name"=>"channel ORANGE", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "release"=>"2012", "total_tracks"=>17, "tracks"=>[{"id"=>"0GAE689kVy7sFT2QWZH1Xa", "track_number"=>1, "name"=>"Start", "duration"=>"00:45", "explicit"=>false}, {"id"=>"7DfFc7a6Rwfi3YQMRbDMau", "track_number"=>2, "name"=>"Thinkin Bout You", "duration"=>"03:20", "explicit"=>false}, {"id"=>"6jypaMkKsoc5npsVzxhksl", "track_number"=>3, "name"=>"Fertilizer", "duration"=>"00:39", "explicit"=>true}, {"id"=>"1HwbgJAU9PZ7YbzKgVgoIF", "track_number"=>4, "name"=>"Sierra Leone", "duration"=>"02:28", "explicit"=>true}, {"id"=>"6MEDfjHxnVNcYmHe3mM6L2", "track_number"=>5, "name"=>"Sweet Life", "duration"=>"04:22", "explicit"=>true}, {"id"=>"3iW3y326xuRpNVXzOMBZy5", "track_number"=>6, "name"=>"Not Just Money", "duration"=>"00:59", "explicit"=>false}, {"id"=>"0725YWm6Z0TpZ6wrNk64Eb", "track_number"=>7, "name"=>"Super Rich Kids", "duration"=>"05:04", "explicit"=>true}, {"id"=>"2ohegz9maxzroKBu9YhcCM", "track_number"=>8, "name"=>"Pilot Jones", "duration"=>"03:04", "explicit"=>false}, {"id"=>"5lcyIeEfwZTs8Ajw3kdF7P", "track_number"=>9, "name"=>"Crack Rock", "duration"=>"03:44", "explicit"=>true}, {"id"=>"4QhWbupniDd44EDtnh2bFJ", "track_number"=>10, "name"=>"Pyramids", "duration"=>"09:52", "explicit"=>true}, {"id"=>"3GZD6HmiNUhxXYf8Gch723", "track_number"=>11, "name"=>"Lost", "duration"=>"03:54", "explicit"=>true}, {"id"=>"1VMdwVq0yaTc4DeqSCi7DO", "track_number"=>12, "name"=>"White", "duration"=>"01:16", "explicit"=>false}, {"id"=>"0msrDPXxZpts4FRnoX0bFr", "track_number"=>13, "name"=>"Monks", "duration"=>"03:20", "explicit"=>true}, {"id"=>"2pMPWE7PJH1PizfgGRMnR9", "track_number"=>14, "name"=>"Bad Religion", "duration"=>"02:55", "explicit"=>false}, {"id"=>"1fOkmYW3ZFkkjIdOZSf596", "track_number"=>15, "name"=>"Pink Matter", "duration"=>"04:28", "explicit"=>true}, {"id"=>"4YZbVct8l9MnAVIROnLQdx", "track_number"=>16, "name"=>"Forrest Gump", "duration"=>"03:14", "explicit"=>false}, {"id"=>"05tFLPSXJ1BbqIXy4Jeqfh", "track_number"=>17, "name"=>"End", "duration"=>"02:14", "explicit"=>false}], "type"=>"album"}}}
+[31mUnpermitted parameters: :seed_track, :seed_album[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/playlists_controller.rb:36:in `create'
+  [1m[36mPlaylist Create (7.1ms)[0m  [1m[32mINSERT INTO "playlists" ("playlist_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["playlist_name", "start playlist"], ["created_at", "2019-08-15 12:03:29.412233"], ["updated_at", "2019-08-15 12:03:29.412233"]]
+  ↳ app/controllers/playlists_controller.rb:36:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/playlists_controller.rb:36:in `create'
+[active_model_serializers] Rendered PlaylistSerializer with ActiveModelSerializers::Adapter::Attributes (0.25ms)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/playlists_controller.rb:40:in `create'
+  [1m[36mPlaylist Load (0.3ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/playlists_controller.rb:40:in `create'
+  [1m[36mTrack Create (2.2ms)[0m  [1m[32mINSERT INTO "tracks" ("spotify_id", "playlist_id", "name", "artist", "image", "album_name", "created_at", "updated_at", "album_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["spotify_id", "0GAE689kVy7sFT2QWZH1Xa"], ["playlist_id", 12], ["name", "Start"], ["artist", "Frank Ocean"], ["image", "https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed"], ["album_name", "channel ORANGE"], ["created_at", "2019-08-15 12:03:29.458495"], ["updated_at", "2019-08-15 12:03:29.458495"], ["album_id", "392p3shh2jkxUxY2VHvlH8"]]
+  ↳ app/controllers/playlists_controller.rb:40:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/playlists_controller.rb:40:in `create'
+Completed 200 OK in 53ms (Views: 0.8ms | ActiveRecord: 13.7ms | Allocations: 22011)
+
+
+  [1m[36mTrack Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "tracks" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  [1m[36mPlaylist Load (0.4ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mTrack Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "tracks" WHERE "tracks"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", 12], ["LIMIT", 1]]
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."playlist_id" = $1[0m  [["playlist_id", 12]]
+  [1m[36mPlaylist Load (3.8ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "tracks"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "playlists"[0m
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from block in <module:ContentHelper> at /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0.rc2/app/helpers/action_text/content_helper.rb:7)
+Started GET "/search/channel%20orange" for ::1 at 2019-08-15 12:48:26 -0400
+  [1m[35m (6.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (8.7ms)
+Completed 200 OK in 356ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 19155)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-15 12:48:39 -0400
+Processing by SearchController#show as HTML
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.9ms)
+Completed 200 OK in 277ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 16308)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-15 12:53:10 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.15ms)
+Completed 200 OK in 169ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 5934)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-15 12:56:44 -0400
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.98ms)
+Completed 200 OK in 143ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 5853)
+
+
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from <top (required)> at /Users/victormrecabarren/project4/api-spotify/app/controllers/application_controller.rb:1)
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5038566874636245300)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDurationColumnToTracks (20190815171306)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.0ms)[0m  [1m[35mALTER TABLE "tracks" ADD "duration" character varying[0m
+  [1m[36mprimary::SchemaMigration Create (2.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190815171306"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5038566874636245300)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-15 13:21:42 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+Completed 500 Internal Server Error in 170ms (ActiveRecord: 0.0ms | Allocations: 4329)
+
+
+  
+NoMethodError (undefined method `url' for #<Hash:0x00007fecf030bcd8>):
+  
+app/controllers/AlbumsController.rb:21:in `block in set_album'
+app/controllers/AlbumsController.rb:15:in `map'
+app/controllers/AlbumsController.rb:15:in `set_album'
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-15 13:22:16 -0400
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.26ms)
+Completed 200 OK in 139ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 9587)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5038566874636245300)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddExplicitColumnToTracks (20190815173019)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "tracks" ADD "explicit" character varying[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190815173019"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5038566874636245300)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5038566874636245300)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddTrackNumberToTracks (20190815173112)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "tracks" ADD "track_number" character varying[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190815173112"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5038566874636245300)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5038566874636245300)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to ChangeColumneNameImageInTracks (20190815173223)
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "tracks" RENAME COLUMN "image" TO "images"[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190815173223"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5038566874636245300)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m

@@ -14,9 +14,13 @@ class AlbumsController < ApplicationController
 
     album.tracks_cache.map{|track|
       tracks.push({
-        id: track.id,
+        spotify_id: track.id,
         track_number: track.track_number,
         name: track.name,
+        artist: track.artists[0].name,
+        images: album.images,
+        album_name: album.name,
+        album_id: album.id,
         duration: Time.at(track.duration_ms/1000).strftime("%M:%S"),
         explicit: track.explicit,
       })

@@ -24,13 +24,16 @@ class PlaylistsController < ApplicationController
     @containing_album = params[:playlist][:seed_album]
 
     @track_params = {
-      spotify_id: @seed_track[:id],
-      playlist_id: @playlist[:id],
+      spotify_id: @seed_track[:spotify_id],
+      track_number: @seed_track[:track_number],
       name: @seed_track[:name],
-      artist: @containing_album[:artist],
-      image: @containing_album[:images][0][:url],
-      album_name: @containing_album[:name],
-      album_id: @containing_album[:id],
+      artist: @seed_track[:artist],
+      images: @seed_track[:images],
+      album_name: @seed_track[:album_name],
+      album_id: @seed_track[:album_id],
+      duration: @seed_track[:duration],
+      explicit: @seed_track[:explicit],
+      playlist_id: @playlist[:id]
       }
 
     if @playlist.save
@@ -38,7 +41,7 @@ class PlaylistsController < ApplicationController
 
       @track_params[:playlist_id] = @playlist[:id]
       Track.create!(@track_params)
-      
+
     else
       render json: @playlist.errors, status: :unprocessable_entity
     end
