@@ -38,10 +38,14 @@ class PlaylistsController < ApplicationController
 
       puts "track params are: #{@track_params}"
 
-    Track.create!(@track_params)
+
 
     if @playlist.save
       render json: @playlist, status: 200
+      @track_params[:playlist_id] = @playlist[:id]
+      puts " heres playlist.id #{@playlist[:id]}"
+      puts " heres new track_params #{@track_params}"
+      Track.create!(@track_params)
     else
       render json: @playlist.errors, status: :unprocessable_entity
     end
