@@ -8,10 +8,6 @@ class TracksController < ApplicationController
     render json: @tracks
   end
 
-  # GET /tracks/1
-  def show
-    render json: @track
-  end
 
   # POST /tracks
   def create

@@ -10,12 +10,25 @@ class PlaylistsController < ApplicationController
 
   # GET /playlists/1
   def show
-    render json: @playlist
+    render json: @playlist.to_json(include: :tracks)
   end
 
   # POST /playlists
   def create
     @playlist = Playlist.new(playlist_params)
+
+    seed_track = params[:seed_track]
+    containing_album = params[:seed_album]
+
+    Track.create({
+      spotify_id: seed_track.id,
+      playlist_id: @playlist.id,
+      name: seed_track.name,
+      artist: containing_album.artist,
+      image: containing_album.images[0].url,
+      album_name: containing_album.name,
+      album_id: containing_album.id,
+      })
 
     if @playlist.save
       render json: @playlist, status: 200
@@ -46,6 +59,6 @@ class PlaylistsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def playlist_params
-      params.require(:playlist).permit(:id, :user_id, :playlist_name, :playlist_img)
+      params.require(:playlist).permit(:id, :user_id, :playlist_name, :playlist_img, :seed_track, :seed_album)
     end
 end

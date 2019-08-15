@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  resources :tracks
-  resources :playlists
-  resources :songs
+  resources :playlists do
+    resources :tracks
+  end
+
   resources :users, only: [:create, :update, :destroy]
   resources :search, only: [:show]
   resources :albums, only: [:show]
