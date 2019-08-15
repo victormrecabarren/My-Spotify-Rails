@@ -7183,3 +7183,11 @@ Processing by PlaylistsController#create as HTML
 Completed 200 OK in 17ms (Views: 0.7ms | ActiveRecord: 2.1ms | Allocations: 7794)
 
 
+Started GET "/playlists" for ::1 at 2019-08-15 18:36:25 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (1.5ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.23ms)
+Completed 200 OK in 26ms (Views: 20.8ms | ActiveRecord: 1.5ms | Allocations: 6690)
+
+

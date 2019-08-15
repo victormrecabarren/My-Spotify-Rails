@@ -17,7 +17,7 @@ class TracksController < ApplicationController
   def create
     @track = Track.new(track_params)
 
-    @track[:playlist_id] = params[:playlist_id]
+
 
     if @track.save
       render json: @track, status: 200
