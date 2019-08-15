@@ -31,7 +31,7 @@ class PlaylistsController < ApplicationController
       playlist_id: @playlist[:id],
       name: seed_track[:name],
       artist: containing_album[:artist],
-      image: containing_album.[:images][0][:url],
+      image: containing_album[:images][0][:url],
       album_name: containing_album[:name],
       album_id: containing_album[:id],
       })
