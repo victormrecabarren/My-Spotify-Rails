@@ -25,8 +25,7 @@ class PlaylistsController < ApplicationController
 
     puts "var seedtrack = #{@seed_track}"
     puts "seedtrack.id is #{@seed_track[:id]}"
-
-    Track.create!({
+    @track_params = {
       spotify_id: @seed_track[:id],
       playlist_id: @playlist[:id],
       name: @seed_track[:name],
@@ -34,7 +33,11 @@ class PlaylistsController < ApplicationController
       image: @containing_album[:images][0][:url],
       album_name: @containing_album[:name],
       album_id: @containing_album[:id],
-      })
+      }
+
+      puts "track params are: #{@track_params}"
+
+    Track.create!(@track_params)
 
     if @playlist.save
       render json: @playlist, status: 200
