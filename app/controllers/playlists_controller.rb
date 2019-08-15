@@ -20,7 +20,7 @@ class PlaylistsController < ApplicationController
     seed_track = params[:seed_track]
     containing_album = params[:seed_album]
 
-    Track.create({
+    Track.new({
       spotify_id: seed_track.id,
       playlist_id: @playlist.id,
       name: seed_track.name,
