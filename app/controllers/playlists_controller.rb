@@ -23,9 +23,6 @@ class PlaylistsController < ApplicationController
     @seed_track = params[:playlist][:seed_track]
     @containing_album = params[:playlist][:seed_album]
 
-    puts "newplaylist is #{@playlist}"
-
-    puts "playlist id is #{@playlist[:id]} "
     @track_params = {
       spotify_id: @seed_track[:id],
       playlist_id: @playlist[:id],
@@ -36,16 +33,12 @@ class PlaylistsController < ApplicationController
       album_id: @containing_album[:id],
       }
 
-      puts "track params are: #{@track_params}"
-
-
-
     if @playlist.save
       render json: @playlist, status: 200
+
       @track_params[:playlist_id] = @playlist[:id]
-      puts " heres playlist.id #{@playlist[:id]}"
-      puts " heres new track_params #{@track_params}"
       Track.create!(@track_params)
+      
     else
       render json: @playlist.errors, status: :unprocessable_entity
     end
