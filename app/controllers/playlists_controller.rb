@@ -16,18 +16,16 @@ class PlaylistsController < ApplicationController
   # POST /playlists
   def create
 
-    puts "heres seedtrack #{params[:seed_track]}"
 
     @playlist = Playlist.new(playlist_params)
 
-    puts "heres seedtrack again #{params[:playlist][:seed_track]}"
 
-    # seed_track = params[:seed_track]
-    # containing_album = params[:seed_album]
+    seed_track = params[:playlist][:seed_track]
+    containing_album = params[:playlist][:seed_album]
 
     Track.new({
       spotify_id: seed_track.id,
-      # playlist_id: @playlist.id,
+      playlist_id: @playlist.id,
       name: seed_track.name,
       artist: containing_album.artist,
       image: containing_album.images[0].url,
