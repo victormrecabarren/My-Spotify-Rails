@@ -18,7 +18,7 @@ class PlaylistsController < ApplicationController
 
     puts "heres seedtrack #{params[:seed_track]}"
 
-    # @playlist = Playlist.new(playlist_params)
+    @playlist = Playlist.new(playlist_params)
 
     puts "heres seedtrack again #{params[:playlist][:seed_track]}"
 
