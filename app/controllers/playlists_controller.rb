@@ -18,7 +18,7 @@ class PlaylistsController < ApplicationController
 
     puts "heres seedtrack #{params[:seed_track]}"
 
-    @playlist = Playlist.new(playlist_params)
+    # @playlist = Playlist.new(playlist_params)
 
     puts "heres seedtrack again #{params[:seed_track]}"
 
@@ -64,6 +64,7 @@ class PlaylistsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def playlist_params
-      params.require(:playlist).permit(:id, :user_id, :playlist_name, :playlist_img)
+
+      params.require(:playlist).permit(:id, :user_id, :playlist_name, :playlist_img, :seed_track, :seed_album)
     end
 end
