@@ -26,7 +26,7 @@ class PlaylistsController < ApplicationController
     puts "var seedtrack = #{seed_track}"
     puts "seedtrack.id is #{seed_track[:id]}"
 
-    Track.new({
+    Track.create({
       spotify_id: seed_track[:id],
       playlist_id: @playlist[:id],
       name: seed_track[:name],
