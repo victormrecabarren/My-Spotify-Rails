@@ -17,8 +17,6 @@ class TracksController < ApplicationController
   def create
     @track = Track.new(track_params)
 
-
-
     if @track.save
       render json: @track, status: 200
     else

@@ -7191,3 +7191,776 @@ Processing by PlaylistsController#index as */*
 Completed 200 OK in 26ms (Views: 20.8ms | ActiveRecord: 1.5ms | Allocations: 6690)
 
 
+Started GET "/playlists" for ::1 at 2019-08-15 18:37:35 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.6ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.61ms)
+Completed 200 OK in 29ms (Views: 13.8ms | ActiveRecord: 9.3ms | Allocations: 6812)
+
+
+Started GET "/playlists" for ::1 at 2019-08-15 18:37:37 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.4ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.89ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.4ms | Allocations: 1390)
+
+
+  [1m[36mPlaylist Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "playlists" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPlaylist Load (0.3ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  [1m[36mPlaylist Load (0.3ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mPlaylist Destroy (2.3ms)[0m  [1m[31mDELETE FROM "playlists" WHERE "playlists"."id" = $1[0m  [["id", 17]]
+  [1m[36mPlaylist Load (0.4ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mPlaylist Destroy (1.5ms)[0m  [1m[31mDELETE FROM "playlists" WHERE "playlists"."id" = $1[0m  [["id", 18]]
+  [1m[36mPlaylist Load (0.4ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mPlaylist Destroy (0.9ms)[0m  [1m[31mDELETE FROM "playlists" WHERE "playlists"."id" = $1[0m  [["id", 19]]
+  [1m[36mPlaylist Load (0.3ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mTrack Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "tracks" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mTrack Destroy (0.6ms)[0m  [1m[31mDELETE FROM "tracks" WHERE "tracks"."id" = $1[0m  [["id", 6]]
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mTrack Destroy (0.7ms)[0m  [1m[31mDELETE FROM "tracks" WHERE "tracks"."id" = $1[0m  [["id", 7]]
+  [1m[36mTrack Load (0.4ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mTrack Destroy (0.7ms)[0m  [1m[31mDELETE FROM "tracks" WHERE "tracks"."id" = $1[0m  [["id", 8]]
+Started GET "/playlists" for ::1 at 2019-08-15 18:39:01 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.9ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.06ms)
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.9ms | Allocations: 1003)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-15 18:39:04 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.61ms)
+Completed 200 OK in 31862ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 16151)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-15 18:39:46 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+Completed 500 Internal Server Error in 66723ms (ActiveRecord: 0.0ms | Allocations: 1743)
+
+
+  
+RestClient::Exceptions::OpenTimeout (Timed out connecting to server):
+  
+app/controllers/AlbumsController.rb:11:in `set_album'
+Started GET "/playlists" for ::1 at 2019-08-15 18:41:55 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.6ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.18ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.6ms | Allocations: 1002)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-15 18:41:58 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.76ms)
+Completed 200 OK in 2266ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 16073)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-15 18:42:01 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.67ms)
+Completed 200 OK in 1573ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 9568)
+
+
+Started POST "/playlists" for ::1 at 2019-08-15 18:42:11 -0400
+Processing by PlaylistsController#create as HTML
+  Parameters: {"playlist"=>{"playlist_name"=>"channel orange", "seed_track"=>{"spotify_id"=>"0GAE689kVy7sFT2QWZH1Xa", "track_number"=>1, "name"=>"Start", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"00:45", "explicit"=>false}, "seed_album"=>{"id"=>"392p3shh2jkxUxY2VHvlH8", "name"=>"channel ORANGE", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "release"=>"2012", "total_tracks"=>17, "tracks"=>[{"spotify_id"=>"0GAE689kVy7sFT2QWZH1Xa", "track_number"=>1, "name"=>"Start", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"00:45", "explicit"=>false}, {"spotify_id"=>"7DfFc7a6Rwfi3YQMRbDMau", "track_number"=>2, "name"=>"Thinkin Bout You", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"03:20", "explicit"=>false}, {"spotify_id"=>"6jypaMkKsoc5npsVzxhksl", "track_number"=>3, "name"=>"Fertilizer", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"00:39", "explicit"=>true}, {"spotify_id"=>"1HwbgJAU9PZ7YbzKgVgoIF", "track_number"=>4, "name"=>"Sierra Leone", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"02:28", "explicit"=>true}, {"spotify_id"=>"6MEDfjHxnVNcYmHe3mM6L2", "track_number"=>5, "name"=>"Sweet Life", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"04:22", "explicit"=>true}, {"spotify_id"=>"3iW3y326xuRpNVXzOMBZy5", "track_number"=>6, "name"=>"Not Just Money", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"00:59", "explicit"=>false}, {"spotify_id"=>"0725YWm6Z0TpZ6wrNk64Eb", "track_number"=>7, "name"=>"Super Rich Kids", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"05:04", "explicit"=>true}, {"spotify_id"=>"2ohegz9maxzroKBu9YhcCM", "track_number"=>8, "name"=>"Pilot Jones", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"03:04", "explicit"=>false}, {"spotify_id"=>"5lcyIeEfwZTs8Ajw3kdF7P", "track_number"=>9, "name"=>"Crack Rock", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"03:44", "explicit"=>true}, {"spotify_id"=>"4QhWbupniDd44EDtnh2bFJ", "track_number"=>10, "name"=>"Pyramids", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"09:52", "explicit"=>true}, {"spotify_id"=>"3GZD6HmiNUhxXYf8Gch723", "track_number"=>11, "name"=>"Lost", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"03:54", "explicit"=>true}, {"spotify_id"=>"1VMdwVq0yaTc4DeqSCi7DO", "track_number"=>12, "name"=>"White", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"01:16", "explicit"=>false}, {"spotify_id"=>"0msrDPXxZpts4FRnoX0bFr", "track_number"=>13, "name"=>"Monks", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"03:20", "explicit"=>true}, {"spotify_id"=>"2pMPWE7PJH1PizfgGRMnR9", "track_number"=>14, "name"=>"Bad Religion", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"02:55", "explicit"=>false}, {"spotify_id"=>"1fOkmYW3ZFkkjIdOZSf596", "track_number"=>15, "name"=>"Pink Matter", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"04:28", "explicit"=>true}, {"spotify_id"=>"4YZbVct8l9MnAVIROnLQdx", "track_number"=>16, "name"=>"Forrest Gump", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"03:14", "explicit"=>false}, {"spotify_id"=>"05tFLPSXJ1BbqIXy4Jeqfh", "track_number"=>17, "name"=>"End", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"02:14", "explicit"=>false}], "type"=>"album"}}}
+[31mUnpermitted parameters: :seed_track, :seed_album[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/playlists_controller.rb:39:in `create'
+  [1m[36mPlaylist Create (0.7ms)[0m  [1m[32mINSERT INTO "playlists" ("playlist_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["playlist_name", "channel orange"], ["created_at", "2019-08-15 22:42:11.440512"], ["updated_at", "2019-08-15 22:42:11.440512"]]
+  ↳ app/controllers/playlists_controller.rb:39:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/playlists_controller.rb:39:in `create'
+[active_model_serializers] Rendered PlaylistSerializer with ActiveModelSerializers::Adapter::Attributes (0.31ms)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/playlists_controller.rb:43:in `create'
+  [1m[36mPlaylist Load (0.3ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/playlists_controller.rb:43:in `create'
+  [1m[36mTrack Create (1.2ms)[0m  [1m[32mINSERT INTO "tracks" ("spotify_id", "playlist_id", "name", "artist", "images", "album_name", "created_at", "updated_at", "album_id", "duration", "explicit", "track_number") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["spotify_id", "0GAE689kVy7sFT2QWZH1Xa"], ["playlist_id", 20], ["name", "Start"], ["artist", "Frank Ocean"], ["images", "[<ActionController::Parameters {\"height\"=>640, \"url\"=>\"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed\", \"width\"=>640} permitted: false>, <ActionController::Parameters {\"height\"=>300, \"url\"=>\"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb\", \"width\"=>300} permitted: false>, <ActionController::Parameters {\"height\"=>64, \"url\"=>\"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c\", \"width\"=>64} permitted: false>]"], ["album_name", "channel ORANGE"], ["created_at", "2019-08-15 22:42:11.477886"], ["updated_at", "2019-08-15 22:42:11.477886"], ["album_id", "392p3shh2jkxUxY2VHvlH8"], ["duration", "00:45"], ["explicit", "f"], ["track_number", "1"]]
+  ↳ app/controllers/playlists_controller.rb:43:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/playlists_controller.rb:43:in `create'
+Completed 200 OK in 89ms (Views: 0.8ms | ActiveRecord: 8.2ms | Allocations: 21096)
+
+
+Started POST "/playlists/[object%20Object]/tracks" for ::1 at 2019-08-15 18:42:19 -0400
+Processing by TracksController#create as HTML
+  Parameters: {"track"=>{"spotify_id"=>"7DfFc7a6Rwfi3YQMRbDMau", "track_number"=>2, "name"=>"Thinkin Bout You", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"03:20", "explicit"=>false, "playlist_id"=>20}, "playlist_id"=>"[object Object]"}
+[31mUnpermitted parameter: :images[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tracks_controller.rb:22:in `create'
+  [1m[36mPlaylist Load (0.4ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/tracks_controller.rb:22:in `create'
+  [1m[36mTrack Create (0.4ms)[0m  [1m[32mINSERT INTO "tracks" ("spotify_id", "playlist_id", "name", "artist", "album_name", "created_at", "updated_at", "album_id", "duration", "explicit", "track_number") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["spotify_id", "7DfFc7a6Rwfi3YQMRbDMau"], ["playlist_id", 20], ["name", "Thinkin Bout You"], ["artist", "Frank Ocean"], ["album_name", "channel ORANGE"], ["created_at", "2019-08-15 22:42:19.683013"], ["updated_at", "2019-08-15 22:42:19.683013"], ["album_id", "392p3shh2jkxUxY2VHvlH8"], ["duration", "03:20"], ["explicit", "f"], ["track_number", "2"]]
+  ↳ app/controllers/tracks_controller.rb:22:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tracks_controller.rb:22:in `create'
+[active_model_serializers] Rendered TrackSerializer with ActiveModelSerializers::Adapter::Attributes (16.0ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 1.5ms | Allocations: 8177)
+
+
+  
+NoMethodError (undefined method `image' for #<Track:0x00007fececf92e60>
+Did you mean?  images
+               images?
+               images=):
+  
+app/controllers/tracks_controller.rb:23:in `create'
+  [1m[36mTrack Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "tracks" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  [1m[36mPlaylist Load (0.4ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", 20], ["LIMIT", 11]]
+  [1m[36mPlaylist Load (0.4ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mTrack Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "tracks" WHERE "tracks"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", 20], ["LIMIT", 1]]
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."playlist_id" = $1[0m  [["playlist_id", 20]]
+Started POST "/playlists/[object%20Object]/tracks" for ::1 at 2019-08-15 18:43:54 -0400
+Processing by TracksController#create as HTML
+  Parameters: {"track"=>{"spotify_id"=>"6jypaMkKsoc5npsVzxhksl", "track_number"=>3, "name"=>"Fertilizer", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"00:39", "explicit"=>true, "playlist_id"=>20}, "playlist_id"=>"[object Object]"}
+[31mUnpermitted parameter: :images[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tracks_controller.rb:22:in `create'
+  [1m[36mPlaylist Load (0.4ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/tracks_controller.rb:22:in `create'
+  [1m[36mTrack Create (0.4ms)[0m  [1m[32mINSERT INTO "tracks" ("spotify_id", "playlist_id", "name", "artist", "album_name", "created_at", "updated_at", "album_id", "duration", "explicit", "track_number") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["spotify_id", "6jypaMkKsoc5npsVzxhksl"], ["playlist_id", 20], ["name", "Fertilizer"], ["artist", "Frank Ocean"], ["album_name", "channel ORANGE"], ["created_at", "2019-08-15 22:43:54.908896"], ["updated_at", "2019-08-15 22:43:54.908896"], ["album_id", "392p3shh2jkxUxY2VHvlH8"], ["duration", "00:39"], ["explicit", "t"], ["track_number", "3"]]
+  ↳ app/controllers/tracks_controller.rb:22:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tracks_controller.rb:22:in `create'
+[active_model_serializers] Rendered TrackSerializer with ActiveModelSerializers::Adapter::Attributes (7.0ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.7ms | Allocations: 7746)
+
+
+  
+NoMethodError (undefined method `image' for #<Track:0x00007fececfaaab0>
+Did you mean?  images
+               images?
+               images=):
+  
+app/controllers/tracks_controller.rb:23:in `create'
+  [1m[36mPlaylist Load (0.5ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mTrack Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "tracks" WHERE "tracks"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", 20], ["LIMIT", 1]]
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."playlist_id" = $1[0m  [["playlist_id", 20]]
+  [1m[36mPlaylist Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "playlists" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPlaylist Load (0.4ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+Started GET "/playlists" for ::1 at 2019-08-15 18:46:20 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.2ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.51ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 1132)
+
+
+Started GET "/playlists" for ::1 at 2019-08-15 18:46:27 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.3ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.7ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.3ms | Allocations: 1133)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-15 18:46:29 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.86ms)
+Completed 200 OK in 6284ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 16538)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-15 18:46:37 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.53ms)
+Completed 200 OK in 1031ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 9409)
+
+
+Started POST "/playlists/[object%20Object]/tracks" for ::1 at 2019-08-15 18:46:46 -0400
+Processing by TracksController#create as HTML
+  Parameters: {"track"=>{"spotify_id"=>"0GAE689kVy7sFT2QWZH1Xa", "track_number"=>1, "name"=>"Start", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"00:45", "explicit"=>false, "playlist_id"=>20}, "playlist_id"=>"[object Object]"}
+[31mUnpermitted parameter: :images[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tracks_controller.rb:22:in `create'
+  [1m[36mPlaylist Load (0.4ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/tracks_controller.rb:22:in `create'
+  [1m[36mTrack Create (0.4ms)[0m  [1m[32mINSERT INTO "tracks" ("spotify_id", "playlist_id", "name", "artist", "album_name", "created_at", "updated_at", "album_id", "duration", "explicit", "track_number") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["spotify_id", "0GAE689kVy7sFT2QWZH1Xa"], ["playlist_id", 20], ["name", "Start"], ["artist", "Frank Ocean"], ["album_name", "channel ORANGE"], ["created_at", "2019-08-15 22:46:46.913036"], ["updated_at", "2019-08-15 22:46:46.913036"], ["album_id", "392p3shh2jkxUxY2VHvlH8"], ["duration", "00:45"], ["explicit", "f"], ["track_number", "1"]]
+  ↳ app/controllers/tracks_controller.rb:22:in `create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tracks_controller.rb:22:in `create'
+[active_model_serializers] Rendered TrackSerializer with ActiveModelSerializers::Adapter::Attributes (8.65ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.8ms | Allocations: 7746)
+
+
+  
+NoMethodError (undefined method `image' for #<Track:0x00007fecec313810>
+Did you mean?  images
+               images?
+               images=):
+  
+app/controllers/tracks_controller.rb:23:in `create'
+  [1m[36mTrack Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "tracks" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  [1m[36mPlaylist Load (0.3ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPlaylist Load (0.3ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mTrack Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "tracks" WHERE "tracks"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", 20], ["LIMIT", 1]]
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."playlist_id" = $1[0m  [["playlist_id", 20]]
+Started GET "/playlists" for ::1 at 2019-08-15 18:49:08 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.7ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.4ms)
+Completed 200 OK in 30ms (Views: 26.2ms | ActiveRecord: 0.7ms | Allocations: 1132)
+
+
+Started GET "/playlists" for ::1 at 2019-08-15 18:49:12 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.4ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.81ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.4ms | Allocations: 1133)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-15 18:49:20 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+Completed 500 Internal Server Error in 1045ms (ActiveRecord: 0.0ms | Allocations: 1558)
+
+
+  
+SocketError (Failed to open TCP connection to api.spotify.com:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/search_controller.rb:19:in `set_search'
+Started GET "/playlists" for ::1 at 2019-08-15 18:49:24 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.6ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.57ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.6ms | Allocations: 1132)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-15 18:49:28 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms | Allocations: 1552)
+
+
+  
+SocketError (Failed to open TCP connection to api.spotify.com:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/search_controller.rb:19:in `set_search'
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from block in <module:ContentHelper> at /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0.rc2/app/helpers/action_text/content_helper.rb:7)
+Started GET "/playlists" for ::1 at 2019-08-15 18:50:37 -0400
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.6ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.69ms)
+Completed 200 OK in 30ms (Views: 18.6ms | ActiveRecord: 4.5ms | Allocations: 9795)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-15 18:50:39 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+Completed 500 Internal Server Error in 29877ms (ActiveRecord: 0.0ms | Allocations: 2337)
+
+
+  
+OpenSSL::SSL::SSLError (SSL_connect SYSCALL returned=5 errno=0 state=unknown state):
+  
+app/controllers/search_controller.rb:19:in `set_search'
+Started GET "/search/channel%20orange" for ::1 at 2019-08-15 18:51:45 -0400
+Processing by SearchController#show as HTML
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.51ms)
+Completed 200 OK in 789ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 21323)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-08-15 18:51:46 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/playlists" for ::1 at 2019-08-15 18:51:54 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.6ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.42ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.6ms | Allocations: 1186)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-15 18:51:58 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.87ms)
+Completed 200 OK in 1885ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 16489)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-15 18:52:05 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.26ms)
+Completed 200 OK in 2610ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 9703)
+
+
+Started POST "/playlists/20/tracks" for ::1 at 2019-08-15 18:52:15 -0400
+Processing by TracksController#create as HTML
+  Parameters: {"track"=>{"spotify_id"=>"0GAE689kVy7sFT2QWZH1Xa", "track_number"=>1, "name"=>"Start", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"00:45", "explicit"=>false, "playlist_id"=>20}, "playlist_id"=>"20"}
+[31mUnpermitted parameter: :images[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tracks_controller.rb:22:in `create'
+  [1m[36mPlaylist Load (0.3ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/tracks_controller.rb:22:in `create'
+  [1m[36mTrack Create (1.2ms)[0m  [1m[32mINSERT INTO "tracks" ("spotify_id", "playlist_id", "name", "artist", "album_name", "created_at", "updated_at", "album_id", "duration", "explicit", "track_number") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["spotify_id", "0GAE689kVy7sFT2QWZH1Xa"], ["playlist_id", 20], ["name", "Start"], ["artist", "Frank Ocean"], ["album_name", "channel ORANGE"], ["created_at", "2019-08-15 22:52:15.913428"], ["updated_at", "2019-08-15 22:52:15.913428"], ["album_id", "392p3shh2jkxUxY2VHvlH8"], ["duration", "00:45"], ["explicit", "f"], ["track_number", "1"]]
+  ↳ app/controllers/tracks_controller.rb:22:in `create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tracks_controller.rb:22:in `create'
+[active_model_serializers] Rendered TrackSerializer with ActiveModelSerializers::Adapter::Attributes (8.37ms)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 6.4ms | Allocations: 21725)
+
+
+  
+NoMethodError (undefined method `image' for #<Track:0x00007fda7f7230b0>
+Did you mean?  images
+               images?
+               images=):
+  
+app/controllers/tracks_controller.rb:23:in `create'
+Started GET "/playlists" for ::1 at 2019-08-15 18:55:33 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (1.2ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.44ms)
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 1.2ms | Allocations: 1147)
+
+
+Started GET "/playlists" for ::1 at 2019-08-15 18:55:37 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.5ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.59ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.5ms | Allocations: 1133)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-15 18:55:39 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (11.51ms)
+Completed 200 OK in 18471ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 16148)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-15 18:56:10 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+Completed 500 Internal Server Error in 60036ms (ActiveRecord: 0.0ms | Allocations: 1768)
+
+
+  
+RestClient::Exceptions::OpenTimeout (Timed out connecting to server):
+  
+app/controllers/AlbumsController.rb:11:in `set_album'
+Started GET "/playlists" for ::1 at 2019-08-15 18:57:17 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.3ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.24ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1132)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-15 18:57:21 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+Completed 500 Internal Server Error in 15028ms (ActiveRecord: 0.0ms | Allocations: 1639)
+
+
+  
+SocketError (Failed to open TCP connection to api.spotify.com:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/search_controller.rb:19:in `set_search'
+Started GET "/search/channel%20orange" for ::1 at 2019-08-15 18:57:36 -0400
+Processing by SearchController#show as HTML
+  Parameters: {"id"=>"channel orange"}
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms | Allocations: 1547)
+
+
+  
+SocketError (Failed to open TCP connection to api.spotify.com:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/search_controller.rb:19:in `set_search'
+Started GET "/favicon.ico" for ::1 at 2019-08-15 18:57:37 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/playlists" for ::1 at 2019-08-15 18:57:38 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.3ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.3ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1132)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-15 18:57:46 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 1554)
+
+
+  
+SocketError (Failed to open TCP connection to api.spotify.com:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/search_controller.rb:19:in `set_search'
+Started GET "/playlists" for ::1 at 2019-08-15 18:57:49 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.3ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.3ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1132)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-15 18:57:54 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 1547)
+
+
+  
+SocketError (Failed to open TCP connection to api.spotify.com:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/search_controller.rb:19:in `set_search'
+Started GET "/playlists" for ::1 at 2019-08-15 18:57:56 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.2ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.25ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1132)
+
+
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from block in <module:ContentHelper> at /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0.rc2/app/helpers/action_text/content_helper.rb:7)
+Started GET "/search/channel%20orange" for ::1 at 2019-08-15 18:58:11 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms | Allocations: 2258)
+
+
+  
+SocketError (Failed to open TCP connection to api.spotify.com:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/search_controller.rb:19:in `set_search'
+Started GET "/playlists" for ::1 at 2019-08-15 18:58:13 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.9ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.77ms)
+Completed 200 OK in 56ms (Views: 40.1ms | ActiveRecord: 9.5ms | Allocations: 9792)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-15 18:58:17 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 1550)
+
+
+  
+SocketError (Failed to open TCP connection to api.spotify.com:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/search_controller.rb:19:in `set_search'
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from block in <module:ContentHelper> at /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0.rc2/app/helpers/action_text/content_helper.rb:7)
+Started GET "/playlists" for ::1 at 2019-08-15 18:59:06 -0400
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (2.3ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.82ms)
+Completed 200 OK in 40ms (Views: 23.0ms | ActiveRecord: 11.6ms | Allocations: 9791)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-15 18:59:08 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+Completed 500 Internal Server Error in 15034ms (ActiveRecord: 0.0ms | Allocations: 2286)
+
+
+  
+SocketError (Failed to open TCP connection to api.spotify.com:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/search_controller.rb:19:in `set_search'
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from block in <module:ContentHelper> at /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0.rc2/app/helpers/action_text/content_helper.rb:7)
+Started GET "/playlists" for ::1 at 2019-08-15 19:00:05 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.4ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.58ms)
+Completed 200 OK in 28ms (Views: 17.5ms | ActiveRecord: 4.3ms | Allocations: 9790)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-15 19:00:12 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 2247)
+
+
+  
+SocketError (Failed to open TCP connection to api.spotify.com:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/search_controller.rb:19:in `set_search'
+Started GET "/playlists" for ::1 at 2019-08-15 19:00:14 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.3ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.34ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.3ms | Allocations: 1148)
+
+
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from block in <module:ContentHelper> at /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0.rc2/app/helpers/action_text/content_helper.rb:7)
+Started GET "/playlists" for ::1 at 2019-08-15 19:01:26 -0400
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlaylistsController#index as HTML
+  [1m[36mPlaylist Load (2.4ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.61ms)
+Completed 200 OK in 38ms (Views: 19.6ms | ActiveRecord: 10.1ms | Allocations: 9788)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-08-15 19:01:26 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/playlists/20" for ::1 at 2019-08-15 19:01:34 -0400
+Processing by PlaylistsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mPlaylist Load (0.8ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/playlists_controller.rb:67:in `set_playlist'
+  [1m[36mTrack Load (1.7ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."playlist_id" = $1[0m  [["playlist_id", 20]]
+  ↳ app/controllers/playlists_controller.rb:13:in `show'
+Completed 200 OK in 54ms (Views: 0.6ms | ActiveRecord: 5.5ms | Allocations: 19632)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-15 19:01:40 -0400
+Processing by SearchController#show as HTML
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.44ms)
+Completed 200 OK in 409ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 18805)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-15 19:01:47 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (14.69ms)
+Completed 200 OK in 479ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 16262)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-15 19:01:49 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.79ms)
+Completed 200 OK in 292ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 9705)
+
+
+Started POST "/playlists/20/tracks" for ::1 at 2019-08-15 19:01:54 -0400
+Processing by TracksController#create as HTML
+  Parameters: {"track"=>{"spotify_id"=>"0GAE689kVy7sFT2QWZH1Xa", "track_number"=>1, "name"=>"Start", "artist"=>"Frank Ocean", "images"=>"", "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"00:45", "explicit"=>false, "playlist_id"=>20}, "playlist_id"=>"20"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tracks_controller.rb:22:in `create'
+  [1m[36mPlaylist Load (0.2ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/tracks_controller.rb:22:in `create'
+  [1m[36mTrack Create (3.0ms)[0m  [1m[32mINSERT INTO "tracks" ("spotify_id", "playlist_id", "name", "artist", "images", "album_name", "created_at", "updated_at", "album_id", "duration", "explicit", "track_number") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["spotify_id", "0GAE689kVy7sFT2QWZH1Xa"], ["playlist_id", 20], ["name", "Start"], ["artist", "Frank Ocean"], ["images", ""], ["album_name", "channel ORANGE"], ["created_at", "2019-08-15 23:01:54.104130"], ["updated_at", "2019-08-15 23:01:54.104130"], ["album_id", "392p3shh2jkxUxY2VHvlH8"], ["duration", "00:45"], ["explicit", "f"], ["track_number", "1"]]
+  ↳ app/controllers/tracks_controller.rb:22:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tracks_controller.rb:22:in `create'
+[active_model_serializers] Rendered TrackSerializer with ActiveModelSerializers::Adapter::Attributes (7.48ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 3.9ms | Allocations: 8497)
+
+
+  
+NoMethodError (undefined method `image' for #<Track:0x00007ff091da16f8>
+Did you mean?  images
+               images?
+               images=):
+  
+app/controllers/tracks_controller.rb:23:in `create'
+Started GET "/playlists" for ::1 at 2019-08-15 19:03:29 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.3ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.19ms)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.3ms | Allocations: 1147)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-15 19:03:32 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.73ms)
+Completed 200 OK in 540ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 15747)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-15 19:03:33 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.23ms)
+Completed 200 OK in 6477ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 9716)
+
+
+Started POST "/playlists/20/tracks" for ::1 at 2019-08-15 19:03:43 -0400
+Processing by TracksController#create as HTML
+  Parameters: {"track"=>{"spotify_id"=>"0GAE689kVy7sFT2QWZH1Xa", "track_number"=>1, "name"=>"Start", "artist"=>"Frank Ocean", "images"=>"none", "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"00:45", "explicit"=>false, "playlist_id"=>20}, "playlist_id"=>"20"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tracks_controller.rb:22:in `create'
+  [1m[36mPlaylist Load (0.3ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/tracks_controller.rb:22:in `create'
+  [1m[36mTrack Create (0.4ms)[0m  [1m[32mINSERT INTO "tracks" ("spotify_id", "playlist_id", "name", "artist", "images", "album_name", "created_at", "updated_at", "album_id", "duration", "explicit", "track_number") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["spotify_id", "0GAE689kVy7sFT2QWZH1Xa"], ["playlist_id", 20], ["name", "Start"], ["artist", "Frank Ocean"], ["images", "none"], ["album_name", "channel ORANGE"], ["created_at", "2019-08-15 23:03:43.625036"], ["updated_at", "2019-08-15 23:03:43.625036"], ["album_id", "392p3shh2jkxUxY2VHvlH8"], ["duration", "00:45"], ["explicit", "f"], ["track_number", "1"]]
+  ↳ app/controllers/tracks_controller.rb:22:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tracks_controller.rb:22:in `create'
+[active_model_serializers] Rendered TrackSerializer with ActiveModelSerializers::Adapter::Attributes (7.07ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.2ms | Allocations: 7665)
+
+
+  
+NoMethodError (undefined method `image' for #<Track:0x00007ff08d6bc170>
+Did you mean?  images
+               images?
+               images=):
+  
+app/controllers/tracks_controller.rb:23:in `create'
+Started POST "/playlists/20/tracks" for ::1 at 2019-08-15 19:03:55 -0400
+Processing by TracksController#create as HTML
+  Parameters: {"track"=>{"spotify_id"=>"0GAE689kVy7sFT2QWZH1Xa", "track_number"=>1, "name"=>"Start", "artist"=>"Frank Ocean", "images"=>"none", "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"00:45", "explicit"=>false, "playlist_id"=>20}, "playlist_id"=>"20"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tracks_controller.rb:22:in `create'
+  [1m[36mPlaylist Load (0.6ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/tracks_controller.rb:22:in `create'
+  [1m[36mTrack Create (0.5ms)[0m  [1m[32mINSERT INTO "tracks" ("spotify_id", "playlist_id", "name", "artist", "images", "album_name", "created_at", "updated_at", "album_id", "duration", "explicit", "track_number") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["spotify_id", "0GAE689kVy7sFT2QWZH1Xa"], ["playlist_id", 20], ["name", "Start"], ["artist", "Frank Ocean"], ["images", "none"], ["album_name", "channel ORANGE"], ["created_at", "2019-08-15 23:03:55.931159"], ["updated_at", "2019-08-15 23:03:55.931159"], ["album_id", "392p3shh2jkxUxY2VHvlH8"], ["duration", "00:45"], ["explicit", "f"], ["track_number", "1"]]
+  ↳ app/controllers/tracks_controller.rb:22:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tracks_controller.rb:22:in `create'
+[active_model_serializers] Rendered TrackSerializer with ActiveModelSerializers::Adapter::Attributes (5.66ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.7ms | Allocations: 7684)
+
+
+  
+NoMethodError (undefined method `image' for #<Track:0x00007ff091c57770>
+Did you mean?  images
+               images?
+               images=):
+  
+app/controllers/tracks_controller.rb:23:in `create'
+Started POST "/playlists/20/tracks" for ::1 at 2019-08-15 19:05:23 -0400
+Processing by TracksController#create as HTML
+  Parameters: {"track"=>{"spotify_id"=>"0GAE689kVy7sFT2QWZH1Xa", "track_number"=>1, "name"=>"Start", "artist"=>"Frank Ocean", "images"=>"none", "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"00:45", "explicit"=>false, "playlist_id"=>20}, "playlist_id"=>"20"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tracks_controller.rb:20:in `create'
+  [1m[36mPlaylist Load (0.2ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/tracks_controller.rb:20:in `create'
+  [1m[36mTrack Create (0.3ms)[0m  [1m[32mINSERT INTO "tracks" ("spotify_id", "playlist_id", "name", "artist", "images", "album_name", "created_at", "updated_at", "album_id", "duration", "explicit", "track_number") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["spotify_id", "0GAE689kVy7sFT2QWZH1Xa"], ["playlist_id", 20], ["name", "Start"], ["artist", "Frank Ocean"], ["images", "none"], ["album_name", "channel ORANGE"], ["created_at", "2019-08-15 23:05:23.643243"], ["updated_at", "2019-08-15 23:05:23.643243"], ["album_id", "392p3shh2jkxUxY2VHvlH8"], ["duration", "00:45"], ["explicit", "f"], ["track_number", "1"]]
+  ↳ app/controllers/tracks_controller.rb:20:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tracks_controller.rb:20:in `create'
+[active_model_serializers] Rendered TrackSerializer with ActiveModelSerializers::Adapter::Attributes (7.51ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 8.8ms | Allocations: 22711)
+
+
+  
+NoMethodError (undefined method `image' for #<Track:0x00007ff08e20b530>
+Did you mean?  images
+               images?
+               images=):
+  
+app/controllers/tracks_controller.rb:21:in `create'
+  [1m[36mTrack Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "tracks" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mTrack Destroy (1.0ms)[0m  [1m[31mDELETE FROM "tracks" WHERE "tracks"."id" = $1[0m  [["id", 9]]
+  [1m[36mTrack Load (0.4ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mTrack Destroy (0.6ms)[0m  [1m[31mDELETE FROM "tracks" WHERE "tracks"."id" = $1[0m  [["id", 10]]
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mTrack Destroy (0.6ms)[0m  [1m[31mDELETE FROM "tracks" WHERE "tracks"."id" = $1[0m  [["id", 11]]
+  [1m[36mTrack Load (0.4ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mTrack Destroy (0.7ms)[0m  [1m[31mDELETE FROM "tracks" WHERE "tracks"."id" = $1[0m  [["id", 12]]
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mTrack Destroy (0.7ms)[0m  [1m[31mDELETE FROM "tracks" WHERE "tracks"."id" = $1[0m  [["id", 13]]
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mTrack Destroy (0.7ms)[0m  [1m[31mDELETE FROM "tracks" WHERE "tracks"."id" = $1[0m  [["id", 14]]
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mTrack Destroy (0.6ms)[0m  [1m[31mDELETE FROM "tracks" WHERE "tracks"."id" = $1[0m  [["id", 15]]
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mTrack Destroy (0.6ms)[0m  [1m[31mDELETE FROM "tracks" WHERE "tracks"."id" = $1[0m  [["id", 16]]
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mTrack Destroy (0.6ms)[0m  [1m[31mDELETE FROM "tracks" WHERE "tracks"."id" = $1[0m  [["id", 17]]
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "tracks"[0m
+  [1m[36mPlaylist Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "playlists" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPlaylist Load (0.2ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
