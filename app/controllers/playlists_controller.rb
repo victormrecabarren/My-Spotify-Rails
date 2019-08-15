@@ -15,14 +15,19 @@ class PlaylistsController < ApplicationController
 
   # POST /playlists
   def create
+
+    puts params[:seed_track]
+
     @playlist = Playlist.new(playlist_params)
 
-    seed_track = params[:seed_track]
-    containing_album = params[:seed_album]
+    puts params[:seed_track]
+
+    # seed_track = params[:seed_track]
+    # containing_album = params[:seed_album]
 
     Track.new({
       spotify_id: seed_track.id,
-      playlist_id: @playlist.id,
+      # playlist_id: @playlist.id,
       name: seed_track.name,
       artist: containing_album.artist,
       image: containing_album.images[0].url,
@@ -59,6 +64,6 @@ class PlaylistsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def playlist_params
-      params.require(:playlist).permit(:id, :user_id, :playlist_name, :playlist_img, :seed_track, :seed_album)
+      params.require(:playlist).permit(:id, :user_id, :playlist_name, :playlist_img)
     end
 end
