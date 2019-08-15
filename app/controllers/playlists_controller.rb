@@ -23,8 +23,9 @@ class PlaylistsController < ApplicationController
     @seed_track = params[:playlist][:seed_track]
     @containing_album = params[:playlist][:seed_album]
 
-    puts "var seedtrack = #{@seed_track}"
-    puts "seedtrack.id is #{@seed_track[:id]}"
+    puts "newplaylist is #{@playlist}"
+
+    puts "playlist id is #{@playlist[:id]} "
     @track_params = {
       spotify_id: @seed_track[:id],
       playlist_id: @playlist[:id],
