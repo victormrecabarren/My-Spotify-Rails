@@ -28,7 +28,7 @@ class PlaylistsController < ApplicationController
       track_number: @seed_track[:track_number],
       name: @seed_track[:name],
       artist: @seed_track[:artist],
-      images: @seed_track[:images],
+      images: 'none',
       album_name: @seed_track[:album_name],
       album_id: @seed_track[:album_id],
       duration: @seed_track[:duration],

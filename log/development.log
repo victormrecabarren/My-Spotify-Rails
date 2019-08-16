@@ -9624,3 +9624,321 @@ Completed 500 Internal Server Error in 138ms (ActiveRecord: 0.0ms | Allocations:
 NoMethodError (undefined method `type' for nil:NilClass):
   
 app/controllers/search_controller.rb:23:in `set_search'
+Started GET "/playlists" for ::1 at 2019-08-16 19:30:16 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (1.0ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.18ms)
+Completed 200 OK in 29ms (Views: 24.6ms | ActiveRecord: 1.0ms | Allocations: 1400)
+
+
+Started GET "/search/yeezus" for ::1 at 2019-08-16 19:38:26 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"yeezus"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (10.96ms)
+Completed 200 OK in 251ms (Views: 14.5ms | ActiveRecord: 0.0ms | Allocations: 25942)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 19:40:10 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (1.6ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.93ms)
+Completed 200 OK in 12ms (Views: 8.9ms | ActiveRecord: 1.6ms | Allocations: 1372)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 19:40:12 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.74ms)
+Completed 200 OK in 195ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 16078)
+
+
+Started GET "/search/frank%20ocean" for ::1 at 2019-08-16 19:40:17 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"frank ocean"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (7.39ms)
+Completed 200 OK in 198ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 25144)
+
+
+Started GET "/search/ye" for ::1 at 2019-08-16 19:40:22 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"ye"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (9.66ms)
+Completed 200 OK in 232ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 30742)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 19:40:35 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (9.77ms)
+Completed 200 OK in 171ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 16088)
+
+
+Started GET "/search/kanye%20west" for ::1 at 2019-08-16 19:40:40 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"kanye west"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (7.3ms)
+Completed 200 OK in 213ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 27850)
+
+
+Started GET "/search/yeezys" for ::1 at 2019-08-16 19:41:43 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"yeezys"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (11.74ms)
+Completed 200 OK in 236ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 25019)
+
+
+Started GET "/search/ye" for ::1 at 2019-08-16 19:43:41 -0400
+Processing by SearchController#show as HTML
+  Parameters: {"id"=>"ye"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (20.38ms)
+Completed 200 OK in 306ms (Views: 22.0ms | ActiveRecord: 0.0ms | Allocations: 30931)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-08-16 19:43:41 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/playlists" for ::1 at 2019-08-16 19:48:05 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (1.0ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.63ms)
+Completed 200 OK in 30ms (Views: 23.2ms | ActiveRecord: 1.0ms | Allocations: 1259)
+
+
+Started GET "/search/yeezus" for ::1 at 2019-08-16 19:48:08 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"yeezus"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (16.54ms)
+Completed 200 OK in 243ms (Views: 17.1ms | ActiveRecord: 0.0ms | Allocations: 25825)
+
+
+Started GET "/albums/7D2NdGvBHIavgLhmcwhluK" for ::1 at 2019-08-16 19:48:13 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"7D2NdGvBHIavgLhmcwhluK"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.47ms)
+Completed 200 OK in 150ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 7494)
+
+
+Started POST "/playlists/20/tracks" for ::1 at 2019-08-16 19:48:19 -0400
+Processing by TracksController#create as HTML
+  Parameters: {"track"=>{"spotify_id"=>"1gqkRc9WtOpnGIqxf2Hvzr", "track_number"=>1, "name"=>"On Sight", "artist"=>"Kanye West", "images"=>"none", "album_name"=>"Yeezus", "album_id"=>"7D2NdGvBHIavgLhmcwhluK", "duration"=>"02:36", "explicit"=>true, "playlist_id"=>20}, "playlist_id"=>"20"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tracks_controller.rb:20:in `create'
+  [1m[36mPlaylist Load (1.9ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/tracks_controller.rb:20:in `create'
+  [1m[36mTrack Create (12.2ms)[0m  [1m[32mINSERT INTO "tracks" ("spotify_id", "playlist_id", "name", "artist", "images", "album_name", "created_at", "updated_at", "album_id", "duration", "explicit", "track_number") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["spotify_id", "1gqkRc9WtOpnGIqxf2Hvzr"], ["playlist_id", 20], ["name", "On Sight"], ["artist", "Kanye West"], ["images", "none"], ["album_name", "Yeezus"], ["created_at", "2019-08-16 23:48:19.322225"], ["updated_at", "2019-08-16 23:48:19.322225"], ["album_id", "7D2NdGvBHIavgLhmcwhluK"], ["duration", "02:36"], ["explicit", "t"], ["track_number", "1"]]
+  ↳ app/controllers/tracks_controller.rb:20:in `create'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tracks_controller.rb:20:in `create'
+[active_model_serializers] Rendered TrackSerializer with ActiveModelSerializers::Adapter::Attributes (7.75ms)
+Completed 500 Internal Server Error in 84ms (ActiveRecord: 26.1ms | Allocations: 21728)
+
+
+  
+NoMethodError (undefined method `image' for #<Track:0x00007fa3bd9089c8>
+Did you mean?  images
+               images?
+               images=):
+  
+app/controllers/tracks_controller.rb:21:in `create'
+Started GET "/playlists" for ::1 at 2019-08-16 19:50:30 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.3ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.55ms)
+Completed 200 OK in 16ms (Views: 8.1ms | ActiveRecord: 4.9ms | Allocations: 6681)
+
+
+Started GET "/search/yeezys" for ::1 at 2019-08-16 19:50:38 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"yeezys"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.72ms)
+Completed 200 OK in 163ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 24780)
+
+
+Started GET "/search/yeezus" for ::1 at 2019-08-16 19:50:51 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"yeezus"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.11ms)
+Completed 200 OK in 177ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 26111)
+
+
+Started GET "/search/kanye%20west" for ::1 at 2019-08-16 19:51:24 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"kanye west"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.71ms)
+Completed 200 OK in 201ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 27733)
+
+
+Started GET "/search/kid%20cudi" for ::1 at 2019-08-16 19:51:40 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"kid cudi"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.31ms)
+Completed 200 OK in 196ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 24825)
+
+
+Started GET "/search/kid%20cudi" for ::1 at 2019-08-16 19:52:22 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"kid cudi"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (11.57ms)
+Completed 200 OK in 205ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 24993)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 19:52:26 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (1.4ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.7ms)
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 1.4ms | Allocations: 1260)
+
+
+  [1m[36mPlaylist Destroy (2.2ms)[0m  [1m[31mDELETE FROM "playlists"[0m
+  [1m[36mTrack Destroy (0.6ms)[0m  [1m[31mDELETE FROM "tracks"[0m
+Started GET "/playlists" for ::1 at 2019-08-16 19:52:39 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.7ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.11ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.7ms | Allocations: 1015)
+
+
+Started GET "/search/kid%20cudi" for ::1 at 2019-08-16 19:52:43 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"kid cudi"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (8.37ms)
+Completed 200 OK in 180ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 24473)
+
+
+Started GET "/albums/47y3PbX8oIDCkYAFylCJz0" for ::1 at 2019-08-16 19:52:45 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"47y3PbX8oIDCkYAFylCJz0"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (19.01ms)
+Completed 200 OK in 172ms (Views: 19.6ms | ActiveRecord: 0.0ms | Allocations: 8952)
+
+
+Started POST "/playlists" for ::1 at 2019-08-16 19:52:49 -0400
+Processing by PlaylistsController#create as HTML
+  Parameters: {"playlist"=>{"playlist_name"=>"dreams", "seed_track"=>{"spotify_id"=>"3Xm9jQDd8my7ui5DUtEHYf", "track_number"=>1, "name"=>"In My Dreams (Cudder Anthem)", "artist"=>"Kid Cudi", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/909a9df9e1b6398cd489abeb77a42ad887570d7e", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/db0368213aea8c9a2b45110e14daddabcb777f3e", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/b8c4603814249c5fe081c1cf14a5d42b00d47b9b", "width"=>64}], "album_name"=>"Man On The Moon: The End Of Day", "album_id"=>"47y3PbX8oIDCkYAFylCJz0", "duration"=>"03:19", "explicit"=>true}, "seed_album"=>{"id"=>"47y3PbX8oIDCkYAFylCJz0", "name"=>"Man On The Moon: The End Of Day", "artist"=>"Kid Cudi", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/909a9df9e1b6398cd489abeb77a42ad887570d7e", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/db0368213aea8c9a2b45110e14daddabcb777f3e", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/b8c4603814249c5fe081c1cf14a5d42b00d47b9b", "width"=>64}], "release"=>"2009", "total_tracks"=>15, "tracks"=>[{"spotify_id"=>"3Xm9jQDd8my7ui5DUtEHYf", "track_number"=>1, "name"=>"In My Dreams (Cudder Anthem)", "artist"=>"Kid Cudi", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/909a9df9e1b6398cd489abeb77a42ad887570d7e", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/db0368213aea8c9a2b45110e14daddabcb777f3e", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/b8c4603814249c5fe081c1cf14a5d42b00d47b9b", "width"=>64}], "album_name"=>"Man On The Moon: The End Of Day", "album_id"=>"47y3PbX8oIDCkYAFylCJz0", "duration"=>"03:19", "explicit"=>true}, {"spotify_id"=>"1cdC9TCqyLwAlsw3fVJaJS", "track_number"=>2, "name"=>"Soundtrack 2 My Life", "artist"=>"Kid Cudi", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/909a9df9e1b6398cd489abeb77a42ad887570d7e", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/db0368213aea8c9a2b45110e14daddabcb777f3e", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/b8c4603814249c5fe081c1cf14a5d42b00d47b9b", "width"=>64}], "album_name"=>"Man On The Moon: The End Of Day", "album_id"=>"47y3PbX8oIDCkYAFylCJz0", "duration"=>"03:55", "explicit"=>true}, {"spotify_id"=>"77fcAXl6MsFPtFJG45zTUE", "track_number"=>3, "name"=>"Simple As...", "artist"=>"Kid Cudi", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/909a9df9e1b6398cd489abeb77a42ad887570d7e", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/db0368213aea8c9a2b45110e14daddabcb777f3e", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/b8c4603814249c5fe081c1cf14a5d42b00d47b9b", "width"=>64}], "album_name"=>"Man On The Moon: The End Of Day", "album_id"=>"47y3PbX8oIDCkYAFylCJz0", "duration"=>"02:31", "explicit"=>true}, {"spotify_id"=>"2EHEQx2avP1fNBLJf5UGYy", "track_number"=>4, "name"=>"Solo Dolo (Nightmare)", "artist"=>"Kid Cudi", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/909a9df9e1b6398cd489abeb77a42ad887570d7e", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/db0368213aea8c9a2b45110e14daddabcb777f3e", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/b8c4603814249c5fe081c1cf14a5d42b00d47b9b", "width"=>64}], "album_name"=>"Man On The Moon: The End Of Day", "album_id"=>"47y3PbX8oIDCkYAFylCJz0", "duration"=>"04:26", "explicit"=>true}, {"spotify_id"=>"246SdvVYT3yrZPXU7NSWwy", "track_number"=>5, "name"=>"Heart Of A Lion (Kid Cudi Theme Music)", "artist"=>"Kid Cudi", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/909a9df9e1b6398cd489abeb77a42ad887570d7e", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/db0368213aea8c9a2b45110e14daddabcb777f3e", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/b8c4603814249c5fe081c1cf14a5d42b00d47b9b", "width"=>64}], "album_name"=>"Man On The Moon: The End Of Day", "album_id"=>"47y3PbX8oIDCkYAFylCJz0", "duration"=>"04:21", "explicit"=>true}, {"spotify_id"=>"018Lv2nSK23HDJeqmvw1A8", "track_number"=>6, "name"=>"My World", "artist"=>"Kid Cudi", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/909a9df9e1b6398cd489abeb77a42ad887570d7e", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/db0368213aea8c9a2b45110e14daddabcb777f3e", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/b8c4603814249c5fe081c1cf14a5d42b00d47b9b", "width"=>64}], "album_name"=>"Man On The Moon: The End Of Day", "album_id"=>"47y3PbX8oIDCkYAFylCJz0", "duration"=>"04:03", "explicit"=>true}, {"spotify_id"=>"5FEXPoPnzueFJQCPRIrC3c", "track_number"=>7, "name"=>"Day 'N' Nite (nightmare)", "artist"=>"Kid Cudi", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/909a9df9e1b6398cd489abeb77a42ad887570d7e", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/db0368213aea8c9a2b45110e14daddabcb777f3e", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/b8c4603814249c5fe081c1cf14a5d42b00d47b9b", "width"=>64}], "album_name"=>"Man On The Moon: The End Of Day", "album_id"=>"47y3PbX8oIDCkYAFylCJz0", "duration"=>"03:41", "explicit"=>false}, {"spotify_id"=>"6gyaXDZS45uIpyETSTibQ9", "track_number"=>8, "name"=>"Sky Might Fall", "artist"=>"Kid Cudi", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/909a9df9e1b6398cd489abeb77a42ad887570d7e", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/db0368213aea8c9a2b45110e14daddabcb777f3e", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/b8c4603814249c5fe081c1cf14a5d42b00d47b9b", "width"=>64}], "album_name"=>"Man On The Moon: The End Of Day", "album_id"=>"47y3PbX8oIDCkYAFylCJz0", "duration"=>"03:40", "explicit"=>true}, {"spotify_id"=>"6Bs8KdjRAuv3rzCIdchXwu", "track_number"=>9, "name"=>"Enter Galactic (Love Connection Part I)", "artist"=>"Kid Cudi", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/909a9df9e1b6398cd489abeb77a42ad887570d7e", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/db0368213aea8c9a2b45110e14daddabcb777f3e", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/b8c4603814249c5fe081c1cf14a5d42b00d47b9b", "width"=>64}], "album_name"=>"Man On The Moon: The End Of Day", "album_id"=>"47y3PbX8oIDCkYAFylCJz0", "duration"=>"04:20", "explicit"=>true}, {"spotify_id"=>"1Zt4rVKL5cazgN54WibvLt", "track_number"=>10, "name"=>"Alive (Nightmare)", "artist"=>"Kid Cudi", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/909a9df9e1b6398cd489abeb77a42ad887570d7e", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/db0368213aea8c9a2b45110e14daddabcb777f3e", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/b8c4603814249c5fe081c1cf14a5d42b00d47b9b", "width"=>64}], "album_name"=>"Man On The Moon: The End Of Day", "album_id"=>"47y3PbX8oIDCkYAFylCJz0", "duration"=>"04:06", "explicit"=>true}, {"spotify_id"=>"6P9uVc2SxCOAiextf4udxk", "track_number"=>11, "name"=>"Cudi Zone", "artist"=>"Kid Cudi", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/909a9df9e1b6398cd489abeb77a42ad887570d7e", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/db0368213aea8c9a2b45110e14daddabcb777f3e", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/b8c4603814249c5fe081c1cf14a5d42b00d47b9b", "width"=>64}], "album_name"=>"Man On The Moon: The End Of Day", "album_id"=>"47y3PbX8oIDCkYAFylCJz0", "duration"=>"04:19", "explicit"=>true}, {"spotify_id"=>"5bkhrGvabAPrugPUm7DvsD", "track_number"=>12, "name"=>"Make Her Say", "artist"=>"Kid Cudi", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/909a9df9e1b6398cd489abeb77a42ad887570d7e", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/db0368213aea8c9a2b45110e14daddabcb777f3e", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/b8c4603814249c5fe081c1cf14a5d42b00d47b9b", "width"=>64}], "album_name"=>"Man On The Moon: The End Of Day", "album_id"=>"47y3PbX8oIDCkYAFylCJz0", "duration"=>"03:36", "explicit"=>true}, {"spotify_id"=>"5iSEsR6NKjlC9SrIJkyL3k", "track_number"=>13, "name"=>"Pursuit Of Happiness (Nightmare)", "artist"=>"Kid Cudi", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/909a9df9e1b6398cd489abeb77a42ad887570d7e", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/db0368213aea8c9a2b45110e14daddabcb777f3e", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/b8c4603814249c5fe081c1cf14a5d42b00d47b9b", "width"=>64}], "album_name"=>"Man On The Moon: The End Of Day", "album_id"=>"47y3PbX8oIDCkYAFylCJz0", "duration"=>"04:55", "explicit"=>true}, {"spotify_id"=>"2FPmKIojpcMK86GJBx9KJI", "track_number"=>14, "name"=>"Hyyerr", "artist"=>"Kid Cudi", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/909a9df9e1b6398cd489abeb77a42ad887570d7e", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/db0368213aea8c9a2b45110e14daddabcb777f3e", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/b8c4603814249c5fe081c1cf14a5d42b00d47b9b", "width"=>64}], "album_name"=>"Man On The Moon: The End Of Day", "album_id"=>"47y3PbX8oIDCkYAFylCJz0", "duration"=>"03:32", "explicit"=>true}, {"spotify_id"=>"6MWH4pJQ5QYjidX2A2KECd", "track_number"=>15, "name"=>"Up Up & Away", "artist"=>"Kid Cudi", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/909a9df9e1b6398cd489abeb77a42ad887570d7e", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/db0368213aea8c9a2b45110e14daddabcb777f3e", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/b8c4603814249c5fe081c1cf14a5d42b00d47b9b", "width"=>64}], "album_name"=>"Man On The Moon: The End Of Day", "album_id"=>"47y3PbX8oIDCkYAFylCJz0", "duration"=>"03:47", "explicit"=>true}], "type"=>"album"}}}
+[31mUnpermitted parameters: :seed_track, :seed_album[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/playlists_controller.rb:39:in `create'
+  [1m[36mPlaylist Create (1.9ms)[0m  [1m[32mINSERT INTO "playlists" ("playlist_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["playlist_name", "dreams"], ["created_at", "2019-08-16 23:52:49.855707"], ["updated_at", "2019-08-16 23:52:49.855707"]]
+  ↳ app/controllers/playlists_controller.rb:39:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/playlists_controller.rb:39:in `create'
+[active_model_serializers] Rendered PlaylistSerializer with ActiveModelSerializers::Adapter::Attributes (0.35ms)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/playlists_controller.rb:43:in `create'
+  [1m[36mPlaylist Load (0.2ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/playlists_controller.rb:43:in `create'
+  [1m[36mTrack Create (0.5ms)[0m  [1m[32mINSERT INTO "tracks" ("spotify_id", "playlist_id", "name", "artist", "images", "album_name", "created_at", "updated_at", "album_id", "duration", "explicit", "track_number") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["spotify_id", "3Xm9jQDd8my7ui5DUtEHYf"], ["playlist_id", 22], ["name", "In My Dreams (Cudder Anthem)"], ["artist", "Kid Cudi"], ["images", "none"], ["album_name", "Man On The Moon: The End Of Day"], ["created_at", "2019-08-16 23:52:49.884423"], ["updated_at", "2019-08-16 23:52:49.884423"], ["album_id", "47y3PbX8oIDCkYAFylCJz0"], ["duration", "03:19"], ["explicit", "t"], ["track_number", "1"]]
+  ↳ app/controllers/playlists_controller.rb:43:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/playlists_controller.rb:43:in `create'
+Completed 200 OK in 35ms (Views: 0.8ms | ActiveRecord: 7.1ms | Allocations: 17826)
+
+
+  [1m[36mPlaylist Load (0.3ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPlaylist Load (0.3ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mTrack Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "tracks" WHERE "tracks"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", 22], ["LIMIT", 1]]
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."playlist_id" = $1[0m  [["playlist_id", 22]]
+Started POST "/playlists/22/tracks" for ::1 at 2019-08-16 19:53:26 -0400
+Processing by TracksController#create as HTML
+  Parameters: {"track"=>{"spotify_id"=>"1cdC9TCqyLwAlsw3fVJaJS", "track_number"=>2, "name"=>"Soundtrack 2 My Life", "artist"=>"Kid Cudi", "images"=>"none", "album_name"=>"Man On The Moon: The End Of Day", "album_id"=>"47y3PbX8oIDCkYAFylCJz0", "duration"=>"03:55", "explicit"=>true, "playlist_id"=>22}, "playlist_id"=>"22"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tracks_controller.rb:20:in `create'
+  [1m[36mPlaylist Load (0.3ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/tracks_controller.rb:20:in `create'
+  [1m[36mTrack Create (0.3ms)[0m  [1m[32mINSERT INTO "tracks" ("spotify_id", "playlist_id", "name", "artist", "images", "album_name", "created_at", "updated_at", "album_id", "duration", "explicit", "track_number") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["spotify_id", "1cdC9TCqyLwAlsw3fVJaJS"], ["playlist_id", 22], ["name", "Soundtrack 2 My Life"], ["artist", "Kid Cudi"], ["images", "none"], ["album_name", "Man On The Moon: The End Of Day"], ["created_at", "2019-08-16 23:53:26.430417"], ["updated_at", "2019-08-16 23:53:26.430417"], ["album_id", "47y3PbX8oIDCkYAFylCJz0"], ["duration", "03:55"], ["explicit", "t"], ["track_number", "2"]]
+  ↳ app/controllers/tracks_controller.rb:20:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tracks_controller.rb:20:in `create'
+[active_model_serializers] Rendered TrackSerializer with ActiveModelSerializers::Adapter::Attributes (7.39ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.1ms | Allocations: 8085)
+
+
+  
+NoMethodError (undefined method `image' for #<Track:0x00007fa3bcc749c8>
+Did you mean?  images
+               images?
+               images=):
+  
+app/controllers/tracks_controller.rb:21:in `create'
+  [1m[36mPlaylist Load (0.8ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mTrack Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "tracks" WHERE "tracks"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", 22], ["LIMIT", 1]]
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."playlist_id" = $1[0m  [["playlist_id", 22]]
+Started GET "/playlists" for ::1 at 2019-08-16 19:55:22 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (1.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.03ms)
+Completed 200 OK in 42ms (Views: 33.1ms | ActiveRecord: 1.1ms | Allocations: 1132)
+
+
+Started GET "/search/kid%20cudi" for ::1 at 2019-08-16 19:55:29 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"kid cudi"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (9.8ms)
+Completed 200 OK in 228ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 24875)
+
+
+Started GET "/albums/47y3PbX8oIDCkYAFylCJz0" for ::1 at 2019-08-16 19:55:30 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"47y3PbX8oIDCkYAFylCJz0"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.64ms)
+Completed 200 OK in 170ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 9066)
+
+
+Started POST "/playlists/22/tracks" for ::1 at 2019-08-16 19:55:41 -0400
+Processing by TracksController#create as HTML
+  Parameters: {"track"=>{"spotify_id"=>"3Xm9jQDd8my7ui5DUtEHYf", "track_number"=>1, "name"=>"In My Dreams (Cudder Anthem)", "artist"=>"Kid Cudi", "images"=>"none", "album_name"=>"Man On The Moon: The End Of Day", "album_id"=>"47y3PbX8oIDCkYAFylCJz0", "duration"=>"03:19", "explicit"=>true, "playlist_id"=>22}, "playlist_id"=>"22"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tracks_controller.rb:20:in `create'
+  [1m[36mPlaylist Load (0.3ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/tracks_controller.rb:20:in `create'
+  [1m[36mTrack Create (0.5ms)[0m  [1m[32mINSERT INTO "tracks" ("spotify_id", "playlist_id", "name", "artist", "images", "album_name", "created_at", "updated_at", "album_id", "duration", "explicit", "track_number") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["spotify_id", "3Xm9jQDd8my7ui5DUtEHYf"], ["playlist_id", 22], ["name", "In My Dreams (Cudder Anthem)"], ["artist", "Kid Cudi"], ["images", "none"], ["album_name", "Man On The Moon: The End Of Day"], ["created_at", "2019-08-16 23:55:41.356487"], ["updated_at", "2019-08-16 23:55:41.356487"], ["album_id", "47y3PbX8oIDCkYAFylCJz0"], ["duration", "03:19"], ["explicit", "t"], ["track_number", "1"]]
+  ↳ app/controllers/tracks_controller.rb:20:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tracks_controller.rb:20:in `create'
+[active_model_serializers] Rendered TrackSerializer with ActiveModelSerializers::Adapter::Attributes (7.76ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 1.3ms | Allocations: 7668)
+
+
+  
+NoMethodError (undefined method `image' for #<Track:0x00007fa3bd962a68>
+Did you mean?  images
+               images?
+               images=):
+  
+app/controllers/tracks_controller.rb:21:in `create'
+  [1m[36mPlaylist Load (2.3ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mTrack Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "tracks" WHERE "tracks"."playlist_id" = $1 LIMIT $2[0m  [["playlist_id", 22], ["LIMIT", 1]]
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."playlist_id" = $1[0m  [["playlist_id", 22]]
+  [1m[36mTrack Destroy (1.0ms)[0m  [1m[31mDELETE FROM "tracks"[0m
+  [1m[36mPlaylist Destroy (1.4ms)[0m  [1m[31mDELETE FROM "playlists"[0m
