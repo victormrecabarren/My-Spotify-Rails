@@ -7964,3 +7964,1663 @@ app/controllers/tracks_controller.rb:21:in `create'
   [1m[35m (3.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "tracks"[0m
   [1m[36mPlaylist Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "playlists" LIMIT $1[0m  [["LIMIT", 1]]
   [1m[36mPlaylist Load (0.2ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from block in <module:ContentHelper> at /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0.rc2/app/helpers/action_text/content_helper.rb:7)
+Started GET "/playlists" for ::1 at 2019-08-16 07:26:50 -0400
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (1.1.4) lib/pg.rb:56:in `initialize'
+pg (1.1.4) lib/pg.rb:56:in `new'
+pg (1.1.4) lib/pg.rb:56:in `connect'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/postgresql_adapter.rb:46:in `postgresql_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:923:in `checkout_new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:902:in `try_to_checkout_new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:863:in `acquire_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:587:in `checkout'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1106:in `retrieve_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_handling.rb:231:in `retrieve_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_handling.rb:199:in `connection'
+activerecord (6.0.0.rc2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/playlists" for ::1 at 2019-08-16 07:36:35 -0400
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (1.1.4) lib/pg.rb:56:in `initialize'
+pg (1.1.4) lib/pg.rb:56:in `new'
+pg (1.1.4) lib/pg.rb:56:in `connect'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/postgresql_adapter.rb:46:in `postgresql_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:923:in `checkout_new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:902:in `try_to_checkout_new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:863:in `acquire_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:587:in `checkout'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1106:in `retrieve_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_handling.rb:231:in `retrieve_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_handling.rb:199:in `connection'
+activerecord (6.0.0.rc2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/playlists" for ::1 at 2019-08-16 07:37:53 -0400
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (1.1.4) lib/pg.rb:56:in `initialize'
+pg (1.1.4) lib/pg.rb:56:in `new'
+pg (1.1.4) lib/pg.rb:56:in `connect'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/postgresql_adapter.rb:46:in `postgresql_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:923:in `checkout_new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:902:in `try_to_checkout_new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:863:in `acquire_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:587:in `checkout'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1106:in `retrieve_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_handling.rb:231:in `retrieve_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_handling.rb:199:in `connection'
+activerecord (6.0.0.rc2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/playlists" for ::1 at 2019-08-16 07:39:10 -0400
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (1.1.4) lib/pg.rb:56:in `initialize'
+pg (1.1.4) lib/pg.rb:56:in `new'
+pg (1.1.4) lib/pg.rb:56:in `connect'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/postgresql_adapter.rb:46:in `postgresql_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:923:in `checkout_new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:902:in `try_to_checkout_new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:863:in `acquire_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:587:in `checkout'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1106:in `retrieve_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_handling.rb:231:in `retrieve_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_handling.rb:199:in `connection'
+activerecord (6.0.0.rc2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/playlists" for ::1 at 2019-08-16 07:45:33 -0400
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (1.1.4) lib/pg.rb:56:in `initialize'
+pg (1.1.4) lib/pg.rb:56:in `new'
+pg (1.1.4) lib/pg.rb:56:in `connect'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/postgresql_adapter.rb:46:in `postgresql_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:923:in `checkout_new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:902:in `try_to_checkout_new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:863:in `acquire_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:587:in `checkout'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1106:in `retrieve_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_handling.rb:231:in `retrieve_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_handling.rb:199:in `connection'
+activerecord (6.0.0.rc2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/playlists" for ::1 at 2019-08-16 07:46:50 -0400
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (1.1.4) lib/pg.rb:56:in `initialize'
+pg (1.1.4) lib/pg.rb:56:in `new'
+pg (1.1.4) lib/pg.rb:56:in `connect'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/postgresql_adapter.rb:46:in `postgresql_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:923:in `checkout_new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:902:in `try_to_checkout_new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:863:in `acquire_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:587:in `checkout'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1106:in `retrieve_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_handling.rb:231:in `retrieve_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_handling.rb:199:in `connection'
+activerecord (6.0.0.rc2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/playlists" for ::1 at 2019-08-16 07:47:05 -0400
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (1.1.4) lib/pg.rb:56:in `initialize'
+pg (1.1.4) lib/pg.rb:56:in `new'
+pg (1.1.4) lib/pg.rb:56:in `connect'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/postgresql_adapter.rb:46:in `postgresql_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:923:in `checkout_new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:902:in `try_to_checkout_new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:863:in `acquire_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:587:in `checkout'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1106:in `retrieve_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_handling.rb:231:in `retrieve_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_handling.rb:199:in `connection'
+activerecord (6.0.0.rc2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 07:47:13 -0400
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (1.1.4) lib/pg.rb:56:in `initialize'
+pg (1.1.4) lib/pg.rb:56:in `new'
+pg (1.1.4) lib/pg.rb:56:in `connect'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/postgresql_adapter.rb:46:in `postgresql_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:923:in `checkout_new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:902:in `try_to_checkout_new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:863:in `acquire_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:587:in `checkout'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1106:in `retrieve_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_handling.rb:231:in `retrieve_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_handling.rb:199:in `connection'
+activerecord (6.0.0.rc2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from block in <module:ContentHelper> at /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0.rc2/app/helpers/action_text/content_helper.rb:7)
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 07:47:47 -0400
+  [1m[35m (6.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SearchController#show as HTML
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (22.92ms)
+Completed 200 OK in 2890ms (Views: 30.1ms | ActiveRecord: 0.0ms | Allocations: 19151)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 07:47:57 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (7.0ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.66ms)
+Completed 200 OK in 99ms (Views: 56.7ms | ActiveRecord: 28.6ms | Allocations: 9704)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 07:47:59 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (21.5ms)
+Completed 200 OK in 2790ms (Views: 22.8ms | ActiveRecord: 0.0ms | Allocations: 16316)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 07:51:29 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (47.31ms)
+Completed 200 OK in 10979ms (Views: 48.3ms | ActiveRecord: 0.0ms | Allocations: 16452)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-16 07:51:42 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (9.21ms)
+Completed 200 OK in 2473ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 9545)
+
+
+Started GET "/search/" for ::1 at 2019-08-16 07:51:55 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/search"):
+  
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/search/kanye%20west" for ::1 at 2019-08-16 07:52:14 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"kanye west"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (35.42ms)
+Completed 200 OK in 7818ms (Views: 36.6ms | ActiveRecord: 0.0ms | Allocations: 28027)
+
+
+Started GET "/search/kanye%20west" for ::1 at 2019-08-16 07:52:27 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"kanye west"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (14.87ms)
+Completed 200 OK in 5418ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 27839)
+
+
+Started GET "/search/kanye%20west" for ::1 at 2019-08-16 07:53:00 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"kanye west"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (11.81ms)
+Completed 200 OK in 954ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 28071)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 07:54:54 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (2.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (46.9ms)
+Completed 200 OK in 197ms (Views: 142.8ms | ActiveRecord: 2.1ms | Allocations: 1149)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 07:55:52 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.6ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.7ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.6ms | Allocations: 1133)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 07:56:25 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (1.9ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.7ms)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 1.9ms | Allocations: 1146)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 07:56:44 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (1.4ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.06ms)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 1.4ms | Allocations: 1146)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 07:56:47 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (10.52ms)
+Completed 200 OK in 371ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 15788)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 07:58:09 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.9ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.7ms)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.9ms | Allocations: 1133)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 07:58:13 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (11.39ms)
+Completed 200 OK in 542ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 16187)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 07:58:25 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (9.87ms)
+Completed 200 OK in 278ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 16368)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-16 07:58:27 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.78ms)
+Completed 200 OK in 338ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 9524)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 12:40:52 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (3.4ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.13ms)
+Completed 200 OK in 34ms (Views: 25.5ms | ActiveRecord: 3.4ms | Allocations: 1232)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 12:40:54 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.13ms)
+Completed 200 OK in 551ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 24763)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 12:40:58 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (7.09ms)
+Completed 200 OK in 114ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 15957)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-16 12:40:59 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (7.58ms)
+Completed 200 OK in 115ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 9607)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 12:42:25 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.5ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.49ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.5ms | Allocations: 1133)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 12:43:49 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (1.8ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.91ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 1.8ms | Allocations: 1134)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 12:43:56 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.5ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.66ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.5ms | Allocations: 1133)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 12:43:58 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (13.49ms)
+Completed 200 OK in 147ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 15926)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 12:44:01 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.89ms)
+Completed 200 OK in 146ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 16299)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-16 12:44:02 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.67ms)
+Completed 200 OK in 133ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 9418)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-16 12:44:03 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.43ms)
+Completed 200 OK in 111ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 9637)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 12:44:36 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (3.6ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.37ms)
+Completed 200 OK in 19ms (Views: 14.6ms | ActiveRecord: 3.6ms | Allocations: 1133)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 12:44:38 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.4ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.39ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.4ms | Allocations: 1133)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 12:44:41 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.92ms)
+Completed 200 OK in 169ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 16212)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 12:44:44 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.95ms)
+Completed 200 OK in 118ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 16165)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-16 12:44:45 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.03ms)
+Completed 200 OK in 110ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 9376)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 12:44:52 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (15.53ms)
+Completed 200 OK in 126ms (Views: 15.9ms | ActiveRecord: 0.0ms | Allocations: 16548)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-16 12:44:53 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.02ms)
+Completed 200 OK in 148ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 9588)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-16 12:44:58 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.19ms)
+Completed 200 OK in 109ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 9439)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 12:45:08 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.45ms)
+Completed 200 OK in 128ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 16429)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-16 12:45:11 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (13.26ms)
+Completed 200 OK in 129ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 9739)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 12:51:11 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.9ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.08ms)
+Completed 200 OK in 14ms (Views: 11.6ms | ActiveRecord: 0.9ms | Allocations: 1233)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 12:51:18 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.52ms)
+Completed 200 OK in 165ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 15773)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 12:51:21 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.34ms)
+Completed 200 OK in 126ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 16277)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-16 12:51:22 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.29ms)
+Completed 200 OK in 1808ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 9654)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 12:53:28 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.7ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.42ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.7ms | Allocations: 1133)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 12:53:36 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.3ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.37ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms | Allocations: 1133)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 12:53:41 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (8.82ms)
+Completed 200 OK in 138ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 16145)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 12:53:47 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (11.97ms)
+Completed 200 OK in 155ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 16426)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 12:54:32 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (11.35ms)
+Completed 200 OK in 123ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 16207)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-16 12:54:33 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.59ms)
+Completed 200 OK in 185ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 9401)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 12:56:40 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.7ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.02ms)
+Completed 200 OK in 18ms (Views: 14.9ms | ActiveRecord: 0.7ms | Allocations: 1133)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 12:56:44 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (15.9ms)
+Completed 200 OK in 147ms (Views: 16.6ms | ActiveRecord: 0.0ms | Allocations: 16190)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 12:56:47 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (11.62ms)
+Completed 200 OK in 146ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 16297)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-16 12:56:48 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.65ms)
+Completed 200 OK in 103ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 9677)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 12:58:08 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (24.37ms)
+Completed 200 OK in 162ms (Views: 24.8ms | ActiveRecord: 0.0ms | Allocations: 16039)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-16 12:59:25 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.08ms)
+Completed 200 OK in 114ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 9420)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-16 12:59:29 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (8.91ms)
+Completed 200 OK in 431ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 9657)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 12:59:48 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (9.49ms)
+Completed 200 OK in 124ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 16277)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-16 12:59:49 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.96ms)
+Completed 200 OK in 106ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 9692)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 13:00:37 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (1.0ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.33ms)
+Completed 200 OK in 32ms (Views: 24.0ms | ActiveRecord: 1.0ms | Allocations: 1133)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 13:01:03 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.4ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.55ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms | Allocations: 1133)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 13:02:02 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.4ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.62ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.4ms | Allocations: 1133)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 13:02:14 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.7ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.34ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.7ms | Allocations: 1133)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 13:11:34 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.6ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.35ms)
+Completed 200 OK in 23ms (Views: 18.1ms | ActiveRecord: 0.6ms | Allocations: 1234)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 13:11:38 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.69ms)
+Completed 200 OK in 214ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 16309)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 13:13:48 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.4ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.49ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.4ms | Allocations: 1133)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 13:13:51 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (7.55ms)
+Completed 200 OK in 173ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 15877)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-16 13:13:52 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.65ms)
+Completed 200 OK in 104ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 9586)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-16 13:14:17 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.47ms)
+Completed 200 OK in 117ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 9503)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 13:14:26 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.91ms)
+Completed 200 OK in 140ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 16026)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-16 13:14:29 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (9.96ms)
+Completed 200 OK in 136ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 9319)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 13:17:04 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (1.4ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.58ms)
+Completed 200 OK in 65ms (Views: 27.3ms | ActiveRecord: 1.4ms | Allocations: 1133)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 13:17:09 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (30.17ms)
+Completed 200 OK in 192ms (Views: 31.0ms | ActiveRecord: 0.0ms | Allocations: 16208)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-16 13:17:10 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.61ms)
+Completed 200 OK in 124ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 9619)
+
+
+Started POST "/playlists/20/tracks" for ::1 at 2019-08-16 13:17:16 -0400
+Processing by TracksController#create as HTML
+  Parameters: {"track"=>{"spotify_id"=>"0GAE689kVy7sFT2QWZH1Xa", "track_number"=>1, "name"=>"Start", "artist"=>"Frank Ocean", "images"=>"none", "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"00:45", "explicit"=>false, "playlist_id"=>20}, "playlist_id"=>"20"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tracks_controller.rb:20:in `create'
+  [1m[36mPlaylist Load (2.4ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/tracks_controller.rb:20:in `create'
+  [1m[36mTrack Create (12.9ms)[0m  [1m[32mINSERT INTO "tracks" ("spotify_id", "playlist_id", "name", "artist", "images", "album_name", "created_at", "updated_at", "album_id", "duration", "explicit", "track_number") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["spotify_id", "0GAE689kVy7sFT2QWZH1Xa"], ["playlist_id", 20], ["name", "Start"], ["artist", "Frank Ocean"], ["images", "none"], ["album_name", "channel ORANGE"], ["created_at", "2019-08-16 17:17:17.222434"], ["updated_at", "2019-08-16 17:17:17.222434"], ["album_id", "392p3shh2jkxUxY2VHvlH8"], ["duration", "00:45"], ["explicit", "f"], ["track_number", "1"]]
+  ↳ app/controllers/tracks_controller.rb:20:in `create'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tracks_controller.rb:20:in `create'
+[active_model_serializers] Rendered TrackSerializer with ActiveModelSerializers::Adapter::Attributes (8.53ms)
+Completed 500 Internal Server Error in 163ms (ActiveRecord: 66.8ms | Allocations: 21664)
+
+
+  
+NoMethodError (undefined method `image' for #<Track:0x00007fbe71688760>
+Did you mean?  images
+               images=
+               images?):
+  
+app/controllers/tracks_controller.rb:21:in `create'
+Started POST "/playlists" for ::1 at 2019-08-16 13:17:20 -0400
+Processing by PlaylistsController#create as HTML
+  Parameters: {"playlist"=>{"playlist_name"=>"new one", "seed_track"=>{"spotify_id"=>"0GAE689kVy7sFT2QWZH1Xa", "track_number"=>1, "name"=>"Start", "artist"=>"Frank Ocean", "images"=>"none", "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"00:45", "explicit"=>false, "playlist_id"=>20}, "seed_album"=>{"id"=>"392p3shh2jkxUxY2VHvlH8", "name"=>"channel ORANGE", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "release"=>"2012", "total_tracks"=>17, "tracks"=>[{"spotify_id"=>"0GAE689kVy7sFT2QWZH1Xa", "track_number"=>1, "name"=>"Start", "artist"=>"Frank Ocean", "images"=>"none", "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"00:45", "explicit"=>false, "playlist_id"=>20}, {"spotify_id"=>"7DfFc7a6Rwfi3YQMRbDMau", "track_number"=>2, "name"=>"Thinkin Bout You", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"03:20", "explicit"=>false}, {"spotify_id"=>"6jypaMkKsoc5npsVzxhksl", "track_number"=>3, "name"=>"Fertilizer", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"00:39", "explicit"=>true}, {"spotify_id"=>"1HwbgJAU9PZ7YbzKgVgoIF", "track_number"=>4, "name"=>"Sierra Leone", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"02:28", "explicit"=>true}, {"spotify_id"=>"6MEDfjHxnVNcYmHe3mM6L2", "track_number"=>5, "name"=>"Sweet Life", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"04:22", "explicit"=>true}, {"spotify_id"=>"3iW3y326xuRpNVXzOMBZy5", "track_number"=>6, "name"=>"Not Just Money", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"00:59", "explicit"=>false}, {"spotify_id"=>"0725YWm6Z0TpZ6wrNk64Eb", "track_number"=>7, "name"=>"Super Rich Kids", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"05:04", "explicit"=>true}, {"spotify_id"=>"2ohegz9maxzroKBu9YhcCM", "track_number"=>8, "name"=>"Pilot Jones", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"03:04", "explicit"=>false}, {"spotify_id"=>"5lcyIeEfwZTs8Ajw3kdF7P", "track_number"=>9, "name"=>"Crack Rock", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"03:44", "explicit"=>true}, {"spotify_id"=>"4QhWbupniDd44EDtnh2bFJ", "track_number"=>10, "name"=>"Pyramids", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"09:52", "explicit"=>true}, {"spotify_id"=>"3GZD6HmiNUhxXYf8Gch723", "track_number"=>11, "name"=>"Lost", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"03:54", "explicit"=>true}, {"spotify_id"=>"1VMdwVq0yaTc4DeqSCi7DO", "track_number"=>12, "name"=>"White", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"01:16", "explicit"=>false}, {"spotify_id"=>"0msrDPXxZpts4FRnoX0bFr", "track_number"=>13, "name"=>"Monks", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"03:20", "explicit"=>true}, {"spotify_id"=>"2pMPWE7PJH1PizfgGRMnR9", "track_number"=>14, "name"=>"Bad Religion", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"02:55", "explicit"=>false}, {"spotify_id"=>"1fOkmYW3ZFkkjIdOZSf596", "track_number"=>15, "name"=>"Pink Matter", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"04:28", "explicit"=>true}, {"spotify_id"=>"4YZbVct8l9MnAVIROnLQdx", "track_number"=>16, "name"=>"Forrest Gump", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"03:14", "explicit"=>false}, {"spotify_id"=>"05tFLPSXJ1BbqIXy4Jeqfh", "track_number"=>17, "name"=>"End", "artist"=>"Frank Ocean", "images"=>[{"height"=>640, "url"=>"https://i.scdn.co/image/a809b53f724dab8416e399bda6c0fc2a16ab75ed", "width"=>640}, {"height"=>300, "url"=>"https://i.scdn.co/image/6ec300639127e22c7ebbfb2d57df9f87ef17d5cb", "width"=>300}, {"height"=>64, "url"=>"https://i.scdn.co/image/68ca5e4ab3a73d641e31b0f7c64f5ccd4ad2fa2c", "width"=>64}], "album_name"=>"channel ORANGE", "album_id"=>"392p3shh2jkxUxY2VHvlH8", "duration"=>"02:14", "explicit"=>false}], "type"=>"album"}}}
+[31mUnpermitted parameters: :seed_track, :seed_album[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/playlists_controller.rb:39:in `create'
+  [1m[36mPlaylist Create (2.9ms)[0m  [1m[32mINSERT INTO "playlists" ("playlist_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["playlist_name", "new one"], ["created_at", "2019-08-16 17:17:20.714725"], ["updated_at", "2019-08-16 17:17:20.714725"]]
+  ↳ app/controllers/playlists_controller.rb:39:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/playlists_controller.rb:39:in `create'
+[active_model_serializers] Rendered PlaylistSerializer with ActiveModelSerializers::Adapter::Attributes (0.32ms)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/playlists_controller.rb:43:in `create'
+  [1m[36mPlaylist Load (0.3ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/playlists_controller.rb:43:in `create'
+  [1m[36mTrack Create (0.3ms)[0m  [1m[32mINSERT INTO "tracks" ("spotify_id", "playlist_id", "name", "artist", "images", "album_name", "created_at", "updated_at", "album_id", "duration", "explicit", "track_number") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["spotify_id", "0GAE689kVy7sFT2QWZH1Xa"], ["playlist_id", 21], ["name", "Start"], ["artist", "Frank Ocean"], ["images", "none"], ["album_name", "channel ORANGE"], ["created_at", "2019-08-16 17:17:20.726611"], ["updated_at", "2019-08-16 17:17:20.726611"], ["album_id", "392p3shh2jkxUxY2VHvlH8"], ["duration", "00:45"], ["explicit", "f"], ["track_number", "1"]]
+  ↳ app/controllers/playlists_controller.rb:43:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/playlists_controller.rb:43:in `create'
+Completed 200 OK in 214ms (Views: 0.9ms | ActiveRecord: 4.6ms | Allocations: 7800)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 13:18:51 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.19ms)
+Completed 200 OK in 122ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 16315)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 13:18:55 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.3ms)
+Completed 200 OK in 115ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 16199)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-16 13:18:56 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.68ms)
+Completed 200 OK in 131ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 9722)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 13:19:29 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.45ms)
+Completed 200 OK in 124ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 16099)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 13:19:39 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.9ms)
+Completed 200 OK in 123ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 15997)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-16 13:19:40 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.02ms)
+Completed 200 OK in 117ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 9523)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 13:20:25 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (1.0ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.61ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 1.0ms | Allocations: 1265)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 13:20:28 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (12.34ms)
+Completed 200 OK in 131ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 16129)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-16 13:20:29 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.11ms)
+Completed 200 OK in 109ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 9598)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 13:20:33 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.19ms)
+Completed 200 OK in 120ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 15952)
+
+
+Started GET "/search/life%20of%20pablo" for ::1 at 2019-08-16 13:20:39 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"life of pablo"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.92ms)
+Completed 200 OK in 147ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 21350)
+
+
+Started GET "/albums/7gsWAHLeT0w7es6FofOXk1" for ::1 at 2019-08-16 13:20:42 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"7gsWAHLeT0w7es6FofOXk1"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.94ms)
+Completed 200 OK in 120ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 12208)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 13:20:49 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.52ms)
+Completed 200 OK in 135ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 16054)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 13:21:48 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.8ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.03ms)
+Completed 200 OK in 25ms (Views: 19.5ms | ActiveRecord: 0.8ms | Allocations: 1260)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 13:21:51 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (9.8ms)
+Completed 200 OK in 163ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 16161)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 13:22:32 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (1.2ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.54ms)
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 1.2ms | Allocations: 1260)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 13:22:35 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (7.82ms)
+Completed 200 OK in 211ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 16296)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 13:22:48 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (9.96ms)
+Completed 200 OK in 143ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 15815)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-16 13:22:50 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (10.33ms)
+Completed 200 OK in 332ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 9607)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 13:23:17 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (1.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.57ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 1.1ms | Allocations: 1260)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 13:23:19 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.56ms)
+Completed 200 OK in 161ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 16159)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 13:23:24 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.92ms)
+Completed 200 OK in 164ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 16235)
+
+
+Started GET "/search/life%20of%20pablo" for ::1 at 2019-08-16 13:23:27 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"life of pablo"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.42ms)
+Completed 200 OK in 128ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 21266)
+
+
+Started GET "/albums/1TxHDwSQQlkdNusM6oTJO4" for ::1 at 2019-08-16 13:23:29 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"1TxHDwSQQlkdNusM6oTJO4"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.35ms)
+Completed 200 OK in 128ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 3487)
+
+
+Started GET "/search/life%20of%20pablo" for ::1 at 2019-08-16 13:23:35 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"life of pablo"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.19ms)
+Completed 200 OK in 166ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 21643)
+
+
+Started GET "/search/life%20of%20pablo" for ::1 at 2019-08-16 13:23:39 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"life of pablo"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.82ms)
+Completed 200 OK in 148ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 21206)
+
+
+Started GET "/albums/7gsWAHLeT0w7es6FofOXk1" for ::1 at 2019-08-16 13:23:41 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"7gsWAHLeT0w7es6FofOXk1"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.34ms)
+Completed 200 OK in 119ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 12207)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 13:26:00 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (1.0ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.47ms)
+Completed 200 OK in 28ms (Views: 21.0ms | ActiveRecord: 1.0ms | Allocations: 1260)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 13:29:18 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (3.4ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.64ms)
+Completed 200 OK in 37ms (Views: 26.0ms | ActiveRecord: 3.4ms | Allocations: 1260)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 17:49:29 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (8.42ms)
+Completed 200 OK in 1973ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 20751)
+
+
+Started GET "/search/h.e.r." for ::1 at 2019-08-16 17:49:43 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/search/h.e.r."):
+  
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/playlists" for ::1 at 2019-08-16 17:49:48 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (3.7ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.28ms)
+Completed 200 OK in 11ms (Views: 7.2ms | ActiveRecord: 3.7ms | Allocations: 1358)
+
+
+Started GET "/search/her" for ::1 at 2019-08-16 17:49:50 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"her"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (14.84ms)
+Completed 200 OK in 666ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 32336)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 17:55:29 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (1.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.47ms)
+Completed 200 OK in 40ms (Views: 35.8ms | ActiveRecord: 1.1ms | Allocations: 1359)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 17:58:37 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (3.7ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.07ms)
+Completed 200 OK in 35ms (Views: 26.4ms | ActiveRecord: 3.7ms | Allocations: 1260)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 18:00:41 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (2.2ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.54ms)
+Completed 200 OK in 38ms (Views: 29.7ms | ActiveRecord: 2.2ms | Allocations: 1260)
+
+
+Started GET "/search/kanye%20west" for ::1 at 2019-08-16 18:01:29 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"kanye west"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (15.09ms)
+Completed 200 OK in 2743ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 27959)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 18:03:00 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.8ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.6ms)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.8ms | Allocations: 1260)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 18:03:17 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (7.7ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.69ms)
+Completed 200 OK in 66ms (Views: 57.9ms | ActiveRecord: 7.7ms | Allocations: 1261)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 18:04:02 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.6ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.73ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.6ms | Allocations: 1260)
+
+
+Started GET "/search/kanye%20west" for ::1 at 2019-08-16 18:04:56 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"kanye west"}
+Completed 500 Internal Server Error in 1056ms (ActiveRecord: 0.0ms | Allocations: 1554)
+
+
+  
+SocketError (Failed to open TCP connection to api.spotify.com:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/search_controller.rb:19:in `set_search'
+Started GET "/playlists" for ::1 at 2019-08-16 18:05:07 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (2.7ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.99ms)
+Completed 200 OK in 19ms (Views: 15.9ms | ActiveRecord: 2.7ms | Allocations: 1259)
+
+
+Started GET "/search/kanye%20west" for ::1 at 2019-08-16 18:05:09 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"kanye west"}
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 1547)
+
+
+  
+SocketError (Failed to open TCP connection to api.spotify.com:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/search_controller.rb:19:in `set_search'
+Started GET "/playlists" for ::1 at 2019-08-16 18:05:35 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (1.0ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.66ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 1.0ms | Allocations: 1259)
+
+
+Started GET "/search/kanye%20west" for ::1 at 2019-08-16 18:05:38 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"kanye west"}
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 1554)
+
+
+  
+SocketError (Failed to open TCP connection to api.spotify.com:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/search_controller.rb:19:in `set_search'
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from block in <module:ContentHelper> at /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0.rc2/app/helpers/action_text/content_helper.rb:7)
+Started GET "/playlists" for ::1 at 2019-08-16 18:05:51 -0400
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.6ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.4ms)
+Completed 200 OK in 44ms (Views: 27.0ms | ActiveRecord: 10.3ms | Allocations: 9917)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 18:05:53 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms | Allocations: 2247)
+
+
+  
+SocketError (Failed to open TCP connection to api.spotify.com:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/search_controller.rb:19:in `set_search'
+Started GET "/playlists" for ::1 at 2019-08-16 18:06:04 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.4ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.99ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.4ms | Allocations: 1275)
+
+
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from block in <module:ContentHelper> at /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0.rc2/app/helpers/action_text/content_helper.rb:7)
+Started GET "/playlists" for ::1 at 2019-08-16 18:06:31 -0400
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (2.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.98ms)
+Completed 200 OK in 40ms (Views: 23.5ms | ActiveRecord: 9.5ms | Allocations: 9917)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 18:06:33 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.53ms)
+Completed 200 OK in 327ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 19091)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 18:10:39 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (0.8ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.75ms)
+Completed 200 OK in 24ms (Views: 20.2ms | ActiveRecord: 0.8ms | Allocations: 1277)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 18:14:54 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (2.4ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.15ms)
+Completed 200 OK in 63ms (Views: 51.3ms | ActiveRecord: 2.4ms | Allocations: 1277)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 18:20:07 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (1.2ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.37ms)
+Completed 200 OK in 30ms (Views: 22.5ms | ActiveRecord: 1.2ms | Allocations: 1276)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 18:31:04 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (1.9ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (147.1ms)
+Completed 200 OK in 194ms (Views: 184.9ms | ActiveRecord: 1.9ms | Allocations: 1362)
+
+
+Started GET "/search/kanye%20west" for ::1 at 2019-08-16 18:32:32 -0400
+Processing by SearchController#show as HTML
+  Parameters: {"id"=>"kanye west"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (16.62ms)
+Completed 200 OK in 8226ms (Views: 17.2ms | ActiveRecord: 0.0ms | Allocations: 27943)
+
+
+Started GET "/playlists" for ::1 at 2019-08-16 18:36:53 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (2.5ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.63ms)
+Completed 200 OK in 62ms (Views: 48.4ms | ActiveRecord: 2.5ms | Allocations: 1260)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 18:37:45 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 0.0ms | Allocations: 1552)
+
+
+  
+SocketError (Failed to open TCP connection to api.spotify.com:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/search_controller.rb:19:in `set_search'
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from block in <module:ContentHelper> at /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0.rc2/app/helpers/action_text/content_helper.rb:7)
+Started GET "/playlists" for ::1 at 2019-08-16 18:40:43 -0400
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (1.1.4) lib/pg.rb:56:in `initialize'
+pg (1.1.4) lib/pg.rb:56:in `new'
+pg (1.1.4) lib/pg.rb:56:in `connect'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/postgresql_adapter.rb:46:in `postgresql_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:923:in `checkout_new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:902:in `try_to_checkout_new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:863:in `acquire_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:587:in `checkout'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1106:in `retrieve_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_handling.rb:231:in `retrieve_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_handling.rb:199:in `connection'
+activerecord (6.0.0.rc2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 18:40:45 -0400
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (1.1.4) lib/pg.rb:56:in `initialize'
+pg (1.1.4) lib/pg.rb:56:in `new'
+pg (1.1.4) lib/pg.rb:56:in `connect'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/postgresql_adapter.rb:46:in `postgresql_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:923:in `checkout_new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:902:in `try_to_checkout_new_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:863:in `acquire_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:587:in `checkout'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1106:in `retrieve_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_handling.rb:231:in `retrieve_connection'
+activerecord (6.0.0.rc2) lib/active_record/connection_handling.rb:199:in `connection'
+activerecord (6.0.0.rc2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+DEPRECATION WARNING: warning: white_list_sanitizer isdeprecated, please use safe_list_sanitizer instead. (called from block in <module:ContentHelper> at /Users/victormrecabarren/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0.rc2/app/helpers/action_text/content_helper.rb:7)
+Started GET "/playlists" for ::1 at 2019-08-16 19:17:12 -0400
+  [1m[35m (4.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (2.2ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.91ms)
+Completed 200 OK in 48ms (Views: 19.9ms | ActiveRecord: 9.4ms | Allocations: 9918)
+
+
+Started GET "/search/kanye%20west" for ::1 at 2019-08-16 19:17:22 -0400
+Processing by SearchController#show as HTML
+  Parameters: {"id"=>"kanye west"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (24.94ms)
+Completed 200 OK in 1808ms (Views: 28.7ms | ActiveRecord: 0.0ms | Allocations: 30880)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 19:18:49 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (22.76ms)
+Completed 200 OK in 252ms (Views: 23.2ms | ActiveRecord: 0.0ms | Allocations: 16063)
+
+
+Started GET "/albums/392p3shh2jkxUxY2VHvlH8" for ::1 at 2019-08-16 19:19:08 -0400
+Processing by AlbumsController#show as */*
+  Parameters: {"id"=>"392p3shh2jkxUxY2VHvlH8"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (13.97ms)
+Completed 200 OK in 177ms (Views: 14.5ms | ActiveRecord: 0.0ms | Allocations: 9567)
+
+
+Started GET "/search/channel%20orane" for ::1 at 2019-08-16 19:21:57 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orane"}
+Completed 500 Internal Server Error in 172ms (ActiveRecord: 0.0ms | Allocations: 2913)
+
+
+  
+NoMethodError (undefined method `type' for nil:NilClass):
+  
+app/controllers/search_controller.rb:23:in `set_search'
+Started GET "/playlists" for ::1 at 2019-08-16 19:22:04 -0400
+Processing by PlaylistsController#index as */*
+  [1m[36mPlaylist Load (1.0ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (8.19ms)
+Completed 200 OK in 17ms (Views: 14.5ms | ActiveRecord: 1.0ms | Allocations: 1275)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 19:22:07 -0400
+Processing by SearchController#show as */*
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.48ms)
+Completed 200 OK in 179ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 16123)
+
+
+Started GET "/search/channel%20orange" for ::1 at 2019-08-16 19:22:26 -0400
+Processing by SearchController#show as HTML
+  Parameters: {"id"=>"channel orange"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.64ms)
+Completed 200 OK in 167ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 16118)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-08-16 19:22:26 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0.rc2) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/search/channel%20oran" for ::1 at 2019-08-16 19:22:31 -0400
+Processing by SearchController#show as HTML
+  Parameters: {"id"=>"channel oran"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.76ms)
+Completed 200 OK in 201ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 5587)
+
+
+Started GET "/search/channel%20orage" for ::1 at 2019-08-16 19:22:38 -0400
+Processing by SearchController#show as HTML
+  Parameters: {"id"=>"channel orage"}
+Completed 500 Internal Server Error in 138ms (ActiveRecord: 0.0ms | Allocations: 2802)
+
+
+  
+NoMethodError (undefined method `type' for nil:NilClass):
+  
+app/controllers/search_controller.rb:23:in `set_search'
