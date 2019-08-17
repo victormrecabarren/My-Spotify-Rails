@@ -28,7 +28,7 @@ class PlaylistsController < ApplicationController
       track_number: @seed_track[:track_number],
       name: @seed_track[:name],
       artist: @seed_track[:artist],
-      images: 'none',
+      images: @seed_track[:images],
       album_name: @seed_track[:album_name],
       album_id: @seed_track[:album_id],
       duration: @seed_track[:duration],
@@ -50,7 +50,7 @@ class PlaylistsController < ApplicationController
   # PATCH/PUT /playlists/1
   def update
     if @playlist.update(playlist_params)
-      render json: @playlist
+      render json: Playlist.all
     else
       render json: @playlist.errors, status: :unprocessable_entity
     end
@@ -59,6 +59,7 @@ class PlaylistsController < ApplicationController
   # DELETE /playlists/1
   def destroy
     @playlist.destroy
+    render json: Playlist.all
   end
 
   private
